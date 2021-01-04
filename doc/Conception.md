@@ -57,7 +57,7 @@ On va avoir `` T_AG`` qui sera une instanciation de ``T_AB`` avec ``T_Element`` 
 procedure init(arbre : out T_AB, e_racine : in T_element);
 ```
 
-#### Rafinage
+##### Rafinage
 ```
 R0 : “Créer un arbre binaire avec un noeud racine”
 R1 : comment “Créer un arbre binaire avec un noeud racine”   -- arbre : out t_AB; e_racine : in T_element
@@ -66,6 +66,7 @@ R2 : comment “attribuer la valeur au noeud”  -- e_racine : in T_element
   arbre:=new T_AB_Cell
   arbre.all.element <- e_racine
 ```
+
 
 #### Inserer une valeur à gauche
 
@@ -121,6 +122,7 @@ R2 : Comment “assigner valeur à droite” -- noeud : out T_AB; e_racine : in 
 noeud.all.droite.all.element <- e_racine
 ```
 
+
 #### Calculer la taille 
 
 ##### Specification 
@@ -137,7 +139,6 @@ function calcul_taille(arbre : in T_AB) return integer;
 ```
 
 ##### Rafinage
-
 ```
 R0 : calculer le  nombre de nœuds de l’arbre 
 R1 : comment “calculer le  nombre de nœuds de l’arbre”  --arbre : in T_AB
@@ -150,9 +151,10 @@ R2 : comment “ajouter le noeud courant + sosu arbre gauche + sous_arbre droit�
   end if;
 ```
 
-#### Rechercher un noeud
-##### Specification 
 
+#### Rechercher un noeud
+
+##### Specification 
 ```ada
 -- nom : rechercher
 -- sémantique :  rechercher un noeud dans un arbre
@@ -167,7 +169,6 @@ function rechercher(racine : in  T_AB ; valeur : in T_element) return T_AB
 ```
 
 ##### Rafinage 
-
 ```
 R0 : ”rechercher un noeud dans un arbre”
 R1 : comment “rechercher un noeud dans un arbre”  -- arbre : in  T_AB ; valeur : in 
@@ -182,6 +183,7 @@ R1 : comment “rechercher un noeud dans un arbre”  -- arbre : in  T_AB ; vale
 ```
 
 #### afficher arbre
+
 ##### Specification 
 ```ada
 -- nom : afficher
@@ -196,10 +198,13 @@ R1 : comment “rechercher un noeud dans un arbre”  -- arbre : in  T_AB ; vale
 -- Tests de la procédure :
 procedure afficher(arbre : in T_AB; profondeur : in integer; ethiquette_gauche, etiquette_droite : in string(0..10))
 ```
+
 ##### Rafinage
 ```
 R0 : “affiche un arbre”
-R1 : Comment “affiche un arbre”  -- arbre : in  T_AB; profondeur : in integer; etiquette_gauche : in string(0..10); etiquette_droite : in string(0..10) 
+R1 : Comment “affiche un arbre”  -- arbre : in  T_AB; profondeur : in integer; 
+                                 -- etiquette_gauche : in string(0..10); 
+                                 -- etiquette_droite : in string(0..10) 
   if(arbre = null) raise arbre_exception; end if;
   afficher racine; 
   if(arbre.all.droite /= null )then 
@@ -211,14 +216,18 @@ R1 : Comment “affiche un arbre”  -- arbre : in  T_AB; profondeur : in intege
 R2 : Comment “afficher racine”  -- arbre : in  T_AB;        
   afficher_element(arbre.all.element);
   new_line;
-R2 : Comment afficher sous arbres droite -- arbre : in  T_AB; profondeur : in integer; etiquette_gauche : in string(0..10); etiquette_droite : in string(0..10) 
+R2 : Comment afficher sous arbres droite -- arbre : in  T_AB; profondeur : in integer; 
+                                         -- etiquette_gauche : in string(0..10); 
+                                         -- etiquette_droite : in string(0..10) 
   for i in 1..profondeur loop
     put(“   ”);
   end loop;
   put(etiquette_droite);
   put(“ : ”);
   afficher(arbre.all.droite, profondeur+1, etiquette_droite, etiquette_gauche)
-R2 : Comment afficher sous arbres gauche -- arbre : in  T_AB; profondeur : in integer; etiquette_gauche : in string(0..10); etiquette_droite : in string(0..10) 
+R2 : Comment afficher sous arbres gauche -- arbre : in  T_AB; profondeur : in integer; 
+                                         -- etiquette_gauche : in string(0..10); 
+                                         -- etiquette_droite : in string(0..10) 
   for i in 1..profondeur loop
     put(“   ”);
   end loop;
@@ -227,7 +236,10 @@ R2 : Comment afficher sous arbres gauche -- arbre : in  T_AB; profondeur : in in
   afficher(arbre.all.gauche, profondeur+1, etiquette_droite, etiquette_gauche)
 
 ```
+
+
 #### Suprimer element
+
 ##### Specification 
 ```ada
 -- nom : supprimer
@@ -240,6 +252,7 @@ R2 : Comment afficher sous arbres gauche -- arbre : in  T_AB; profondeur : in in
 -- Tests de la procédure :
 procedure supprimer(arbre: in out T_AB;  element : in T_Element)
 ```
+
 ##### Raffinage 
 ```
 R0 : suprimer un noeud de l’arbre 
@@ -264,6 +277,8 @@ R2 : comment “supprimer récursivement le noeud et ses antécédents"
   supprimer(arbre.all.droit,valeur)
   supprimer(arbre.all.gauche, valeur);
 ```
+
+
 ### Fonctions et procedures de ``T_Persone`` : 
 
 
