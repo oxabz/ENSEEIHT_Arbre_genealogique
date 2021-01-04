@@ -1,8 +1,8 @@
-## Conception du projet 
+# Conception du projet 
 
-### Types de donées
+## Types de donées
 
-#### Arbre Binaire 
+### Arbre Binaire 
 
 Nous allons avoir besoint d'un arbre binaire generique de donnés non trié afin de representer l'arbre genealogique
 
@@ -16,7 +16,7 @@ Pour ce faire il nous faut deux types :
 ```
 
 
-#### Personnes 
+### Personnes 
 
 Nous allons vouloir representer des individues. Pour ce faire on utilisera un type record ``T_Personne`` :
 ```
@@ -26,7 +26,19 @@ Nous allons vouloir representer des individues. Pour ce faire on utilisera un ty
 ... <Tout autre info sur un individu>
 ```
 
-#### Arbre Genealogique 
+### Arbre Genealogique 
 
 Nous allons vouloir faire un arbre généalogique. On peut se servir de l'arbre binaire precedement créé pour faire notre arbre genalogique.
 On va avoir `` T_AG`` qui sera une instanciation de ``T_AB`` avec ``T_Element`` qui est ``T_Personne``
+
+
+## Fonctions Et Procedures
+
+
+### Fonctions et procedures de ``T_AB`` : 
+
+
+### Fonctions et procedures de ``T_Persone`` : 
+
+
+### Fonctions et procedures de ``T_AG`` : 
