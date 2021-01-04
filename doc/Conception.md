@@ -256,26 +256,29 @@ procedure supprimer(arbre: in out T_AB;  element : in T_Element)
 ##### Raffinage 
 ```
 R0 : suprimer un noeud de l’arbre 
-R1 : comment “supprimer un noeud de l’arbre”
-  if(rechercher(arbre, valeur)=null) then
+R1 : comment “supprimer un noeud de l’arbre” -- arbre : in  T_AB; element : in T_element
+  if(suprimer_rec(arbre, valeur) = false) then
     raise noeud_absent
-  else
-    supprimer récursivement le noeud et ses antécédents
   end if;
-R2 : comment “supprimer récursivement le noeud et ses antécédents"
+R2 : comment “supprimer récursivement le noeud et ses antécédents" aka "suprimer_rec"
+          -- arbre : in  T_AB; element : in T_element
+          -- return : boolean
   if(arbre=null) then
-    return;
+    return false;
   end if;
   if(arbre.all.gauche /= null and then arbre.all.gauche.all.element = valeur) then
     arbre.all.gauche:=null;
-    return;
+    return true;
   end if;
   if(arbre.all.droit /= null and then arbre.all.droit.all.element = valeur) then
     arbre.all.droit:=null;
-    return;
+    return true;
   end if;
-  supprimer(arbre.all.droit,valeur)
-  supprimer(arbre.all.gauche, valeur);
+  res := supprimer(arbre.all.droit,valeur)
+  if(not res) then 
+    res := supprimer(arbre.all.gauche, valeur);
+  end if;
+  return res;
 ```
 
 
