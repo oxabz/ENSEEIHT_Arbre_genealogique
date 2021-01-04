@@ -138,6 +138,18 @@ function calcul_taille(arbre : in T_AB) return integer;
 
 ##### Rafinage
 
+```
+R0 : calculer le  nombre de nœuds de l’arbre 
+R1 : comment “calculer le  nombre de nœuds de l’arbre”  --arbre : in T_AB
+ajouter le noeud courant + sosu arbre gauche + sous_arbre droit
+R2 : comment “ajouter le noeud courant + sosu arbre gauche + sous_arbre droit”
+  if(arbre = null) then
+    return 0;
+  else
+    return 1+ calcul_taille(arbre.all.gauche) + calcul_taille(arbre.all.droite)
+  end if;
+```
+
 #### Rechercher un noeud
 ##### Specification 
 
@@ -152,6 +164,21 @@ function calcul_taille(arbre : in T_AB) return integer;
 -- post-condition : retourne le noeud ou null si le noeud existe pas
 -- Tests de la procédure :
 function rechercher(racine : in  T_AB ; valeur : in T_element) return T_AB
+```
+
+##### Rafinage 
+
+```
+R0 : ”rechercher un noeud dans un arbre”
+R1 : comment “rechercher un noeud dans un arbre”  -- arbre : in  T_AB ; valeur : in 
+  if(arbre =null or else arbre.all.element = valeur) then
+    return arbre;
+  end if;
+  result = rechercher(arbre.all.gauche);
+  if(result = null)
+      result = rechercher (arbre.all.droite);
+  end if;
+  return result;
 ```
 
 #### afficher arbre
@@ -169,6 +196,37 @@ function rechercher(racine : in  T_AB ; valeur : in T_element) return T_AB
 -- Tests de la procédure :
 procedure afficher(arbre : in T_AB; profondeur : in integer; ethiquette_gauche, etiquette_droite : in string(0..10))
 ```
+##### Rafinage
+```
+R0 : “affiche un arbre”
+R1 : Comment “affiche un arbre”  -- arbre : in  T_AB; profondeur : in integer; etiquette_gauche : in string(0..10); etiquette_droite : in string(0..10) 
+  if(arbre = null) raise arbre_exception; end if;
+  afficher racine; 
+  if(arbre.all.droite /= null )then 
+    afficher sous arbre droit 
+  end if;
+  if(arbre.all.gauche /= null )then 
+    afficher sous arbre gauche 
+  end if;
+R2 : Comment “afficher racine”  -- arbre : in  T_AB;        
+  afficher_element(arbre.all.element);
+  new_line;
+R2 : Comment afficher sous arbres droite -- arbre : in  T_AB; profondeur : in integer; etiquette_gauche : in string(0..10); etiquette_droite : in string(0..10) 
+  for i in 1..profondeur loop
+    put(“   ”);
+  end loop;
+  put(etiquette_droite);
+  put(“ : ”);
+  afficher(arbre.all.droite, profondeur+1, etiquette_droite, etiquette_gauche)
+R2 : Comment afficher sous arbres gauche -- arbre : in  T_AB; profondeur : in integer; etiquette_gauche : in string(0..10); etiquette_droite : in string(0..10) 
+  for i in 1..profondeur loop
+    put(“   ”);
+  end loop;
+  put(etiquette_gauche);
+  put(“ : ”);
+  afficher(arbre.all.gauche, profondeur+1, etiquette_droite, etiquette_gauche)
+
+```
 #### Suprimer element
 ##### Specification 
 ```ada
@@ -182,7 +240,30 @@ procedure afficher(arbre : in T_AB; profondeur : in integer; ethiquette_gauche, 
 -- Tests de la procédure :
 procedure supprimer(arbre: in out T_AB;  element : in T_Element)
 ```
-
+##### Raffinage 
+```
+R0 : suprimer un noeud de l’arbre 
+R1 : comment “supprimer un noeud de l’arbre”
+  if(rechercher(arbre, valeur)=null) then
+    raise noeud_absent
+  else
+    supprimer récursivement le noeud et ses antécédents
+  end if;
+R2 : comment “supprimer récursivement le noeud et ses antécédents"
+  if(arbre=null) then
+    return;
+  end if;
+  if(arbre.all.gauche /= null and then arbre.all.gauche.all.element = valeur) then
+    arbre.all.gauche:=null;
+    return;
+  end if;
+  if(arbre.all.droit /= null and then arbre.all.droit.all.element = valeur) then
+    arbre.all.droit:=null;
+    return;
+  end if;
+  supprimer(arbre.all.droit,valeur)
+  supprimer(arbre.all.gauche, valeur);
+```
 ### Fonctions et procedures de ``T_Persone`` : 
 
 
