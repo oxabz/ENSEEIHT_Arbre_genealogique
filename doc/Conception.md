@@ -74,8 +74,9 @@ R2 : comment “attribuer la valeur au noeud”  -- e_racine : in T_element
 ```ada
 -- Nom : inserer_gauche
 -- sémantique : inserer un noeud a gauche d’un noeud donner
---paramètres : --noeud : in out T_AB -- noeud ou il faut insérer à gauche    
-        -- valeur : in T_element ; -- element à insérer
+--paramètres : 
+    --noeud : in out T_AB -- noeud ou il faut insérer à gauche    
+    -- valeur : in T_element ; -- element à insérer
 --précondition : l’arbre est initialiser 
 --postcondition : noeud.all.gauche.all.element = valeur
 procedure inserer_gauche(noeud : in out T_AB ; valeur : in t_element)
@@ -84,15 +85,15 @@ procedure inserer_gauche(noeud : in out T_AB ; valeur : in t_element)
 #### Rafinage
 ```
 R0 : “inserer un noeud a gauche d’un noeud donné"
-R1 : Comment “inserer un noeud a gauche d’un noeud donner” -- noeud : out T_AB; e_racine : in T_element; 
+R1 : Comment “inserer un noeud a gauche d’un noeud donner” -- noeud : out T_AB; valeur : in T_element; 
     if noeud.all.gauche /= null then
         raise exception_insertion;
     else 
         assigner valeur à gauche
     end if; 
-R2 : Comment “assigner valeur à gauche” -- noeud : out T_AB; e_racine : in T_element; 
+R2 : Comment “assigner valeur à gauche” -- noeud : out T_AB; valeur : in T_element; 
     noeud.all.gauche = new T_AB_Cell
-noeud.all.gauche.all.element <- e_racine
+noeud.all.gauche.all.element <- valeur
 ```
 
 #### Inserer une valeur à droite
@@ -101,8 +102,9 @@ noeud.all.gauche.all.element <- e_racine
 ```ada
 -- Nom : inserer_droite
 -- sémantique : inserer un noeud a droite d’un noeud donner
---paramètres : --noeud : in out T_AB -- noeud ou il faut insérer à droite    
-        -- valeur : in T_element ; -- element à insérer
+--paramètres : 
+    --noeud : in out T_AB -- noeud ou il faut insérer à droite    
+    -- valeur : in T_element ; -- element à insérer
 --précondition : l’arbre est initialiser 
 --postcondition : noeud.all.droite.all.element = valeur
 procedure inserer_droit(noeud : in out T_AB ; valeur : in t_element)
@@ -111,15 +113,15 @@ procedure inserer_droit(noeud : in out T_AB ; valeur : in t_element)
 #### Rafinage
 ```
 R0 : “inserer un noeud a droite d’un noeud donné"
-R1 : Comment “inserer un noeud a droite d’un noeud donner” -- noeud : out T_AB; e_racine : in T_element; 
+R1 : Comment “inserer un noeud a droite d’un noeud donner” -- noeud : out T_AB; valeur : in T_element; 
     if noeud.all.gauche /= null then
         raise exception_insertion;
     else 
         assigner valeur à droite
     end if; 
-R2 : Comment “assigner valeur à droite” -- noeud : out T_AB; e_racine : in T_element; 
+R2 : Comment “assigner valeur à droite” -- noeud : out T_AB; valeur : in T_element; 
     noeud.all.droite = new T_AB_Cell
-noeud.all.droite.all.element <- e_racine
+noeud.all.droite.all.element <- valeur
 ```
 
 
@@ -159,7 +161,7 @@ R2 : comment “ajouter le noeud courant + sosu arbre gauche + sous_arbre droit�
 -- nom : rechercher
 -- sémantique :  rechercher un noeud dans un arbre
 -- paramètres : racine : in T_AB --l’arbre où on fait une recherche
---        valeur : in T_element -- le noeud à rechercher
+  -- valeur : in T_element -- le noeud à rechercher
   -- arbre : in  T_AB -- Arbre dont on veut le nombre de nœuds
 -- retour : T_AB -- le noeud
 -- pré-condition : l’arbre est initialisé
@@ -175,9 +177,9 @@ R1 : comment “rechercher un noeud dans un arbre”  -- arbre : in  T_AB ; vale
   if(arbre =null or else arbre.all.element = valeur) then
     return arbre;
   end if;
-  result = rechercher(arbre.all.gauche);
+  result := rechercher(arbre.all.gauche);
   if(result = null)
-      result = rechercher (arbre.all.droite);
+      result := rechercher (arbre.all.droite);
   end if;
   return result;
 ```
@@ -205,7 +207,7 @@ R0 : “affiche un arbre”
 R1 : Comment “affiche un arbre”  -- arbre : in  T_AB; profondeur : in integer; 
                                  -- etiquette_gauche : in string(0..10); 
                                  -- etiquette_droite : in string(0..10) 
-  if(arbre = null) raise arbre_exception; end if;
+  if(arbre = null) then raise arbre_exception; end if;
   afficher racine; 
   if(arbre.all.droite /= null )then 
     afficher sous arbre droit 
@@ -274,9 +276,9 @@ R2 : comment “supprimer récursivement le noeud et ses antécédents" aka "sup
     arbre.all.droit:=null;
     return true;
   end if;
-  res := supprimer(arbre.all.droit,valeur)
+  res := supprimer_rec(arbre.all.droit,valeur)
   if(not res) then 
-    res := supprimer(arbre.all.gauche, valeur);
+    res := supprimer_rec(arbre.all.gauche, valeur);
   end if;
   return res;
 ```
