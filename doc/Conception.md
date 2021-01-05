@@ -74,8 +74,9 @@ R2 : comment “attribuer la valeur au noeud”  -- e_racine : in T_element
 ```ada
 -- Nom : inserer_gauche
 -- sémantique : inserer un noeud a gauche d’un noeud donner
---paramètres : --noeud : in out T_AB -- noeud ou il faut insérer à gauche    
-        -- valeur : in T_element ; -- element à insérer
+--paramètres : 
+    --noeud : in out T_AB -- noeud ou il faut insérer à gauche    
+    -- valeur : in T_element ; -- element à insérer
 --précondition : l’arbre est initialiser 
 --postcondition : noeud.all.gauche.all.element = valeur
 procedure inserer_gauche(noeud : in out T_AB ; valeur : in t_element)
@@ -101,8 +102,9 @@ noeud.all.gauche.all.element <- e_racine
 ```ada
 -- Nom : inserer_droite
 -- sémantique : inserer un noeud a droite d’un noeud donner
---paramètres : --noeud : in out T_AB -- noeud ou il faut insérer à droite    
-        -- valeur : in T_element ; -- element à insérer
+--paramètres : 
+    --noeud : in out T_AB -- noeud ou il faut insérer à droite    
+    -- valeur : in T_element ; -- element à insérer
 --précondition : l’arbre est initialiser 
 --postcondition : noeud.all.droite.all.element = valeur
 procedure inserer_droit(noeud : in out T_AB ; valeur : in t_element)
@@ -159,7 +161,7 @@ R2 : comment “ajouter le noeud courant + sosu arbre gauche + sous_arbre droit�
 -- nom : rechercher
 -- sémantique :  rechercher un noeud dans un arbre
 -- paramètres : racine : in T_AB --l’arbre où on fait une recherche
---        valeur : in T_element -- le noeud à rechercher
+  -- valeur : in T_element -- le noeud à rechercher
   -- arbre : in  T_AB -- Arbre dont on veut le nombre de nœuds
 -- retour : T_AB -- le noeud
 -- pré-condition : l’arbre est initialisé
