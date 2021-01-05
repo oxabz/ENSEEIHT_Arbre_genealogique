@@ -177,9 +177,9 @@ R1 : comment “rechercher un noeud dans un arbre”  -- arbre : in  T_AB ; vale
   if(arbre =null or else arbre.all.element = valeur) then
     return arbre;
   end if;
-  result = rechercher(arbre.all.gauche);
+  result := rechercher(arbre.all.gauche);
   if(result = null)
-      result = rechercher (arbre.all.droite);
+      result := rechercher (arbre.all.droite);
   end if;
   return result;
 ```
