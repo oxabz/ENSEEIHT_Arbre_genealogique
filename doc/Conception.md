@@ -85,15 +85,15 @@ procedure inserer_gauche(noeud : in out T_AB ; valeur : in t_element)
 #### Rafinage
 ```
 R0 : “inserer un noeud a gauche d’un noeud donné"
-R1 : Comment “inserer un noeud a gauche d’un noeud donner” -- noeud : out T_AB; e_racine : in T_element; 
+R1 : Comment “inserer un noeud a gauche d’un noeud donner” -- noeud : out T_AB; valeur : in T_element; 
     if noeud.all.gauche /= null then
         raise exception_insertion;
     else 
         assigner valeur à gauche
     end if; 
-R2 : Comment “assigner valeur à gauche” -- noeud : out T_AB; e_racine : in T_element; 
+R2 : Comment “assigner valeur à gauche” -- noeud : out T_AB; valeur : in T_element; 
     noeud.all.gauche = new T_AB_Cell
-noeud.all.gauche.all.element <- e_racine
+noeud.all.gauche.all.element <- valeur
 ```
 
 #### Inserer une valeur à droite
@@ -113,15 +113,15 @@ procedure inserer_droit(noeud : in out T_AB ; valeur : in t_element)
 #### Rafinage
 ```
 R0 : “inserer un noeud a droite d’un noeud donné"
-R1 : Comment “inserer un noeud a droite d’un noeud donner” -- noeud : out T_AB; e_racine : in T_element; 
+R1 : Comment “inserer un noeud a droite d’un noeud donner” -- noeud : out T_AB; valeur : in T_element; 
     if noeud.all.gauche /= null then
         raise exception_insertion;
     else 
         assigner valeur à droite
     end if; 
-R2 : Comment “assigner valeur à droite” -- noeud : out T_AB; e_racine : in T_element; 
+R2 : Comment “assigner valeur à droite” -- noeud : out T_AB; valeur : in T_element; 
     noeud.all.droite = new T_AB_Cell
-noeud.all.droite.all.element <- e_racine
+noeud.all.droite.all.element <- valeur
 ```
 
 
