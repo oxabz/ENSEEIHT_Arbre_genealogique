@@ -207,7 +207,7 @@ R0 : “affiche un arbre”
 R1 : Comment “affiche un arbre”  -- arbre : in  T_AB; profondeur : in integer; 
                                  -- etiquette_gauche : in string(0..10); 
                                  -- etiquette_droite : in string(0..10) 
-  if(arbre = null) raise arbre_exception; end if;
+  if(arbre = null) then raise arbre_exception; end if;
   afficher racine; 
   if(arbre.all.droite /= null )then 
     afficher sous arbre droit 
