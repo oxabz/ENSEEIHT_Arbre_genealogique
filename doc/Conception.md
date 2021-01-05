@@ -276,9 +276,9 @@ R2 : comment “supprimer récursivement le noeud et ses antécédents" aka "sup
     arbre.all.droit:=null;
     return true;
   end if;
-  res := supprimer(arbre.all.droit,valeur)
+  res := supprimer_rec(arbre.all.droit,valeur)
   if(not res) then 
-    res := supprimer(arbre.all.gauche, valeur);
+    res := supprimer_rec(arbre.all.gauche, valeur);
   end if;
   return res;
 ```
