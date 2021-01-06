@@ -186,7 +186,7 @@ R1 : comment “rechercher un noeud dans un arbre”  -- arbre : in  T_AB ; vale
 
 #### afficher arbre
 
-##### Specification 
+##### Spécification 
 ```ada
 -- nom : afficher
 -- sémantique :  affiche un arbre  
@@ -240,9 +240,9 @@ R2 : Comment afficher sous arbres gauche -- arbre : in  T_AB; profondeur : in in
 ```
 
 
-#### Suprimer element
+#### Supprimer élément
 
-##### Specification 
+##### Spécification 
 ```ada
 -- nom : supprimer
 -- sémantique :  suprime un noeud de l’arbre 
@@ -282,13 +282,16 @@ R2 : comment “supprimer récursivement le noeud et ses antécédents" aka "sup
   end if;
   return res;
 ```
+#### Get Sous Arbre Droit 
 
-	
+```ada
 
-### Fonctions et procedures de ``T_Persone`` : 
+```
+
+### Fonctions et procédures de ``T_Persone`` : 
 
 
-### Fonctions et procedures de ``T_AG`` : 
+### Fonctions et procédures de ``T_AG`` : 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDg1NzE4MiwtMTM3ODM1NDU2OF19
+eyJoaXN0b3J5IjpbMTU2NTg3MzcyLC0xMzc4MzU0NTY4XX0=
 -->
