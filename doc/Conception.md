@@ -294,7 +294,7 @@ R2 : comment “supprimer récursivement le noeud et ses antécédents" aka "sup
 function get_SA_droit(abre : T_AB) return T_AB;
 ```
 
-### Get Sous Arbre Gauche
+#### Get Sous Arbre Gauche
 ```ada
 --Nom : get_SA_gauche
 --sémantique : retourne le sous-arbre droit d’un noeud
@@ -429,6 +429,6 @@ function nextid(personne : in T_personne) return Integer;
 
 ### Fonctions et procédures de ``T_AG`` : 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjI2NjQyOTYsOTg1NDExNjcyLC0xMz
-c4MzU0NTY4XX0=
+eyJoaXN0b3J5IjpbMTg5ODM5NzAzMSw5ODU0MTE2NzIsLTEzNz
+gzNTQ1NjhdfQ==
 -->
