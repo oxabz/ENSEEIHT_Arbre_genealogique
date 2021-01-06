@@ -299,8 +299,8 @@ function get_SA_droit(abre : T_AB) return T_AB;
 --Nom : get_SA_gauche
 --sémantique : retourne le sous-arbre droit d’un noeud
 --paramètres :
--- arbre : T_AB
--- retour : T_AB
+  -- arbre : T_AB
+  -- retour : T_AB
 --préconditions : arbre/=null
 --postconditions :
 function  get_SA_gauche (arbre: T_AB) return  T_AB;
@@ -312,8 +312,8 @@ function  get_SA_gauche (arbre: T_AB) return  T_AB;
 --Nom : get_racine_element
 --sémantique : retourne le sous-arbre droit d’un noeud
 --paramètres :
--- arbre : T_AB
--- retour : T_AB
+  -- arbre : T_AB
+  -- retour : T_AB
 --préconditions : arbre/=null
 --postconditions :
 function  get_racine_element (arbre: T_AB) return  T_Element;
@@ -336,13 +336,14 @@ procedure put(p:T_Person);
 --Nom : "="
 --sémantique : compare les identifiants des personnes
 --paramètres :
--- o1 : in T_Persone
--- o2 : in T_Persone 
+  -- o1 : in T_Persone
+  -- o2 : in T_Persone 
 -- retour : boolean
 --préconditions : 
--- o1.id /= 0
--- o2.id /= 0
+  -- o1.id /= 0
+  -- o2.id /= 0
 --postconditions : null
+function "="(o1, o2)
 ```
 
 --Nom : init
@@ -409,5 +410,6 @@ function nextid(personne : in T_personne) return Integer;
 
 ### Fonctions et procédures de ``T_AG`` : 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODM2NTM2NDA2LC0xMzc4MzU0NTY4XX0=
+eyJoaXN0b3J5IjpbLTEwNTQ5NTU2NDEsLTEzNzgzNTQ1NjhdfQ
+==
 -->
