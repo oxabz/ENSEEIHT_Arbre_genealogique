@@ -288,16 +288,49 @@ R2 : comment “supprimer récursivement le noeud et ses antécédents" aka "sup
 --Nom : get_SA_droit
 --sémantique : retourne le sous-arbre gauche d’un noeud
 --paramètres : arbre : T_AB
--- retour : arbre_gauche : T_AB
+--retour : T_AB
 --préconditions : arbre/=null
 --postconditions : null
 function get_SA_droit(abre : T_AB) return T_AB;
 ```
+
+### Get Sous Arbre Gauche
+```ada
+--Nom : get_SA_gauche
+--sémantique : retourne le sous-arbre droit d’un noeud
+--paramètres :
+-- arbre : T_AB
+-- retour : T_AB
+--préconditions : arbre/=null
+--postconditions :
+function  get_SA_gauche (arbre: T_AB) return  T_AB;
+```
+  
+  ### Get Racine Element
+
+```ada
+--Nom : get_racine_element
+
+--sémantique : retourne le sous-arbre droit d’un noeud
+
+--paramètres :
+
+-- arbre : T_AB
+
+-- retour : T_AB
+
+--préconditions : arbre/=null
+
+--postconditions :
+function  get_racine_element (arbre: T_AB) return  T_Element;
+```
+
 
 ### Fonctions et procédures de ``T_Persone`` : 
 
 
 ### Fonctions et procédures de ``T_AG`` : 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4MTk1NDg4NywtMTM3ODM1NDU2OF19
+eyJoaXN0b3J5IjpbLTExMTgwODI0NDUsLTEzNzgzNTQ1NjhdfQ
+==
 -->
