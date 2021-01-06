@@ -22,8 +22,8 @@ Pour ce faire il nous faut trois types :
 Nous allons vouloir representer des individues. Pour ce faire on utilisera un type record ``T_Personne`` :
 ```
 - Identifiant : integer
-- nom : string(20)
-- prenom : string(20)
+- nom : string
+- prenom : string
 ... <Tout autre info sur un individu>
 ```
 
@@ -310,17 +310,11 @@ function  get_SA_gauche (arbre: T_AB) return  T_AB;
 
 ```ada
 --Nom : get_racine_element
-
 --sémantique : retourne le sous-arbre droit d’un noeud
-
 --paramètres :
-
 -- arbre : T_AB
-
 -- retour : T_AB
-
 --préconditions : arbre/=null
-
 --postconditions :
 function  get_racine_element (arbre: T_AB) return  T_Element;
 ```
@@ -331,6 +325,5 @@ function  get_racine_element (arbre: T_AB) return  T_Element;
 
 ### Fonctions et procédures de ``T_AG`` : 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTgwODI0NDUsLTEzNzgzNTQ1NjhdfQ
-==
+eyJoaXN0b3J5IjpbMjEzMTMzMDc5OSwtMTM3ODM1NDU2OF19
 -->
