@@ -369,7 +369,7 @@ function "="(o1, o2) return boolean;
 -- retour : integer
 --préconditions : id/=0
 --postconditions : 
-procedure 
+function get_id() return 
 ```
 
 --Nom : get_nom
@@ -418,5 +418,6 @@ function nextid(personne : in T_personne) return Integer;
 
 ### Fonctions et procédures de ``T_AG`` : 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5MjUzNzQ5OSwtMTM3ODM1NDU2OF19
+eyJoaXN0b3J5IjpbLTEzNTk1NjY5ODUsLTEzNzgzNTQ1NjhdfQ
+==
 -->
