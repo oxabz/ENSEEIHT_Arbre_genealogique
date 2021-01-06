@@ -306,7 +306,7 @@ function get_SA_droit(abre : T_AB) return T_AB;
 function  get_SA_gauche (arbre: T_AB) return  T_AB;
 ```
   
-  ### Get Racine Element
+#### Get Racine Élément
 
 ```ada
 --Nom : get_racine_element
@@ -319,11 +319,11 @@ function  get_SA_gauche (arbre: T_AB) return  T_AB;
 function  get_racine_element (arbre: T_AB) return  T_Element;
 ```
 
-
 ### Fonctions et procédures de ``T_Persone`` : 
+
 
 
 ### Fonctions et procédures de ``T_AG`` : 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzMTMzMDc5OSwtMTM3ODM1NDU2OF19
+eyJoaXN0b3J5IjpbMTQzNDE0OTk4LC0xMzc4MzU0NTY4XX0=
 -->
