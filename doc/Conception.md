@@ -329,9 +329,10 @@ function  get_racine_element (arbre: T_AB) return  T_Element;
 --paramètres : perso : in  T_personne
 --préconditions : 
 --postconditions : 
+procedure put(p:T_Person);
 ```
 
-
+```ada
 --Nom : "="
 --sémantique : compare les identifiants des personnes
 --paramètres :
@@ -342,6 +343,7 @@ function  get_racine_element (arbre: T_AB) return  T_Element;
 -- o1.id /= 0
 -- o2.id /= 0
 --postconditions : null
+```
 
 --Nom : init
 --sémantique : initialise personne avec un nom et prenom 
@@ -407,5 +409,5 @@ function nextid(personne : in T_personne) return Integer;
 
 ### Fonctions et procédures de ``T_AG`` : 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2NzkzODIzOCwtMTM3ODM1NDU2OF19
+eyJoaXN0b3J5IjpbODM2NTM2NDA2LC0xMzc4MzU0NTY4XX0=
 -->
