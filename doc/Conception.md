@@ -288,3 +288,6 @@ R2 : comment “supprimer récursivement le noeud et ses antécédents" aka "sup
 
 
 ### Fonctions et procedures de ``T_AG`` : 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEzNzgzNTQ1NjhdfQ==
+-->
