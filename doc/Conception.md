@@ -369,25 +369,29 @@ function "="(o1, o2) return boolean;
 -- retour : integer
 --préconditions : id/=0
 --postconditions : 
-function get_id() return 
+function get_id(personne : in T_Personne) return integer;
 ```
-
+```ada
 --Nom : get_nom
 --sémantique : retourne le nom de la persone
 --paramètres :
 -- persone : in T_Persone
--- retour : integer
+-- retour : string
 --préconditions : id/=0
 --postconditions : 
+function get_nom(personne : in T_Personne) return string;
+```
 
+```ada
 --Nom : get_prenom
 --sémantique : retourne le prenom de la persone
 --paramètres :
 -- persone : in T_Persone
--- retour : integer
+-- retour : string
 --préconditions : id/=0
 --postconditions : 
-
+function get_prenom(personne : in T_Personne) return string;
+```
 --Nom : set_nom
 --sémantique : attribuer une valeur au champ nom
 --paramètres : personne :  in out T_personne
@@ -418,6 +422,5 @@ function nextid(personne : in T_personne) return Integer;
 
 ### Fonctions et procédures de ``T_AG`` : 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTk1NjY5ODUsLTEzNzgzNTQ1NjhdfQ
-==
+eyJoaXN0b3J5IjpbNTUwNjk1MDY3LC0xMzc4MzU0NTY4XX0=
 -->
