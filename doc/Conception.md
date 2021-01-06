@@ -68,9 +68,9 @@ R2 : comment “attribuer la valeur au noeud”  -- e_racine : in T_element
 ```
 
 
-#### Inserer une valeur à gauche
+#### Insérer une valeur à gauche
 
-##### Specification
+##### Spécification
 ```ada
 -- Nom : inserer_gauche
 -- sémantique : inserer un noeud a gauche d’un noeud donner
@@ -82,7 +82,7 @@ R2 : comment “attribuer la valeur au noeud”  -- e_racine : in T_element
 procedure inserer_gauche(noeud : in out T_AB ; valeur : in t_element)
 ```
 
-#### Rafinage
+#### Raffinage
 ```
 R0 : “inserer un noeud a gauche d’un noeud donné"
 R1 : Comment “inserer un noeud a gauche d’un noeud donner” -- noeud : out T_AB; valeur : in T_element; 
@@ -293,5 +293,5 @@ R2 : comment “supprimer récursivement le noeud et ses antécédents" aka "sup
 
 ### Fonctions et procédures de ``T_AG`` : 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2NTg3MzcyLC0xMzc4MzU0NTY4XX0=
+eyJoaXN0b3J5IjpbNzIxMjkyNDc2LC0xMzc4MzU0NTY4XX0=
 -->
