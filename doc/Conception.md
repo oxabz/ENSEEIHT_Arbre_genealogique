@@ -283,11 +283,12 @@ R2 : comment “supprimer récursivement le noeud et ses antécédents" aka "sup
   return res;
 ```
 
+	
 
 ### Fonctions et procedures de ``T_Persone`` : 
 
 
 ### Fonctions et procedures de ``T_AG`` : 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzgzNTQ1NjhdfQ==
+eyJoaXN0b3J5IjpbLTExMDg1NzE4MiwtMTM3ODM1NDU2OF19
 -->
