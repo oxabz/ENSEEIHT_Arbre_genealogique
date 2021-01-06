@@ -395,7 +395,7 @@ function get_prenom(personne : in T_Personne) return string;
 
 #### Getter 
 
-
+```ada
 --Nom : set_nom
 --sémantique : attribuer une valeur au champ nom
 --paramètres : personne :  in out T_personne
@@ -403,7 +403,8 @@ function get_prenom(personne : in T_Personne) return string;
 --préconditions : id/=0
 --postconditions : personne.nom= nom
 procedure set_nom(personne : in out T_personne ; nom : string);
-
+```
+```ada
  --Nom : set_prenom
 --sémantique : attribuer une valeur au champ prenom
 --paramètres : personne : T_personne
@@ -411,20 +412,23 @@ procedure set_nom(personne : in out T_personne ; nom : string);
 --préconditions : id/=0
 --postconditions : personne.nom= nom
 procedure set_prenom(personne : in out T_personne ; prenom : string);
-
+```
+```ada
 -- Nom : nextid
 --sémantique : renvoi un nouveau id unique
 --préconditions : null
 --postconditions : retourne l’id prochain
 function nextid(personne : in T_personne) return Integer;
-
+```
+```ada
 --Nom : lastid
 --sémantique : renvoi l’id dernièrement utiliser;
 --préconditions : 
 --postconditions : retourne l’id dernier
-
+```
 
 ### Fonctions et procédures de ``T_AG`` : 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg1NDExNjcyLC0xMzc4MzU0NTY4XX0=
+eyJoaXN0b3J5IjpbLTEwNjI2NjQyOTYsOTg1NDExNjcyLC0xMz
+c4MzU0NTY4XX0=
 -->
