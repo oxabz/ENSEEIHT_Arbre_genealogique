@@ -321,9 +321,91 @@ function  get_racine_element (arbre: T_AB) return  T_Element;
 
 ### Fonctions et procédures de ``T_Persone`` : 
 
+#### Afficher
+
+```ada
+--Nom : put
+--sémantique : affiche les informations d’une personne
+--paramètres : perso : in  T_personne
+--préconditions : 
+--postconditions : 
+```
+
+
+--Nom : "="
+--sémantique : compare les identifiants des personnes
+--paramètres :
+-- o1 : in T_Persone
+-- o2 : in T_Persone 
+-- retour : boolean
+--préconditions : 
+-- o1.id /= 0
+-- o2.id /= 0
+--postconditions : null
+
+--Nom : init
+--sémantique : initialise personne avec un nom et prenom 
+--paramètres :
+-- persone : out T_Persone
+--  nom : string
+-- prenom : string
+--préconditions : 
+--postconditions : id/=0
+
+
+--Nom : get_id 
+--sémantique : retourne l’id de la persone
+--paramètres :
+-- persone : in T_Persone
+-- retour : integer
+--préconditions : id/=0
+--postconditions : 
+
+--Nom : get_nom
+--sémantique : retourne le nom de la persone
+--paramètres :
+-- persone : in T_Persone
+-- retour : integer
+--préconditions : id/=0
+--postconditions : 
+
+--Nom : get_prenom
+--sémantique : retourne le prenom de la persone
+--paramètres :
+-- persone : in T_Persone
+-- retour : integer
+--préconditions : id/=0
+--postconditions : 
+
+--Nom : set_nom
+--sémantique : attribuer une valeur au champ nom
+--paramètres : personne :  in out T_personne
+--        nom : in string
+--préconditions : id/=0
+--postconditions : personne.nom= nom
+procedure set_nom(personne : in out T_personne ; nom : string);
+
+ --Nom : set_prenom
+--sémantique : attribuer une valeur au champ prenom
+--paramètres : personne : T_personne
+--        prenom : string
+--préconditions : id/=0
+--postconditions : personne.nom= nom
+procedure set_prenom(personne : in out T_personne ; prenom : string);
+
+-- Nom : nextid
+--sémantique : renvoi un nouveau id unique
+--préconditions : null
+--postconditions : retourne l’id prochain
+function nextid(personne : in T_personne) return Integer;
+
+--Nom : lastid
+--sémantique : renvoi l’id dernièrement utiliser;
+--préconditions : 
+--postconditions : retourne l’id dernier
 
 
 ### Fonctions et procédures de ``T_AG`` : 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzNDE0OTk4LC0xMzc4MzU0NTY4XX0=
+eyJoaXN0b3J5IjpbMTk2NzkzODIzOCwtMTM3ODM1NDU2OF19
 -->
