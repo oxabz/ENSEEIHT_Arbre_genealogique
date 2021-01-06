@@ -392,6 +392,10 @@ function get_nom(personne : in T_Personne) return string;
 --postconditions : 
 function get_prenom(personne : in T_Personne) return string;
 ```
+
+#### Getter 
+
+
 --Nom : set_nom
 --sémantique : attribuer une valeur au champ nom
 --paramètres : personne :  in out T_personne
@@ -422,5 +426,5 @@ function nextid(personne : in T_personne) return Integer;
 
 ### Fonctions et procédures de ``T_AG`` : 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTUwNjk1MDY3LC0xMzc4MzU0NTY4XX0=
+eyJoaXN0b3J5IjpbOTg1NDExNjcyLC0xMzc4MzU0NTY4XX0=
 -->
