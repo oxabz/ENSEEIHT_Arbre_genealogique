@@ -347,7 +347,7 @@ procedure put(p:T_Person);
 --postconditions : null
 function "="(o1, o2) return boolean;
 ```
-#### Init
+#### Initialisation
 
 ```ada
 --Nom : init
@@ -360,7 +360,8 @@ function "="(o1, o2) return boolean;
 --postconditions : id/=0
 
 ```
-
+#### Getter 
+```ada
 --Nom : get_id 
 --sémantique : retourne l’id de la persone
 --paramètres :
@@ -368,6 +369,8 @@ function "="(o1, o2) return boolean;
 -- retour : integer
 --préconditions : id/=0
 --postconditions : 
+procedure 
+```
 
 --Nom : get_nom
 --sémantique : retourne le nom de la persone
@@ -415,5 +418,5 @@ function nextid(personne : in T_personne) return Integer;
 
 ### Fonctions et procédures de ``T_AG`` : 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzUzNTE5NDA4LC0xMzc4MzU0NTY4XX0=
+eyJoaXN0b3J5IjpbMjA5MjUzNzQ5OSwtMTM3ODM1NDU2OF19
 -->
