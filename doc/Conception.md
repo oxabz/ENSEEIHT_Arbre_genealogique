@@ -418,7 +418,7 @@ procedure set_prenom(personne : in out T_personne ; prenom : string);
 --sémantique : renvoi un nouveau id unique
 --préconditions : null
 --postconditions : retourne l’id prochain
-function nextid(personne : in T_personne) return Integer;
+function nextid() return Integer;
 ```
 ```ada
 --Nom : lastid
