@@ -3,8 +3,7 @@ generic
     with function "=" (X, Y: T_Element) return boolean;
     with procedure afficher_element (X: T_Element);
 package ArbreBinaire is
-    type T_AB_Cell is private;
-    type T_AB is access T_AB_Cell;
+    type T_AB is private;
 
     INSERTION_ERROR : exception;
     UNINTIALISE_ERROR : exception;
@@ -84,7 +83,46 @@ package ArbreBinaire is
     -- post-condition : 
     -- Tests de la procédure :
     procedure supprimer(arbre: in out T_AB;  element : in T_Element);
+
+    --Nom : get_SA_droit
+    --sémantique : retourne le sous-arbre droit d’un noeud
+    --paramètres : 
+        -- arbre : T_AB
+    -- retour : T_AB
+    --préconditions : arbre/=null
+    --postconditions :
+    function get_SA_droit (arbre: T_AB) return T_AB;
+
+    --Nom : get_SA_gauche
+    --sémantique : retourne le sous-arbre droit d’un noeud
+    --paramètres : 
+        -- arbre : T_AB
+    -- retour : T_AB
+    --préconditions : arbre/=null
+    --postconditions : 
+    function get_SA_gauche (arbre: T_AB) return T_AB;
+
+    --Nom : get_racine_element
+    --sémantique : retourne le sous-arbre droit d’un noeud
+    --paramètres : 
+        -- arbre : T_AB
+    -- retour : T_AB
+    --préconditions : arbre/=null
+    --postconditions : 
+    function get_racine_element (arbre: T_AB) return T_Element;
+
+    --Nom : is_null
+    --sémantique : retourn le resultat de comparaison a null
+    --paramètres : 
+        -- arbre : T_AB
+    -- retour : T_AB
+    --préconditions :
+    --postconditions : 
+    function is_null(arbre: T_AB) return boolean;
+
 private
+    type T_AB_Cell;
+    type T_AB is access T_AB_Cell;
     type T_AB_Cell is record
        gauche : T_AB;
        droite : T_AB;

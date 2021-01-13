@@ -159,5 +159,36 @@ package body ArbreBinaire is
         if(supprimer_rec(arbre, element) = false) then
             raise NOEUD_ABSENT_ERROR;
         end if;
-    end;
+    end supprimer;
+
+    function get_SA_droit (arbre : T_AB) return T_AB is
+       
+    begin
+       return arbre.all.droite;
+    end get_SA_droit;
+
+    function get_SA_gauche (arbre : T_AB) return T_AB is
+       
+    begin
+       return arbre.all.gauche;
+    end get_SA_gauche;
+
+    function get_racine_element (arbre : T_AB) return T_element is
+       
+    begin
+       return arbre.all.element;
+    end get_racine_element;
+
+    --Nom : is_null
+    --sémantique : retourn le resultat de comparaison a null
+    --paramètres : 
+        -- arbre : T_AB
+    -- retour : T_AB
+    --préconditions :
+    --postconditions : 
+    function is_null(arbre: T_AB) return boolean is
+
+    begin
+        return arbre = null;
+    end is_null;
 end ArbreBinaire;

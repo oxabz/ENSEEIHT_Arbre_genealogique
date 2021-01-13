@@ -1,0 +1,155 @@
+gnatmake: could not find the main ALI file
+x86_64-linux-gnu-gcc-7 -c -lls arbregenealogique.adb
+arbregenealogique.adb:12:80: not type conformant with declaration at arbregenealogique.ads:22
+arbregenealogique.adb:12:80: too many parameters
+arbregenealogique.adb:16:20: invalid operand types for operator "="
+arbregenealogique.adb:16:20: left operand has private type "T_AG" defined at arbregenealogique.ads:7
+arbregenealogique.adb:16:20: right operand has an access type
+arbregenealogique.adb:21:13: "ajouter_gauche" is undefined
+arbregenealogique.adb:23:13: "ajouter_droit" is undefined
+arbregenealogique.adb:35:47: not type conformant with declaration at arbregenealogique.ads:32
+arbregenealogique.adb:35:47: too many parameters
+arbregenealogique.adb:39:24: invalid operand types for operator "="
+arbregenealogique.adb:39:24: left operand has private type "T_AG" defined at arbregenealogique.ads:7
+arbregenealogique.adb:39:24: right operand has an access type
+arbregenealogique.adb:56:54: not type conformant with declaration at arbregenealogique.ads:44
+arbregenealogique.adb:56:54: too many parameters
+arbregenealogique.adb:56:106: subtype mark required in this context
+arbregenealogique.adb:56:106: found "L_Personne" declared at arbregenealogique.ads:8
+arbregenealogique.adb:57:85: subtype mark required in this context
+arbregenealogique.adb:57:85: found "L_Personne" declared at arbregenealogique.ads:8
+arbregenealogique.adb:60:25: invalid operand types for operator "="
+arbregenealogique.adb:60:25: left operand has private type "T_AG" defined at arbregenealogique.ads:7
+arbregenealogique.adb:60:25: right operand has an access type
+arbregenealogique.adb:62:17: "insertHead" is not visible (more references follow)
+arbregenealogique.adb:62:17: non-visible declaration at linked_list.ads:12, instance at arbregenealogique.ads:8
+arbregenealogique.adb:70:17: subtype mark required in this context
+arbregenealogique.adb:70:17: found "L_Personne" declared at arbregenealogique.ads:8
+arbregenealogique.adb:73:24: invalid operand types for operator "="
+arbregenealogique.adb:73:24: left operand has private type "T_AG" defined at arbregenealogique.ads:7
+arbregenealogique.adb:73:24: right operand has an access type
+arbregenealogique.adb:77:09: no candidate interpretations match the actuals:
+arbregenealogique.adb:77:09: missing argument for parameter "e_racine" in call to "init" (inherited) at arbregenealogique.ads:7
+arbregenealogique.adb:77:09: missing argument for parameter "e_racine" in call to "init" declared at arbrebinaire.ads:24, instance at arbregenealogique.ads:6
+arbregenealogique.adb:77:09: missing argument for parameter "nom" in call to "init" declared at persone.ads:14
+arbregenealogique.adb:89:24: not type conformant with declaration at arbregenealogique.ads:53
+arbregenealogique.adb:89:24: type of "arbre" does not match
+arbregenealogique.adb:93:24: invalid operand types for operator "="
+arbregenealogique.adb:93:24: left operand has private type "T_AG" defined at arbregenealogique.ads:7
+arbregenealogique.adb:93:24: right operand has an access type
+arbregenealogique.adb:106:52: subtype mark required in this context
+arbregenealogique.adb:106:52: found "L_Personne" declared at arbregenealogique.ads:8
+arbregenealogique.adb:107:73: subtype mark required in this context
+arbregenealogique.adb:107:73: found "L_Personne" declared at arbregenealogique.ads:8
+arbregenealogique.adb:110:22: invalid operand types for operator "="
+arbregenealogique.adb:110:22: left operand has private type "T_AG" defined at arbregenealogique.ads:7
+arbregenealogique.adb:110:22: right operand has an access type
+arbregenealogique.adb:113:36: invalid operand types for operator "="
+arbregenealogique.adb:113:36: left operand has private type "T_AG" defined at arbregenealogique.ads:7
+arbregenealogique.adb:113:36: right operand has an access type
+arbregenealogique.adb:113:65: invalid operand types for operator "="
+arbregenealogique.adb:113:65: left operand has private type "T_AG" defined at arbregenealogique.ads:7
+arbregenealogique.adb:113:65: right operand has an access type
+arbregenealogique.adb:121:17: subtype mark required in this context
+arbregenealogique.adb:121:17: found "L_Personne" declared at arbregenealogique.ads:8
+arbregenealogique.adb:123:09: no candidate interpretations match the actuals:
+arbregenealogique.adb:123:09: missing argument for parameter "e_racine" in call to "init" (inherited) at arbregenealogique.ads:7
+arbregenealogique.adb:123:09: missing argument for parameter "e_racine" in call to "init" declared at arbrebinaire.ads:24, instance at arbregenealogique.ads:6
+arbregenealogique.adb:123:09: missing argument for parameter "nom" in call to "init" declared at persone.ads:14
+arbregenealogique.adb:135:54: subtype mark required in this context
+arbregenealogique.adb:135:54: found "L_Personne" declared at arbregenealogique.ads:8
+arbregenealogique.adb:136:75: subtype mark required in this context
+arbregenealogique.adb:136:75: found "L_Personne" declared at arbregenealogique.ads:8
+arbregenealogique.adb:139:22: invalid operand types for operator "="
+arbregenealogique.adb:139:22: left operand has private type "T_AG" defined at arbregenealogique.ads:7
+arbregenealogique.adb:139:22: right operand has an access type
+arbregenealogique.adb:142:36: invalid operand types for operator "/="
+arbregenealogique.adb:142:36: left operand has private type "T_AG" defined at arbregenealogique.ads:7
+arbregenealogique.adb:142:36: right operand has an access type
+arbregenealogique.adb:142:66: invalid operand types for operator "/="
+arbregenealogique.adb:142:66: left operand has private type "T_AG" defined at arbregenealogique.ads:7
+arbregenealogique.adb:142:66: right operand has an access type
+arbregenealogique.adb:150:17: subtype mark required in this context
+arbregenealogique.adb:150:17: found "L_Personne" declared at arbregenealogique.ads:8
+arbregenealogique.adb:152:09: no candidate interpretations match the actuals:
+arbregenealogique.adb:152:09: missing argument for parameter "e_racine" in call to "init" (inherited) at arbregenealogique.ads:7
+arbregenealogique.adb:152:09: missing argument for parameter "e_racine" in call to "init" declared at arbrebinaire.ads:24, instance at arbregenealogique.ads:6
+arbregenealogique.adb:152:09: missing argument for parameter "nom" in call to "init" declared at persone.ads:14
+arbregenealogique.adb:164:54: subtype mark required in this context
+arbregenealogique.adb:164:54: found "L_Personne" declared at arbregenealogique.ads:8
+arbregenealogique.adb:165:75: subtype mark required in this context
+arbregenealogique.adb:165:75: found "L_Personne" declared at arbregenealogique.ads:8
+arbregenealogique.adb:168:22: invalid operand types for operator "="
+arbregenealogique.adb:168:22: left operand has private type "T_AG" defined at arbregenealogique.ads:7
+arbregenealogique.adb:168:22: right operand has an access type
+arbregenealogique.adb:171:36: invalid operand types for operator "="
+arbregenealogique.adb:171:36: left operand has private type "T_AG" defined at arbregenealogique.ads:7
+arbregenealogique.adb:171:36: right operand has an access type
+arbregenealogique.adb:171:65: invalid operand types for operator "="
+arbregenealogique.adb:171:65: left operand has private type "T_AG" defined at arbregenealogique.ads:7
+arbregenealogique.adb:171:65: right operand has an access type
+arbregenealogique.adb:180:17: subtype mark required in this context
+arbregenealogique.adb:180:17: found "L_Personne" declared at arbregenealogique.ads:8
+arbregenealogique.adb:182:09: no candidate interpretations match the actuals:
+arbregenealogique.adb:182:09: missing argument for parameter "e_racine" in call to "init" (inherited) at arbregenealogique.ads:7
+arbregenealogique.adb:182:09: missing argument for parameter "e_racine" in call to "init" declared at arbrebinaire.ads:24, instance at arbregenealogique.ads:6
+arbregenealogique.adb:182:09: missing argument for parameter "nom" in call to "init" declared at persone.ads:14
+arbregenealogique.adb:196:65: not type conformant with declaration at arbregenealogique.ads:91
+arbregenealogique.adb:196:65: too many parameters
+arbregenealogique.adb:206:35: invalid operand types for operator "/="
+arbregenealogique.adb:206:35: left operand has private type "T_AG" defined at arbregenealogique.ads:7
+arbregenealogique.adb:206:35: right operand has an access type
+arbregenealogique.adb:207:32: "resultat_arbre" is undefined (more references follow)
+arbregenealogique.adb:207:48: "get_element" is undefined (more references follow)
+arbregenealogique.adb:208:76: actual for "resultat" must be a variable
+arbregenealogique.adb:211:34: invalid operand types for operator "/="
+arbregenealogique.adb:211:34: left operand has private type "T_AG" defined at arbregenealogique.ads:7
+arbregenealogique.adb:211:34: right operand has an access type
+arbregenealogique.adb:213:75: actual for "resultat" must be a variable
+arbregenealogique.adb:220:24: invalid operand types for operator "="
+arbregenealogique.adb:220:24: left operand has private type "T_AG" defined at arbregenealogique.ads:7
+arbregenealogique.adb:220:24: right operand has an access type
+arbregenealogique.adb:223:09: no candidate interpretations match the actuals:
+arbregenealogique.adb:223:09: missing argument for parameter "e_racine" in call to "init" (inherited) at arbregenealogique.ads:7
+arbregenealogique.adb:223:09: missing argument for parameter "e_racine" in call to "init" declared at arbrebinaire.ads:24, instance at arbregenealogique.ads:6
+arbregenealogique.adb:223:09: missing argument for parameter "nom" in call to "init" declared at persone.ads:14
+arbregenealogique.adb:237:57: not type conformant with declaration at arbregenealogique.ads:102
+arbregenealogique.adb:237:57: too many parameters
+arbregenealogique.adb:237:70: "T_persone" is undefined (more references follow)
+arbregenealogique.adb:237:70: possible misspelling of "T_person"
+arbregenealogique.adb:242:22: invalid operand types for operator "="
+arbregenealogique.adb:242:22: left operand has private type "T_AG" defined at arbregenealogique.ads:7
+arbregenealogique.adb:242:22: right operand has an access type
+arbregenealogique.adb:272:66: not type conformant with declaration at arbregenealogique.ads:112
+arbregenealogique.adb:272:66: too many parameters
+arbregenealogique.adb:272:119: subtype mark required in this context
+arbregenealogique.adb:272:119: found "L_Personne" declared at arbregenealogique.ads:8
+arbregenealogique.adb:274:109: "L_person" is undefined (more references follow)
+arbregenealogique.adb:277:22: invalid operand types for operator "="
+arbregenealogique.adb:277:22: left operand has private type "T_AG" defined at arbregenealogique.ads:7
+arbregenealogique.adb:277:22: right operand has an access type
+arbregenealogique.adb:281:93: "descendant" is undefined (more references follow)
+arbregenealogique.adb:281:93: possible misspelling of "descendants"
+arbregenealogique.adb:293:09: no candidate interpretations match the actuals:
+arbregenealogique.adb:293:09: missing argument for parameter "e_racine" in call to "init" (inherited) at arbregenealogique.ads:7
+arbregenealogique.adb:293:09: missing argument for parameter "e_racine" in call to "init" declared at arbrebinaire.ads:24, instance at arbregenealogique.ads:6
+arbregenealogique.adb:293:09: missing argument for parameter "nom" in call to "init" declared at persone.ads:14
+arbregenealogique.ads:8:63: "List_Personne" is undefined
+arbregenealogique.ads:22:78: "," should be ";"
+arbregenealogique.ads:32:45: "," should be ";"
+arbregenealogique.ads:44:52: "," should be ";"
+arbregenealogique.ads:44:106: subtype mark required in this context
+arbregenealogique.ads:44:106: found "L_Personne" declared at line 8
+arbregenealogique.ads:62:52: subtype mark required in this context
+arbregenealogique.ads:62:52: found "L_Personne" declared at line 8
+arbregenealogique.ads:71:54: subtype mark required in this context
+arbregenealogique.ads:71:54: found "L_Personne" declared at line 8
+arbregenealogique.ads:80:54: subtype mark required in this context
+arbregenealogique.ads:80:54: found "L_Personne" declared at line 8
+arbregenealogique.ads:91:63: "," should be ";"
+arbregenealogique.ads:102:55: "," should be ";"
+arbregenealogique.ads:102:110: "T_Personne" is undefined (more references follow)
+arbregenealogique.ads:112:64: "," should be ";"
+arbregenealogique.ads:112:119: subtype mark required in this context
+arbregenealogique.ads:112:119: found "L_Personne" declared at line 8
+gnatmake: "arbregenealogique.adb" compilation error
