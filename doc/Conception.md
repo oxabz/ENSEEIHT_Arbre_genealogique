@@ -22,8 +22,8 @@ Pour ce faire il nous faut trois types :
 Nous allons vouloir representer des individues. Pour ce faire on utilisera un type record ``T_Personne`` :
 ```
 - Identifiant : integer
-- nom : string(20)
-- prenom : string(20)
+- nom : string
+- prenom : string
 ... <Tout autre info sur un individu>
 ```
 
@@ -68,9 +68,9 @@ R2 : comment “attribuer la valeur au noeud”  -- e_racine : in T_element
 ```
 
 
-#### Inserer une valeur à gauche
+#### Insérer une valeur à gauche
 
-##### Specification
+##### Spécification
 ```ada
 -- Nom : inserer_gauche
 -- sémantique : inserer un noeud a gauche d’un noeud donner
@@ -82,7 +82,7 @@ R2 : comment “attribuer la valeur au noeud”  -- e_racine : in T_element
 procedure inserer_gauche(noeud : in out T_AB ; valeur : in t_element)
 ```
 
-#### Rafinage
+#### Raffinage
 ```
 R0 : “inserer un noeud a gauche d’un noeud donné"
 R1 : Comment “inserer un noeud a gauche d’un noeud donner” -- noeud : out T_AB; valeur : in T_element; 
@@ -186,7 +186,7 @@ R1 : comment “rechercher un noeud dans un arbre”  -- arbre : in  T_AB ; vale
 
 #### afficher arbre
 
-##### Specification 
+##### Spécification 
 ```ada
 -- nom : afficher
 -- sémantique :  affiche un arbre  
@@ -240,9 +240,9 @@ R2 : Comment afficher sous arbres gauche -- arbre : in  T_AB; profondeur : in in
 ```
 
 
-#### Suprimer element
+#### Supprimer élément
 
-##### Specification 
+##### Spécification 
 ```ada
 -- nom : supprimer
 -- sémantique :  suprime un noeud de l’arbre 
@@ -282,9 +282,153 @@ R2 : comment “supprimer récursivement le noeud et ses antécédents" aka "sup
   end if;
   return res;
 ```
+#### Get Sous Arbre Droit 
 
+```ada
+--Nom : get_SA_droit
+--sémantique : retourne le sous-arbre gauche d’un noeud
+--paramètres : arbre : T_AB
+--retour : T_AB
+--préconditions : arbre/=null
+--postconditions : null
+function get_SA_droit(abre : T_AB) return T_AB;
+```
 
-### Fonctions et procedures de ``T_Persone`` : 
+#### Get Sous Arbre Gauche
+```ada
+--Nom : get_SA_gauche
+--sémantique : retourne le sous-arbre droit d’un noeud
+--paramètres :
+  -- arbre : T_AB
+  -- retour : T_AB
+--préconditions : arbre/=null
+--postconditions :
+function  get_SA_gauche (arbre: T_AB) return  T_AB;
+```
+  
+#### Get Racine Élément
 
+```ada
+--Nom : get_racine_element
+--sémantique : retourne le sous-arbre droit d’un noeud
+--paramètres :
+  -- arbre : T_AB
+  -- retour : T_AB
+--préconditions : arbre/=null
+--postconditions :
+function  get_racine_element (arbre: T_AB) return  T_Element;
+```
 
-### Fonctions et procedures de ``T_AG`` : 
+### Fonctions et procédures de ``T_Persone`` : 
+
+#### Afficher
+
+```ada
+--Nom : put
+--sémantique : affiche les informations d’une personne
+--paramètres : perso : in  T_personne
+--préconditions : 
+--postconditions : 
+procedure put(p:T_Person);
+```
+
+#### Comparaison 
+
+```ada
+--Nom : "="
+--sémantique : compare les identifiants des personnes
+--paramètres :
+  -- o1 : in T_Persone
+  -- o2 : in T_Persone 
+-- retour : boolean
+--préconditions : 
+  -- o1.id /= 0
+  -- o2.id /= 0
+--postconditions : null
+function "="(o1, o2) return boolean;
+```
+#### Initialisation
+
+```ada
+--Nom : init
+--sémantique : initialise personne avec un nom et prenom 
+--paramètres :
+-- persone : out T_Persone
+--  nom : string
+-- prenom : string
+--préconditions : 
+--postconditions : id/=0
+
+```
+#### Getter 
+```ada
+--Nom : get_id 
+--sémantique : retourne l’id de la persone
+--paramètres :
+-- persone : in T_Persone
+-- retour : integer
+--préconditions : id/=0
+--postconditions : 
+function get_id(personne : in T_Personne) return integer;
+```
+```ada
+--Nom : get_nom
+--sémantique : retourne le nom de la persone
+--paramètres :
+-- persone : in T_Persone
+-- retour : string
+--préconditions : id/=0
+--postconditions : 
+function get_nom(personne : in T_Personne) return string;
+```
+
+```ada
+--Nom : get_prenom
+--sémantique : retourne le prenom de la persone
+--paramètres :
+-- persone : in T_Persone
+-- retour : string
+--préconditions : id/=0
+--postconditions : 
+function get_prenom(personne : in T_Personne) return string;
+```
+
+#### Getter 
+
+```ada
+--Nom : set_nom
+--sémantique : attribuer une valeur au champ nom
+--paramètres : personne :  in out T_personne
+--        nom : in string
+--préconditions : id/=0
+--postconditions : personne.nom= nom
+procedure set_nom(personne : in out T_personne ; nom : string);
+```
+```ada
+ --Nom : set_prenom
+--sémantique : attribuer une valeur au champ prenom
+--paramètres : personne : T_personne
+--        prenom : string
+--préconditions : id/=0
+--postconditions : personne.nom= nom
+procedure set_prenom(personne : in out T_personne ; prenom : string);
+```
+```ada
+-- Nom : nextid
+--sémantique : renvoi un nouveau id unique
+--préconditions : null
+--postconditions : retourne l’id prochain
+function nextid() return Integer;
+```
+```ada
+--Nom : lastid
+--sémantique : renvoi l’id dernièrement utiliser;
+--préconditions : 
+--postconditions : retourne l’id dernier
+```
+
+### Fonctions et procédures de ``T_AG`` : 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTg5ODM5NzAzMSw5ODU0MTE2NzIsLTEzNz
+gzNTQ1NjhdfQ==
+-->
