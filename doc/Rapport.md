@@ -18,11 +18,11 @@ Le rapport suivra le plan suivant :
 ## Architecture du programme : 
 
 Afin d'assurer une bonne lisibilité et une bonne modularité, le code du projet a été décomposé en plusieurs moules ada par rapport à leurs fonctions. 
-Dans cette partie les modules constiuant ce projet seron presenté 
+Dans cette partie les modules constituant ce projet seront présenté avec leur but. Nous nous interesseront qu'au module   
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2MDUxMzYwMSwxNDgzNzM4MjMwLC0xMj
-c4MTE0NTUsNzg2NzA1MjExXX0=
+eyJoaXN0b3J5IjpbNTEyMDU5MDM5LDE0ODM3MzgyMzAsLTEyNz
+gxMTQ1NSw3ODY3MDUyMTFdfQ==
 -->
