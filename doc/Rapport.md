@@ -6,7 +6,9 @@
 
 # Conception 
 ## Types 
-### ``T_AB`` Arbre binaire non trié 
+### Arbre binaire non trié.
+L'arbre binaire qui  nous servira comme base pour l'arbre généalogique est constitué de deux types diffèrent.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzE4OTQ5ODM2XX0=
+eyJoaXN0b3J5IjpbMTI5NTI0NjY1Ml19
 -->
