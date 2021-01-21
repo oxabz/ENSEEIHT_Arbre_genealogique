@@ -18,9 +18,10 @@ On peut représenter l'ensemble des ancêtres par un arbre où chaque ou chaque 
 
 On voudra pouvoir designer les individus en relation des uns par rapport aux autres avec la notion de génération d'ancêtre et de descendant
 > Exemple : 
-> - Un individue est sont propre ancetre/decedant  de generation 0
+> - Un individue est sont propre ancetre/decendant  de generation 0
 > - Le pere d'un individue est sont ancetre de generation 1
-> - La grand mere d'un  individue est son ancetre de generation 2
+> - La grand mere d'un  individue est son ancetre de generation 2*
+> - Le fils d'un individue est sont dedendant de generation 1
 
 ## Plan 
 
@@ -37,6 +38,6 @@ Les modules développé sont :
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1OTU3MzYwLC0xOTQ0NDQ0NDgzLDE0OD
-M3MzgyMzAsLTEyNzgxMTQ1NSw3ODY3MDUyMTFdfQ==
+eyJoaXN0b3J5IjpbLTEzMzM5ODA1OTAsLTE5NDQ0NDQ0ODMsMT
+Q4MzczODIzMCwtMTI3ODExNDU1LDc4NjcwNTIxMV19
 -->
