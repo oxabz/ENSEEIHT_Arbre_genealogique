@@ -2,7 +2,8 @@
 
 ## Objectif du rapport 
 
-Ce rapport presentera le projet de   
+Ce rapport présentera le projet réalisé pour le module "Méthodologie de la Programmation" de l'ENSEEIHT Toulouse.   
+Ce rapport abordera la concepti 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjkyNTk0NzI1LDc4NjcwNTIxMV19
+eyJoaXN0b3J5IjpbMTU5NjAyMTcxMSw3ODY3MDUyMTFdfQ==
 -->
