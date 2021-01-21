@@ -15,7 +15,11 @@ Le rapport suivra le plan suivant :
 
 [TOC]
 
-## Architecture du programe
+## Architecture du programme : 
+
+Pour maintenir une bonne lisibilité 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzgxMTQ1NSw3ODY3MDUyMTFdfQ==
+eyJoaXN0b3J5IjpbMTA4OTUzNzYxLC0xMjc4MTE0NTUsNzg2Nz
+A1MjExXX0=
 -->
