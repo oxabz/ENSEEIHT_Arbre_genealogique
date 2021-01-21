@@ -8,7 +8,8 @@ Il  abordera les différentes parties de la conception de ce projet. Il y sera p
 ## Introduction 
 
 Le projet proposé consiste à créer un système de gestion d'arbre généalogique d'un individue. L'arbre généalogique permet à un individu de répertorier l'ensemble de ses ancêtres. On peut représenter l'ensemble des ancêtres par un arbre où chaque ou chaque individu est représenté par un nœud qui peut avoir deux parents. 
-On voudra pouvoir designer les individus en relation des uns par a
+On voudra pouvoir designer les individus en relation des uns par rapport aux autres avec la notion de génération d'ancêtre et de descendant
+> Exemple : Un individue est un ancetre/ 
 
 ## Plan 
 
@@ -25,6 +26,6 @@ Les modules développé sont :
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTc1NzA3NDMsMTQ4MzczODIzMCwtMT
+eyJoaXN0b3J5IjpbLTE5NjgyNDEwNTEsMTQ4MzczODIzMCwtMT
 I3ODExNDU1LDc4NjcwNTIxMV19
 -->
