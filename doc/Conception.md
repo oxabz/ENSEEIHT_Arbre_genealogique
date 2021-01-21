@@ -4,7 +4,7 @@
 
 ### Arbre Binaire 
 
-Nous allons avoir besoint d'un arbre binaire generique de donnés non trié afin de representer l'arbre genealogique
+Nous allons avoir besoin d'un arbre binaire générique de donnés non trié afin de representer l'arbre genealogique
 
 Pour ce faire il nous faut trois types :
 - ``T_Element`` un type generique.
@@ -429,6 +429,6 @@ function nextid() return Integer;
 
 ### Fonctions et procédures de ``T_AG`` : 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5ODM5NzAzMSw5ODU0MTE2NzIsLTEzNz
-gzNTQ1NjhdfQ==
+eyJoaXN0b3J5IjpbMTM3MTc3MzQzOSwxODk4Mzk3MDMxLDk4NT
+QxMTY3MiwtMTM3ODM1NDU2OF19
 -->
