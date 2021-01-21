@@ -17,9 +17,9 @@ Le rapport suivra le plan suivant :
 
 ## Architecture du programme : 
 
-Afin d'assurer une bonne lisibilité et une bonne modularité, 
+Afin d'assurer une bonne lisibilité et une bonne modularité, le code du projet a été décomposé en plusieurs moules par rapport à leur fonctions.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzY5ODM3NTA3LC0xMjc4MTE0NTUsNzg2Nz
-A1MjExXX0=
+eyJoaXN0b3J5IjpbMTQ4MzczODIzMCwtMTI3ODExNDU1LDc4Nj
+cwNTIxMV19
 -->
