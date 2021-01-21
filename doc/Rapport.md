@@ -14,6 +14,8 @@ Le projet proposé consiste à créer un système de gestion d'arbre généalogi
 Le rapport suivra le plan suivant : 
 
 [TOC]
+
+## Architecture du programe
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDIwMTkyOTQ4LDc4NjcwNTIxMV19
+eyJoaXN0b3J5IjpbLTEyNzgxMTQ1NSw3ODY3MDUyMTFdfQ==
 -->
