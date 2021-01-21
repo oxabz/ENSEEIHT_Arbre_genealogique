@@ -7,7 +7,7 @@ Il  abordera les différentes parties de la conception de ce projet. Il y sera p
 
 ## Introduction 
 
-Le projet proposé consiste à créer un système de gestion d'arbre généalogique d'un individue. L'arbre généalogique permet à un individu de répertorier l'ensemble de ses ancêtres. On peut représenter l'ensemble des ancêtres par un arbre où chaque 
+Le projet proposé consiste à créer un système de gestion d'arbre généalogique d'un individue. L'arbre généalogique permet à un individu de répertorier l'ensemble de ses ancêtres. On peut représenter l'ensemble des ancêtres par un arbre où chaque ou chaque individu est représenté par un nœud qui peut avoir un 
 
 ## Plan 
 
@@ -15,5 +15,5 @@ Le rapport suivra le plan suivant :
 
 [TOC]
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1NzA1NTEwOSw3ODY3MDUyMTFdfQ==
+eyJoaXN0b3J5IjpbMTg4NjIyNDU5Miw3ODY3MDUyMTFdfQ==
 -->
