@@ -7,7 +7,7 @@ Il  abordera les différentes parties de la conception de ce projet. Il y sera p
 
 ## Introduction 
 
-Le projet proposé consiste à créer un système de gestion d'arbre généalogique. 
+Le projet proposé consiste à créer un système de gestion d'arbre généalogique d'un individue. L'arbre généalogique nous 
 
 ## Plan 
 
@@ -15,5 +15,5 @@ Le rapport suivra le plan suivant :
 
 [TOC]
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4MjEwODQyMiw3ODY3MDUyMTFdfQ==
+eyJoaXN0b3J5IjpbNTQxMjEyMTU3LDc4NjcwNTIxMV19
 -->
