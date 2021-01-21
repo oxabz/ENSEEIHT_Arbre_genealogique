@@ -7,9 +7,11 @@
 # Conception 
 ## Types 
 ### Arbre binaire non trié.
-L'arbre binaire qui  nous servira comme type generique de base pour l'arbre généalogique est constitué de deux types diffèrent.
+Nous allons besoin de representer un  arbre avec deux 
+L'arbre binaire qui  nous servira comme type générique de base pour l'arbre généalogique est constitué de deux types : 
+#### ``T_AB_Cell`` 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxNzE3MTExMl19
+eyJoaXN0b3J5IjpbLTE2MTIxMjAzMTNdfQ==
 -->
