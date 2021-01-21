@@ -17,9 +17,9 @@ Le rapport suivra le plan suivant :
 
 ## Architecture du programme : 
 
-Pour maintenir une bonne lisibilité 
+Afin d'assurer une bonne lisibilité et une bonne modularité, 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4OTUzNzYxLC0xMjc4MTE0NTUsNzg2Nz
+eyJoaXN0b3J5IjpbNzY5ODM3NTA3LC0xMjc4MTE0NTUsNzg2Nz
 A1MjExXX0=
 -->
