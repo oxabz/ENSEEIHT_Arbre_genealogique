@@ -20,7 +20,7 @@ On voudra pouvoir designer les individus en relation des uns par rapport aux aut
 > Exemple : 
 > - Un individue est sont propre ancetre/decendant  de generation 0
 > - Le pere d'un individue est sont ancetre de generation 1
-> - La grand mere d'un  individue est son ancetre de generation 2*
+> - La grand mere d'un  individue est son ancetre de generation 2
 > - Le fils d'un individue est sont dedendant de generation 1
 
 ## Plan 
@@ -33,11 +33,13 @@ Le rapport suivra le plan suivant :
 
 Afin d'assurer une bonne lisibilité et une bonne modularité, le code du projet a été décomposé en plusieurs moules ada par rapport à leurs fonctions. 
 Dans cette partie les modules constituant ce projet seront présenté avec leur but. Nous nous intéresserons qu'aux modules appartenant au projet et nous omettrons les modules standard de ada.
-Les modules développé sont :     
+Les modules développé sont :  
+- 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzM5ODA1OTAsLTE5NDQ0NDQ0ODMsMT
-Q4MzczODIzMCwtMTI3ODExNDU1LDc4NjcwNTIxMV19
+eyJoaXN0b3J5IjpbMTg4NzU5OTUxLC0xMzMzOTgwNTkwLC0xOT
+Q0NDQ0NDgzLDE0ODM3MzgyMzAsLTEyNzgxMTQ1NSw3ODY3MDUy
+MTFdfQ==
 -->
