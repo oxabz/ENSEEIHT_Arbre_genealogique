@@ -7,7 +7,7 @@ Il  abordera les différentes parties de la conception de ce projet. Il y sera p
 
 ## Introduction 
 
-Le projet proposé consiste à créer un système de gestion d'arbre généalogique d'un individue. L'arbre généalogique permet à un individu de répertorier l'ensemble de ses ancêtres. On peut représenter l'ensemble des ancêtres par un arbre où chaque ou chaque individu est représenté par un nœud qui peut avoir deux parents
+Le projet proposé consiste à créer un système de gestion d'arbre généalogique d'un individue. L'arbre généalogique permet à un individu de répertorier l'ensemble de ses ancêtres. On peut représenter l'ensemble des ancêtres par un arbre où chaque ou chaque individu est représenté par un nœud qui peut avoir deux parents. 
 
 ## Plan 
 
@@ -19,11 +19,11 @@ Le rapport suivra le plan suivant :
 
 Afin d'assurer une bonne lisibilité et une bonne modularité, le code du projet a été décomposé en plusieurs moules ada par rapport à leurs fonctions. 
 Dans cette partie les modules constituant ce projet seront présenté avec leur but. Nous nous intéresserons qu'aux modules appartenant au projet et nous omettrons les modules standard de ada.
-Les packaquetages dévelopé sont     
+Les modules développé sont :     
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5OTk5NjQ0NiwxNDgzNzM4MjMwLC0xMj
+eyJoaXN0b3J5IjpbMTAxMTYzNTIyOCwxNDgzNzM4MjMwLC0xMj
 c4MTE0NTUsNzg2NzA1MjExXX0=
 -->
