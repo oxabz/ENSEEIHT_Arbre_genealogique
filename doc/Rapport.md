@@ -43,14 +43,17 @@ Les modules développé sont :
 	- T : type des donnés
 	- "=" : comparaison entre deux T
 	- put(x :T) : procédure d'affichage de T
-- **``p_linked_list``** : Ce module générique contient les sous-programmes et les types afin defaire une liste chainé  
+- **``p_linked_list``** : Ce module générique contient les sous-programmes et les types afin de faire une liste chainée.  
+- *Paramètre de généricité* : 
+	- T : type des donnés
+	- afficher(x :T) : procédure d'affichage de T
 - **``p_personne``** : Ce module contient le type ``t_personne`` qui représente un individu. Il y a aussi les différents sous-programmes permettant de le manipuler (init/getter/setter/comparaison/affichage).
 - **``p_arbre_genealogique``** : Ce module instancie ``p_arbre_binaire`` avec ``t_persone`` et ses sous programme associé. Dans ce module on retrouve aussi toutes les procédures de manipulation d'un arbre généalogique qui ne n'ont pas de sens dans un arbre binaire non trié quelconque.  Dans ce module on renomme ``T_AB`` en ``T_AG``. Dans ce module on instancie aussi ``p_linked_list `` avec ``t_personne`` car certaines fonctions ont besoin de renvoyer une liste d'individus.
 - 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzMzOTIyNTE3LDIwMzM4ODkwNzYsLTEwMz
-g5NzU4NzAsMTg4NzU5OTUxLC0xMzMzOTgwNTkwLC0xOTQ0NDQ0
-NDgzLDE0ODM3MzgyMzAsLTEyNzgxMTQ1NSw3ODY3MDUyMTFdfQ
-==
+eyJoaXN0b3J5IjpbLTE5NTU2MDU3MCwyMDMzODg5MDc2LC0xMD
+M4OTc1ODcwLDE4ODc1OTk1MSwtMTMzMzk4MDU5MCwtMTk0NDQ0
+NDQ4MywxNDgzNzM4MjMwLC0xMjc4MTE0NTUsNzg2NzA1MjExXX
+0=
 -->
