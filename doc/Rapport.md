@@ -53,8 +53,36 @@ Les modules développé sont :
 - **``main``** et le programme principal il contient la logique du menu et fait les appels à ``p_arbre_généalogique`` et à ``p_arbre_binaire`` en fonction des entré de l'utilisateur.
 
 ## Types
+
+### Arbre Binaire 
+
+Pour ce faire il nous faut trois types :
+- ``T_Element`` un type generique.
+- ``T_AB`` Un pointeur vers une ``T_AB_Cell``
+- ``T_AB_Cell`` Un record qui est une cellule d'arbre : 
+```
+- gauche : T_AB
+- droite : T_AB
+- valeur : T_Element
+```
+
+
+### Personnes 
+
+Nous allons vouloir representer des individues. Pour ce faire on utilisera un type record ``T_Personne`` :
+```
+- Identifiant : integer
+- nom : string
+- prenom : string
+... <Tout autre info sur un individu>
+```
+
+### Arbre Genealogique 
+
+Nous allons vouloir faire un arbre généalogique. On peut se servir de l'arbre binaire precedement créé pour faire notre arbre genalogique.
+On va avoir `` T_AG`` qui sera une instanciation de ``T_AB`` avec ``T_Element`` qui est ``T_Personne``
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzMwODA3MTgsMjAzMzg4OTA3NiwtMT
+eyJoaXN0b3J5IjpbLTE0MjI5OTkxNjIsMjAzMzg4OTA3NiwtMT
 AzODk3NTg3MCwxODg3NTk5NTEsLTEzMzM5ODA1OTAsLTE5NDQ0
 NDQ0ODMsMTQ4MzczODIzMCwtMTI3ODExNDU1LDc4NjcwNTIxMV
 19
