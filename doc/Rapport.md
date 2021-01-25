@@ -64,7 +64,7 @@ Dans ce module on veut mettre en place un arbre binaire non trié. Un arbre bina
   
 Pour ce faire il nous faut trois types :
 - **``T_Element``**(privé) : Un type en paramètre de généricité du module.
-- **``T_AB``**(visible privé) : Un pointeur vers une cellule de l'arbre ``T_AB_Cell``
+- **``T_AB``**(visible privé) : Un pointeur vers une cellule de l'arbre(``T_AB_Cell``). Représente un arbre binaire.
 - **``T_AB_Cell``**(privé) : Un record qui represent une cellule d'arbre : 
 ```
 - gauche : T_AB
@@ -73,7 +73,7 @@ Pour ce faire il nous faut trois types :
 ```
 
 
-### Personnes 
+### ``p_personne`` 
 
 Nous allons vouloir representer des individues. Pour ce faire on utilisera un type record ``T_Personne`` :
 ```
@@ -88,7 +88,7 @@ Nous allons vouloir representer des individues. Pour ce faire on utilisera un ty
 Nous allons vouloir faire un arbre généalogique. On peut se servir de l'arbre binaire precedement créé pour faire notre arbre genalogique.
 On va avoir `` T_AG`` qui sera une instanciation de ``T_AB`` avec ``T_Element`` qui est ``T_Personne``
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0MTQ4MTQzMywyMDMzODg5MDc2LC0xMD
+eyJoaXN0b3J5IjpbMTMzOTg1MjU3MiwyMDMzODg5MDc2LC0xMD
 M4OTc1ODcwLDE4ODc1OTk1MSwtMTMzMzk4MDU5MCwtMTk0NDQ0
 NDQ4MywxNDgzNzM4MjMwLC0xMjc4MTE0NTUsNzg2NzA1MjExXX
 0=
