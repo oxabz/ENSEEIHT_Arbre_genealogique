@@ -87,10 +87,10 @@ Le type ``T_personne`` n'est encore utilisé que pour contenir le nom et le pré
 
 ### ``p_arbre_genealogique`` 
 
-Nous allons vouloir faire un arbre généalogique. On peut se servir de l'arbre binaire déclaré dans ``p_arbre_binaire`` pour faire notre arbre généalogique.
-On va avoir ``T_AG`` qui sera une instanciation de ``T_AB`` avec ``T_Element`` qui est ``T_Personne``
+Nous allons vouloir faire un arbre généalogique. On peut se servir de l'arbre binaire de ``p_arbre_binaire`` pour faire notre arbre généalogique.
+On utilisera le type ``T_AG`` qui est une implementation de ``T_
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDIyNzMzOSwyMDMzODg5MDc2LC0xMD
+eyJoaXN0b3J5IjpbMjExOTM5MTc5OSwyMDMzODg5MDc2LC0xMD
 M4OTc1ODcwLDE4ODc1OTk1MSwtMTMzMzk4MDU5MCwtMTk0NDQ0
 NDQ4MywxNDgzNzM4MjMwLC0xMjc4MTE0NTUsNzg2NzA1MjExXX
 0=
