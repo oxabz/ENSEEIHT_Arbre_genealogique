@@ -52,9 +52,10 @@ Les modules développé sont :
 - **``p_front``** : dans ce module on retrouve toutes les procédures et fonction d'entré/sortie nécessaire pour le programme principal(``main``).
 - **``main``** et le programme principal il contient la logique du menu et fait les appels à ``p_arbre_généalogique`` et à ``p_arbre_binaire`` en fonction des entré de l'utilisateur.
 
+## Types
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyMDA0MzEzMywyMDMzODg5MDc2LC0xMD
-M4OTc1ODcwLDE4ODc1OTk1MSwtMTMzMzk4MDU5MCwtMTk0NDQ0
-NDQ4MywxNDgzNzM4MjMwLC0xMjc4MTE0NTUsNzg2NzA1MjExXX
-0=
+eyJoaXN0b3J5IjpbLTE1MzMwODA3MTgsMjAzMzg4OTA3NiwtMT
+AzODk3NTg3MCwxODg3NTk5NTEsLTEzMzM5ODA1OTAsLTE5NDQ0
+NDQ0ODMsMTQ4MzczODIzMCwtMTI3ODExNDU1LDc4NjcwNTIxMV
+19
 -->
