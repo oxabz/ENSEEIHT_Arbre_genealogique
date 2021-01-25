@@ -25,7 +25,7 @@ On voudra pouvoir designer les individus en relation des uns par rapport aux aut
 
 ## Plan 
 
-Les modules etants dejha
+Les modules étant déjà une sous-division structurante du projet du programme nous aborderont chaque aspect de conception pour chaque module.
 Le rapport suivra le plan suivant : 
 
 [TOC]
@@ -36,11 +36,8 @@ Afin d'assurer une bonne lisibilité et une bonne modularité, le code du projet
 Dans cette partie les modules constituant ce projet seront présenté avec leur but. Nous nous intéresserons qu'aux modules appartenant au projet et nous omettrons les modules standard de ada.
 Les modules développé sont :  
 
-
-
-
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxNzg1NDQ4NCwtMTAzODk3NTg3MCwxOD
+eyJoaXN0b3J5IjpbMjAzMzg4OTA3NiwtMTAzODk3NTg3MCwxOD
 g3NTk5NTEsLTEzMzM5ODA1OTAsLTE5NDQ0NDQ0ODMsMTQ4Mzcz
 ODIzMCwtMTI3ODExNDU1LDc4NjcwNTIxMV19
 -->
