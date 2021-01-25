@@ -54,7 +54,7 @@ Les modules développé sont :
 
 ## Types
 
-Nous nous intéresserons au type appartenant au 
+Dans cette partie nous nous intéresserons aux types contenue dans
 
 ### ``p_arbre_binaire`` : 
 Dans 
@@ -84,8 +84,8 @@ Nous allons vouloir representer des individues. Pour ce faire on utilisera un ty
 Nous allons vouloir faire un arbre généalogique. On peut se servir de l'arbre binaire precedement créé pour faire notre arbre genalogique.
 On va avoir `` T_AG`` qui sera une instanciation de ``T_AB`` avec ``T_Element`` qui est ``T_Personne``
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTEwODY4OTQsMjAzMzg4OTA3NiwtMT
-AzODk3NTg3MCwxODg3NTk5NTEsLTEzMzM5ODA1OTAsLTE5NDQ0
-NDQ0ODMsMTQ4MzczODIzMCwtMTI3ODExNDU1LDc4NjcwNTIxMV
-19
+eyJoaXN0b3J5IjpbLTQ1MDc4OTY5NCwyMDMzODg5MDc2LC0xMD
+M4OTc1ODcwLDE4ODc1OTk1MSwtMTMzMzk4MDU5MCwtMTk0NDQ0
+NDQ4MywxNDgzNzM4MjMwLC0xMjc4MTE0NTUsNzg2NzA1MjExXX
+0=
 -->
