@@ -92,10 +92,10 @@ Le type ``T_personne`` n'est encore utilisé que pour contenir le nom et le pré
 Nous allons vouloir faire un arbre généalogique. On peut se servir de l'arbre binaire de ``p_arbre_binaire`` pour faire notre arbre généalogique.
 On utilisera le type ``T_AG`` qui est une implémentation de ``T_AB`` avec ``T_personne`` renommé.
 
-Les sous programmes de ce module necessite de faire des listes de personnes nous implmenterons
+Les sous programmes de ce module necessite de faire des listes de personnes nous implmenterons donc le module ``p_linked_list`` avec ``T_personne`` pour obtenir une ``t_linked_list`` qu'on renomera en ``L_personne`` 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzU2NDE0NDY0LDIwMzM4ODkwNzYsLTEwMz
-g5NzU4NzAsMTg4NzU5OTUxLC0xMzMzOTgwNTkwLC0xOTQ0NDQ0
-NDgzLDE0ODM3MzgyMzAsLTEyNzgxMTQ1NSw3ODY3MDUyMTFdfQ
-==
+eyJoaXN0b3J5IjpbLTE0NTc3MjYyMzMsMjAzMzg4OTA3NiwtMT
+AzODk3NTg3MCwxODg3NTk5NTEsLTEzMzM5ODA1OTAsLTE5NDQ0
+NDQ0ODMsMTQ4MzczODIzMCwtMTI3ODExNDU1LDc4NjcwNTIxMV
+19
 -->
