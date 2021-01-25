@@ -43,7 +43,7 @@ Les modules développé sont :
 	- T : type des donnés
 	- "=" : comparaison entre deux T
 	- put(x :T) : procédure d'affichage de T
-- **``p_linked_list``** : Ce module générique contient les sous-programmes et les types afin de faire une liste chainée.  Pour eviter de faire
+- **``p_linked_list``** : Ce module générique contient les sous-programmes et les types afin de faire une liste chainée.  Pour éviter de répéter du travail. On utilise un module développé dans le cadre des TPs 
 *Paramètre de généricité* : 
 	- T : type des donnés
 	- afficher(x :T) : procédure d'affichage de T
@@ -87,16 +87,16 @@ Le type ``T_personne`` n'est encore utilisé que pour contenir le nom et le pré
 
 ### ``T_linked_list``
 
-Certains sous programmes necessiterons une liste pour fonctionner il faudra donn
+Certains sous programmes nécessiterons une liste pour fonctionner. Il faudra 
 
 ### ``p_arbre_genealogique`` 
 
 Nous allons vouloir faire un arbre généalogique. On peut se servir de l'arbre binaire de ``p_arbre_binaire`` pour faire notre arbre généalogique.
 On utilisera le type ``T_AG`` qui est une implémentation de ``T_AB`` avec ``T_personne`` renommé.
 
-Les sous programmes de ce module nécessite de faire des listes de personnes nous implémenterons donc le module ``p_linked_list`` avec ``T_personne`` pour obtenir une ``t_linked_list`` qu'on renommera en ``L_personne`` 
+Les sous programmes de ce module nécessite de faire des listes de personnes nous implémenterons donc le module ``p_linked_list`` avec ``T_personne`` pour obtenir une ``t_linked_list`` qu'on renommera en ``L_personne`` .
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzMTEzNzQwMywyMDMzODg5MDc2LC0xMD
+eyJoaXN0b3J5IjpbLTE1MDAzODEwMiwyMDMzODg5MDc2LC0xMD
 M4OTc1ODcwLDE4ODc1OTk1MSwtMTMzMzk4MDU5MCwtMTk0NDQ0
 NDQ4MywxNDgzNzM4MjMwLC0xMjc4MTE0NTUsNzg2NzA1MjExXX
 0=
