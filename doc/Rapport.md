@@ -108,6 +108,7 @@ Les sous programmes de ce module nécessite de faire des listes de personnes nou
 ## Fonctions Et Procédures
 
 Dans cette partie nous nous intéresserons aux procédures et fonctions importantes de chaque module.
+
 ### Fonctions et procédures de ``T_AB`` : 
 
 #### Calculer la taille 
@@ -412,8 +413,8 @@ function nextid() return Integer;
 --postconditions : retourne l’id dernier
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODcwNDg0NTcsLTYxMzMxNjI1NCwyMD
-MzODg5MDc2LC0xMDM4OTc1ODcwLDE4ODc1OTk1MSwtMTMzMzk4
-MDU5MCwtMTk0NDQ0NDQ4MywxNDgzNzM4MjMwLC0xMjc4MTE0NT
-UsNzg2NzA1MjExXX0=
+eyJoaXN0b3J5IjpbMjAzMTk0NzE3MywtNjEzMzE2MjU0LDIwMz
+M4ODkwNzYsLTEwMzg5NzU4NzAsMTg4NzU5OTUxLC0xMzMzOTgw
+NTkwLC0xOTQ0NDQ0NDgzLDE0ODM3MzgyMzAsLTEyNzgxMTQ1NS
+w3ODY3MDUyMTFdfQ==
 -->
