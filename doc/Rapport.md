@@ -43,12 +43,12 @@ Les modules développé sont :
 	- T : type des donnés
 	- "=" : comparaison entre deux T
 	- put(x :T) : procédure d'affichage de T
-- **``p_personne``** : Ce module contient le type ``t_personne`` qui représente un individu. Il y a aussi les diffèrents sous programes permetant 
+- **``p_personne``** : Ce module contient le type ``t_personne`` qui représente un individu. Il y a aussi les différents sous-programmes permettant de le manipuler (init/getter/setter)
 - **``p_arbre_genealogique``** : Ce module et le module qui instancie ``p_arbre_binaire``
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzOTQxMTAyMCwyMDMzODg5MDc2LC0xMD
-M4OTc1ODcwLDE4ODc1OTk1MSwtMTMzMzk4MDU5MCwtMTk0NDQ0
-NDQ4MywxNDgzNzM4MjMwLC0xMjc4MTE0NTUsNzg2NzA1MjExXX
-0=
+eyJoaXN0b3J5IjpbNzgxMDMwNTgzLDIwMzM4ODkwNzYsLTEwMz
+g5NzU4NzAsMTg4NzU5OTUxLC0xMzMzOTgwNTkwLC0xOTQ0NDQ0
+NDgzLDE0ODM3MzgyMzAsLTEyNzgxMTQ1NSw3ODY3MDUyMTFdfQ
+==
 -->
