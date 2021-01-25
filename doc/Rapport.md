@@ -35,10 +35,10 @@ Le rapport suivra le plan suivant :
 Afin d'assurer une bonne lisibilité et une bonne modularité, le code du projet a été décomposé en plusieurs moules ada par rapport à leurs fonctions. 
 Dans cette partie les modules constituant ce projet seront présenté avec leur but. Nous nous intéresserons qu'aux modules appartenant au projet et nous omettrons les modules standard de ada.
 Les modules développé sont : 
-- **``p_arbre_genealogique``** : 
+- **``p_arbre_binaire``** : Ce module contient l'entièreté des fonctions et des types nécessaire pour faire fonctionner un arbre binaire 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1NzM5ODAwMywyMDMzODg5MDc2LC0xMD
+eyJoaXN0b3J5IjpbLTQwNjI4NzAyMiwyMDMzODg5MDc2LC0xMD
 M4OTc1ODcwLDE4ODc1OTk1MSwtMTMzMzk4MDU5MCwtMTk0NDQ0
 NDQ4MywxNDgzNzM4MjMwLC0xMjc4MTE0NTUsNzg2NzA1MjExXX
 0=
