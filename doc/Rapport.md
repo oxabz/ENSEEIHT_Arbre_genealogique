@@ -52,12 +52,15 @@ Les modules développé sont :
 - **``p_front``** : dans ce module on retrouve toutes les procédures et fonction d'entré/sortie nécessaire pour le programme principal(``main``).
 - **``main``** et le programme principal il contient la logique du menu et fait les appels à ``p_arbre_généalogique`` et à ``p_arbre_binaire`` en fonction des entré de l'utilisateur.
 
+
 ## Types
 
-Dans cette partie nous nous intéresserons aux types contenue dans
+Dans cette partie nous nous intéresserons aux types contenue dans les differents modules. 
+
 
 ### ``p_arbre_binaire`` : 
-Dans 
+
+Dans ce module on 
 Pour ce faire il nous faut trois types :
 - ``T_Element`` un type generique.
 - ``T_AB`` Un pointeur vers une ``T_AB_Cell``
@@ -84,7 +87,7 @@ Nous allons vouloir representer des individues. Pour ce faire on utilisera un ty
 Nous allons vouloir faire un arbre généalogique. On peut se servir de l'arbre binaire precedement créé pour faire notre arbre genalogique.
 On va avoir `` T_AG`` qui sera une instanciation de ``T_AB`` avec ``T_Element`` qui est ``T_Personne``
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1MDc4OTY5NCwyMDMzODg5MDc2LC0xMD
+eyJoaXN0b3J5IjpbLTIxNzIyNzU1MCwyMDMzODg5MDc2LC0xMD
 M4OTc1ODcwLDE4ODc1OTk1MSwtMTMzMzk4MDU5MCwtMTk0NDQ0
 NDQ4MywxNDgzNzM4MjMwLC0xMjc4MTE0NTUsNzg2NzA1MjExXX
 0=
