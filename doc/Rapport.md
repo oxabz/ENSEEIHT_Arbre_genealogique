@@ -53,13 +53,12 @@ Les modules développé sont :
 - **``main``** et le programme principal il contient la logique du menu et fait les appels à ``p_arbre_généalogique`` et à ``p_arbre_binaire`` en fonction des entré de l'utilisateur.
 
 
-## 
+## Choix de conception 
 
 
 ## Types
 
-Dans cette partie nous nous intéresserons aux types contenue dans les differents modules. 
-
+Dans cette partie nous nous intéresserons aux types contenue dans les différents modules. 
 
 ### ``p_arbre_binaire`` : 
 
@@ -86,13 +85,13 @@ Nous allons vouloir representer des individues. Pour ce faire on utilisera un ty
 ... <Tout autre info sur un individu>
 ```
 
-### Arbre Genealogique 
+### ``p_arbre_genealogique`` 
 
 Nous allons vouloir faire un arbre généalogique. On peut se servir de l'arbre binaire precedement créé pour faire notre arbre genalogique.
 On va avoir `` T_AG`` qui sera une instanciation de ``T_AB`` avec ``T_Element`` qui est ``T_Personne``
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2MjA3Njc2MCwyMDMzODg5MDc2LC0xMD
-M4OTc1ODcwLDE4ODc1OTk1MSwtMTMzMzk4MDU5MCwtMTk0NDQ0
-NDQ4MywxNDgzNzM4MjMwLC0xMjc4MTE0NTUsNzg2NzA1MjExXX
-0=
+eyJoaXN0b3J5IjpbODU1ODMzNjY4LDIwMzM4ODkwNzYsLTEwMz
+g5NzU4NzAsMTg4NzU5OTUxLC0xMzMzOTgwNTkwLC0xOTQ0NDQ0
+NDgzLDE0ODM3MzgyMzAsLTEyNzgxMTQ1NSw3ODY3MDUyMTFdfQ
+==
 -->
