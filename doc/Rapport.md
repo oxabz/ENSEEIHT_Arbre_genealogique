@@ -107,7 +107,7 @@ Les sous programmes de ce module nécessite de faire des listes de personnes nou
 
 ## Fonctions Et Procédures
 
-Dans cette partie nous nous intéresserons aux procédures et fonctions importantes de chaque module.
+Dans cette partie nous nous intéresserons aux procédures et fonctions importantes de chaque module. Nous omettrons certaines fonctions et procédures qui ne sont pas complexe. La 
 
 ### Fonctions et procédures de ``P_AB`` : 
 
@@ -380,8 +380,8 @@ function nextid() return Integer;
 --postconditions : retourne l’id dernier
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3NDAxNDUzOSwyMDMxOTQ3MTczLC02MT
-MzMTYyNTQsMjAzMzg4OTA3NiwtMTAzODk3NTg3MCwxODg3NTk5
-NTEsLTEzMzM5ODA1OTAsLTE5NDQ0NDQ0ODMsMTQ4MzczODIzMC
-wtMTI3ODExNDU1LDc4NjcwNTIxMV19
+eyJoaXN0b3J5IjpbMTY2MTcwNDMwNywxMTc0MDE0NTM5LDIwMz
+E5NDcxNzMsLTYxMzMxNjI1NCwyMDMzODg5MDc2LC0xMDM4OTc1
+ODcwLDE4ODc1OTk1MSwtMTMzMzk4MDU5MCwtMTk0NDQ0NDQ4My
+wxNDgzNzM4MjMwLC0xMjc4MTE0NTUsNzg2NzA1MjExXX0=
 -->
