@@ -25,6 +25,7 @@ On voudra pouvoir designer les individus en relation des uns par rapport aux aut
 
 ## Plan 
 
+Les modules etants dejha
 Le rapport suivra le plan suivant : 
 
 [TOC]
@@ -39,7 +40,7 @@ Les modules développé sont :
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzg5NzU4NzAsMTg4NzU5OTUxLC0xMz
-MzOTgwNTkwLC0xOTQ0NDQ0NDgzLDE0ODM3MzgyMzAsLTEyNzgx
-MTQ1NSw3ODY3MDUyMTFdfQ==
+eyJoaXN0b3J5IjpbMTkxNzg1NDQ4NCwtMTAzODk3NTg3MCwxOD
+g3NTk5NTEsLTEzMzM5ODA1OTAsLTE5NDQ0NDQ0ODMsMTQ4Mzcz
+ODIzMCwtMTI3ODExNDU1LDc4NjcwNTIxMV19
 -->
