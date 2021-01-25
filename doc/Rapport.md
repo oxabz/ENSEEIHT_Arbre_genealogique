@@ -34,10 +34,12 @@ Le rapport suivra le plan suivant :
 
 Afin d'assurer une bonne lisibilité et une bonne modularité, le code du projet a été décomposé en plusieurs moules ada par rapport à leurs fonctions. 
 Dans cette partie les modules constituant ce projet seront présenté avec leur but. Nous nous intéresserons qu'aux modules appartenant au projet et nous omettrons les modules standard de ada.
-Les modules développé sont :  
+Les modules développé sont : 
+- **``p_arbre_genealogique``** : 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzMzg4OTA3NiwtMTAzODk3NTg3MCwxOD
-g3NTk5NTEsLTEzMzM5ODA1OTAsLTE5NDQ0NDQ0ODMsMTQ4Mzcz
-ODIzMCwtMTI3ODExNDU1LDc4NjcwNTIxMV19
+eyJoaXN0b3J5IjpbLTU1NzM5ODAwMywyMDMzODg5MDc2LC0xMD
+M4OTc1ODcwLDE4ODc1OTk1MSwtMTMzMzk4MDU5MCwtMTk0NDQ0
+NDQ4MywxNDgzNzM4MjMwLC0xMjc4MTE0NTUsNzg2NzA1MjExXX
+0=
 -->
