@@ -343,7 +343,7 @@ function get_nom(personne : in T_Personne) return string;
 function get_prenom(personne : in T_Personne) return string;
 ```
 
-#### Getter 
+#### Setter 
 
 ```ada
 --Nom : set_nom
@@ -363,6 +363,9 @@ procedure set_nom(personne : in out T_personne ; nom : string);
 --postconditions : personne.nom= nom
 procedure set_prenom(personne : in out T_personne ; prenom : string);
 ```
+
+
+
 ```ada
 -- Nom : nextid
 --sémantique : renvoi un nouveau id unique
@@ -377,8 +380,8 @@ function nextid() return Integer;
 --postconditions : retourne l’id dernier
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzcxNTgyNTA0LDIwMzE5NDcxNzMsLTYxMz
-MxNjI1NCwyMDMzODg5MDc2LC0xMDM4OTc1ODcwLDE4ODc1OTk1
-MSwtMTMzMzk4MDU5MCwtMTk0NDQ0NDQ4MywxNDgzNzM4MjMwLC
-0xMjc4MTE0NTUsNzg2NzA1MjExXX0=
+eyJoaXN0b3J5IjpbLTExODk1NjMwNzQsMjAzMTk0NzE3MywtNj
+EzMzE2MjU0LDIwMzM4ODkwNzYsLTEwMzg5NzU4NzAsMTg4NzU5
+OTUxLC0xMzMzOTgwNTkwLC0xOTQ0NDQ0NDgzLDE0ODM3MzgyMz
+AsLTEyNzgxMTQ1NSw3ODY3MDUyMTFdfQ==
 -->
