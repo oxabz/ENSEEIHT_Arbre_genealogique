@@ -85,13 +85,17 @@ Nous allons vouloir représenter des individus. Pour ce faire on utilisera un ty
 ```
 Le type ``T_personne`` n'est encore utilisé que pour contenir le nom et le prénom de l'individue mais le type pourrait être très facilement étendu en modifiant la déclaration du type.   
 
+### ``T_linked_list``
+
 ### ``p_arbre_genealogique`` 
 
 Nous allons vouloir faire un arbre généalogique. On peut se servir de l'arbre binaire de ``p_arbre_binaire`` pour faire notre arbre généalogique.
-On utilisera le type ``T_AG`` qui est une implementation de ``T_
+On utilisera le type ``T_AG`` qui est une implémentation de ``T_AB`` avec ``T_personne`` renommé.
+
+Les sous programmes de ce module necessite de faire des listes de personnes nous implmenterons
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExOTM5MTc5OSwyMDMzODg5MDc2LC0xMD
-M4OTc1ODcwLDE4ODc1OTk1MSwtMTMzMzk4MDU5MCwtMTk0NDQ0
-NDQ4MywxNDgzNzM4MjMwLC0xMjc4MTE0NTUsNzg2NzA1MjExXX
-0=
+eyJoaXN0b3J5IjpbMzU2NDE0NDY0LDIwMzM4ODkwNzYsLTEwMz
+g5NzU4NzAsMTg4NzU5OTUxLC0xMzMzOTgwNTkwLC0xOTQ0NDQ0
+NDgzLDE0ODM3MzgyMzAsLTEyNzgxMTQ1NSw3ODY3MDUyMTFdfQ
+==
 -->
