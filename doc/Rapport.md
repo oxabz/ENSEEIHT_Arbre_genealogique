@@ -42,11 +42,11 @@ Les modules développé sont :
 *Paramètre de généricité* : 
 	- T : type des donnés
 	- "=" : comparaison entre deux T
-	- put()
-- 
+	- put(x:T) : procedure d'affichage de T
+- **``p_arbre_``**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3MjEyMTg3NSwyMDMzODg5MDc2LC0xMD
+eyJoaXN0b3J5IjpbLTk4MjcxMzUyMCwyMDMzODg5MDc2LC0xMD
 M4OTc1ODcwLDE4ODc1OTk1MSwtMTMzMzk4MDU5MCwtMTk0NDQ0
 NDQ4MywxNDgzNzM4MjMwLC0xMjc4MTE0NTUsNzg2NzA1MjExXX
 0=
