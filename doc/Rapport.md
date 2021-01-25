@@ -364,7 +364,7 @@ procedure set_nom(personne : in out T_personne ; nom : string);
 procedure set_prenom(personne : in out T_personne ; prenom : string);
 ```
 
-
+#### Others
 
 ```ada
 -- Nom : nextid
@@ -380,8 +380,8 @@ function nextid() return Integer;
 --postconditions : retourne l’id dernier
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODk1NjMwNzQsMjAzMTk0NzE3MywtNj
-EzMzE2MjU0LDIwMzM4ODkwNzYsLTEwMzg5NzU4NzAsMTg4NzU5
-OTUxLC0xMzMzOTgwNTkwLC0xOTQ0NDQ0NDgzLDE0ODM3MzgyMz
-AsLTEyNzgxMTQ1NSw3ODY3MDUyMTFdfQ==
+eyJoaXN0b3J5IjpbMTE3NDAxNDUzOSwyMDMxOTQ3MTczLC02MT
+MzMTYyNTQsMjAzMzg4OTA3NiwtMTAzODk3NTg3MCwxODg3NTk5
+NTEsLTEzMzM5ODA1OTAsLTE5NDQ0NDQ0ODMsMTQ4MzczODIzMC
+wtMTI3ODExNDU1LDc4NjcwNTIxMV19
 -->
