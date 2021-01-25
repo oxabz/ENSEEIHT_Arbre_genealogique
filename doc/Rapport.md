@@ -77,21 +77,21 @@ Pour ce faire il nous faut trois types :
 
 ### ``p_personne`` 
 
-Nous allons vouloir representer des individues. Pour ce faire on utilisera un type record ``T_Personne`` :
+Nous allons vouloir représenter des individus. Pour ce faire on utilisera un type record ``T_Personne`` :
 ```
-- Identifiant : integer
+- id : integer
 - nom : string
 - prenom : string
-... <Tout autre info sur un individu>
 ```
+Le type ``T_personne`` n'est encore utilisé que pour contenir le nom et le prenom de l'i 
 
 ### ``p_arbre_genealogique`` 
 
 Nous allons vouloir faire un arbre généalogique. On peut se servir de l'arbre binaire precedement créé pour faire notre arbre genalogique.
 On va avoir `` T_AG`` qui sera une instanciation de ``T_AB`` avec ``T_Element`` qui est ``T_Personne``
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODU1ODMzNjY4LDIwMzM4ODkwNzYsLTEwMz
-g5NzU4NzAsMTg4NzU5OTUxLC0xMzMzOTgwNTkwLC0xOTQ0NDQ0
-NDgzLDE0ODM3MzgyMzAsLTEyNzgxMTQ1NSw3ODY3MDUyMTFdfQ
-==
+eyJoaXN0b3J5IjpbLTgyNzAxMzgwNywyMDMzODg5MDc2LC0xMD
+M4OTc1ODcwLDE4ODc1OTk1MSwtMTMzMzk4MDU5MCwtMTk0NDQ0
+NDQ4MywxNDgzNzM4MjMwLC0xMjc4MTE0NTUsNzg2NzA1MjExXX
+0=
 -->
