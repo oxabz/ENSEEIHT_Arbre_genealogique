@@ -60,7 +60,7 @@ Dans cette partie nous nous intéresserons aux types contenue dans les different
 
 ### ``p_arbre_binaire`` : 
 
-Dans ce module on veut mettre en place un arbre binaire non trié. Un arbre binaire non trié structurellement n'est pas diffèrent de tout autre arbre binaire  I
+Dans ce module on veut mettre en place un arbre binaire non trié. Un arbre binaire non trié structurellement n'est pas diffèrent de tout autre arbre binaire. Il est constitué de cellules contenant chacune deux références à d'aut  
 Pour ce faire il nous faut trois types :
 - ``T_Element`` un type generique.
 - ``T_AB`` Un pointeur vers une ``T_AB_Cell``
@@ -87,8 +87,8 @@ Nous allons vouloir representer des individues. Pour ce faire on utilisera un ty
 Nous allons vouloir faire un arbre généalogique. On peut se servir de l'arbre binaire precedement créé pour faire notre arbre genalogique.
 On va avoir `` T_AG`` qui sera une instanciation de ``T_AB`` avec ``T_Element`` qui est ``T_Personne``
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDA1OTMxNjEsMjAzMzg4OTA3NiwtMT
-AzODk3NTg3MCwxODg3NTk5NTEsLTEzMzM5ODA1OTAsLTE5NDQ0
-NDQ0ODMsMTQ4MzczODIzMCwtMTI3ODExNDU1LDc4NjcwNTIxMV
-19
+eyJoaXN0b3J5IjpbNTYxMTk4MDY1LDIwMzM4ODkwNzYsLTEwMz
+g5NzU4NzAsMTg4NzU5OTUxLC0xMzMzOTgwNTkwLC0xOTQ0NDQ0
+NDgzLDE0ODM3MzgyMzAsLTEyNzgxMTQ1NSw3ODY3MDUyMTFdfQ
+==
 -->
