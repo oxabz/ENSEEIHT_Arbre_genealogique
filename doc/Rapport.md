@@ -87,9 +87,10 @@ Le type ``T_personne`` n'est encore utilisé que pour contenir le nom et le pré
 
 ### ``P_linked_list``
 
-Certains sous programmes nécessiterons une liste pour fonctionner. Il faudra donc un type ``T_linked_list`` qui represente une liste 
+Certains sous programmes nécessiterons une liste pour fonctionner. Il faudra donc un type ``T_linked_list`` qui représente une liste 
 
 Dans ce module on a 2 types :  
+- ``T_linked``
 
 ### ``p_arbre_genealogique`` 
 
@@ -98,8 +99,8 @@ On utilisera le type ``T_AG`` qui est une implémentation de ``T_AB`` avec ``T_p
 
 Les sous programmes de ce module nécessite de faire des listes de personnes nous implémenterons donc le module ``p_linked_list`` avec ``T_personne`` pour obtenir une ``t_linked_list`` qu'on renommera en ``L_personne`` .
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTY4MDE1MjYsMjAzMzg4OTA3NiwtMT
-AzODk3NTg3MCwxODg3NTk5NTEsLTEzMzM5ODA1OTAsLTE5NDQ0
-NDQ0ODMsMTQ4MzczODIzMCwtMTI3ODExNDU1LDc4NjcwNTIxMV
-19
+eyJoaXN0b3J5IjpbLTMzMjI1NjYwMywyMDMzODg5MDc2LC0xMD
+M4OTc1ODcwLDE4ODc1OTk1MSwtMTMzMzk4MDU5MCwtMTk0NDQ0
+NDQ4MywxNDgzNzM4MjMwLC0xMjc4MTE0NTUsNzg2NzA1MjExXX
+0=
 -->
