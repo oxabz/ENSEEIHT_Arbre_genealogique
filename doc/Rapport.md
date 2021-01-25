@@ -39,13 +39,15 @@ Dans cette partie les modules constituant ce projet seront présenté avec leur 
 
 Les modules développé sont : 
 - **``p_arbre_binaire``** : Ce module générique contient l'entièreté des fonctions et des types nécessaire pour faire fonctionner un arbre binaire non trié. On y trouve le type générique ``T_AB``.
-* Paramètre de généricité* : 
-	- 
+*Paramètre de généricité* : 
+	- T : type des donnés
+	- "=" : comparaison entre deux T
+	- put()
 - 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzY5MzYzMTMsMjAzMzg4OTA3NiwtMT
-AzODk3NTg3MCwxODg3NTk5NTEsLTEzMzM5ODA1OTAsLTE5NDQ0
-NDQ0ODMsMTQ4MzczODIzMCwtMTI3ODExNDU1LDc4NjcwNTIxMV
-19
+eyJoaXN0b3J5IjpbMTY3MjEyMTg3NSwyMDMzODg5MDc2LC0xMD
+M4OTc1ODcwLDE4ODc1OTk1MSwtMTMzMzk4MDU5MCwtMTk0NDQ0
+NDQ4MywxNDgzNzM4MjMwLC0xMjc4MTE0NTUsNzg2NzA1MjExXX
+0=
 -->
