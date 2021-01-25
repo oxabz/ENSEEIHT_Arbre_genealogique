@@ -83,14 +83,14 @@ Nous allons vouloir représenter des individus. Pour ce faire on utilisera un ty
 - nom : string
 - prenom : string
 ```
-Le type ``T_personne`` n'est encore utilisé que pour contenir le nom et le prenom de l'i 
+Le type ``T_personne`` n'est encore utilisé que pour contenir le nom et le prénom de l'individue mais le type pourrait être très facilement étendu en modifiant la déclaration du type.   
 
 ### ``p_arbre_genealogique`` 
 
-Nous allons vouloir faire un arbre généalogique. On peut se servir de l'arbre binaire precedement créé pour faire notre arbre genalogique.
+Nous allons vouloir faire un arbre généalogique. On peut se servir de l'arbre binaire declaré dans èèè pour faire notre arbre genalogique.
 On va avoir `` T_AG`` qui sera une instanciation de ``T_AB`` avec ``T_Element`` qui est ``T_Personne``
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyNzAxMzgwNywyMDMzODg5MDc2LC0xMD
+eyJoaXN0b3J5IjpbLTMxODg4Mzk5MCwyMDMzODg5MDc2LC0xMD
 M4OTc1ODcwLDE4ODc1OTk1MSwtMTMzMzk4MDU5MCwtMTk0NDQ0
 NDQ4MywxNDgzNzM4MjMwLC0xMjc4MTE0NTUsNzg2NzA1MjExXX
 0=
