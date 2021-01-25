@@ -107,95 +107,8 @@ Les sous programmes de ce module nécessite de faire des listes de personnes nou
 
 ## Fonctions Et Procédures
 
-Dans cette partie nous nous intéresserons aux procédures et fonctsion 
+Dans cette partie nous nous intéresserons aux procédures et fonctions importantes de chaque module.
 ### Fonctions et procédures de ``T_AB`` : 
-
-#### Initialiser
-
-##### Specification
-```ada
--- nom : init
--- sémantique:  Crée un arbre binaire avec un noeud racine. 
--- paramètres:
-  -- arbre : out T_AB; -- Arbre qui est initialisé par la procedure
-  -- e_racine : in T_element; -- Element contenue dans le noeud racine
--- pré-condition : ∅
--- post-condition :
-  -- arbre.all /= null 
-  -- arbre.all.value = e_racine
-  -- arbre.all.gauche = null
-  -- arbre.all.droite = null
--- Tests de la procédure :
-procedure init(arbre : out T_AB, e_racine : in T_element);
-```
-
-##### Rafinage
-```
-R0 : “Créer un arbre binaire avec un noeud racine”
-R1 : comment “Créer un arbre binaire avec un noeud racine”   -- arbre : out t_AB; e_racine : in T_element
-  attribuer la valeur au noeud
-R2 : comment “attribuer la valeur au noeud”  -- e_racine : in T_element
-  arbre:=new T_AB_Cell
-  arbre.all.element <- e_racine
-```
-
-
-#### Insérer une valeur à gauche
-
-##### Spécification
-```ada
--- Nom : inserer_gauche
--- sémantique : inserer un noeud a gauche d’un noeud donner
---paramètres : 
-    --noeud : in out T_AB -- noeud ou il faut insérer à gauche    
-    -- valeur : in T_element ; -- element à insérer
---précondition : l’arbre est initialiser 
---postcondition : noeud.all.gauche.all.element = valeur
-procedure inserer_gauche(noeud : in out T_AB ; valeur : in t_element)
-```
-
-#### Raffinage
-```
-R0 : “inserer un noeud a gauche d’un noeud donné"
-R1 : Comment “inserer un noeud a gauche d’un noeud donner” -- noeud : out T_AB; valeur : in T_element; 
-    if noeud.all.gauche /= null then
-        raise exception_insertion;
-    else 
-        assigner valeur à gauche
-    end if; 
-R2 : Comment “assigner valeur à gauche” -- noeud : out T_AB; valeur : in T_element; 
-    noeud.all.gauche = new T_AB_Cell
-noeud.all.gauche.all.element <- valeur
-```
-
-#### Inserer une valeur à droite
-
-##### Specification
-```ada
--- Nom : inserer_droite
--- sémantique : inserer un noeud a droite d’un noeud donner
---paramètres : 
-    --noeud : in out T_AB -- noeud ou il faut insérer à droite    
-    -- valeur : in T_element ; -- element à insérer
---précondition : l’arbre est initialiser 
---postcondition : noeud.all.droite.all.element = valeur
-procedure inserer_droit(noeud : in out T_AB ; valeur : in t_element)
-```
-
-#### Rafinage
-```
-R0 : “inserer un noeud a droite d’un noeud donné"
-R1 : Comment “inserer un noeud a droite d’un noeud donner” -- noeud : out T_AB; valeur : in T_element; 
-    if noeud.all.gauche /= null then
-        raise exception_insertion;
-    else 
-        assigner valeur à droite
-    end if; 
-R2 : Comment “assigner valeur à droite” -- noeud : out T_AB; valeur : in T_element; 
-    noeud.all.droite = new T_AB_Cell
-noeud.all.droite.all.element <- valeur
-```
-
 
 #### Calculer la taille 
 
@@ -499,8 +412,8 @@ function nextid() return Integer;
 --postconditions : retourne l’id dernier
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4NDYzNjI0NiwtNjEzMzE2MjU0LDIwMz
-M4ODkwNzYsLTEwMzg5NzU4NzAsMTg4NzU5OTUxLC0xMzMzOTgw
-NTkwLC0xOTQ0NDQ0NDgzLDE0ODM3MzgyMzAsLTEyNzgxMTQ1NS
-w3ODY3MDUyMTFdfQ==
+eyJoaXN0b3J5IjpbLTEyODcwNDg0NTcsLTYxMzMxNjI1NCwyMD
+MzODg5MDc2LC0xMDM4OTc1ODcwLDE4ODc1OTk1MSwtMTMzMzk4
+MDU5MCwtMTk0NDQ0NDQ4MywxNDgzNzM4MjMwLC0xMjc4MTE0NT
+UsNzg2NzA1MjExXX0=
 -->
