@@ -268,42 +268,6 @@ R2 : comment “supprimer récursivement le noeud et ses antécédents" aka "sup
   end if;
   return res;
 ```
-#### Get Sous Arbre Droit 
-
-```ada
---Nom : get_SA_droit
---sémantique : retourne le sous-arbre gauche d’un noeud
---paramètres : arbre : T_AB
---retour : T_AB
---préconditions : arbre/=null
---postconditions : null
-function get_SA_droit(abre : T_AB) return T_AB;
-```
-
-#### Get Sous Arbre Gauche
-```ada
---Nom : get_SA_gauche
---sémantique : retourne le sous-arbre droit d’un noeud
---paramètres :
-  -- arbre : T_AB
-  -- retour : T_AB
---préconditions : arbre/=null
---postconditions :
-function  get_SA_gauche (arbre: T_AB) return  T_AB;
-```
-  
-#### Get Racine Élément
-
-```ada
---Nom : get_racine_element
---sémantique : retourne le sous-arbre droit d’un noeud
---paramètres :
-  -- arbre : T_AB
-  -- retour : T_AB
---préconditions : arbre/=null
---postconditions :
-function  get_racine_element (arbre: T_AB) return  T_Element;
-```
 
 ### Fonctions et procédures de ``T_Persone`` : 
 
@@ -413,8 +377,8 @@ function nextid() return Integer;
 --postconditions : retourne l’id dernier
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzMTk0NzE3MywtNjEzMzE2MjU0LDIwMz
-M4ODkwNzYsLTEwMzg5NzU4NzAsMTg4NzU5OTUxLC0xMzMzOTgw
-NTkwLC0xOTQ0NDQ0NDgzLDE0ODM3MzgyMzAsLTEyNzgxMTQ1NS
-w3ODY3MDUyMTFdfQ==
+eyJoaXN0b3J5IjpbNDUzMDMyMDg4LDIwMzE5NDcxNzMsLTYxMz
+MxNjI1NCwyMDMzODg5MDc2LC0xMDM4OTc1ODcwLDE4ODc1OTk1
+MSwtMTMzMzk4MDU5MCwtMTk0NDQ0NDQ4MywxNDgzNzM4MjMwLC
+0xMjc4MTE0NTUsNzg2NzA1MjExXX0=
 -->
