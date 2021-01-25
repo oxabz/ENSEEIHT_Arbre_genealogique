@@ -109,11 +109,11 @@ Les sous programmes de ce module nécessite de faire des listes de personnes nou
 
 Dans cette partie nous nous intéresserons aux procédures et fonctions importantes de chaque module.
 
-### Fonctions et procédures de ``T_AB`` : 
+### Fonctions et procédures de ``P_AB`` : 
 
 #### Calculer la taille 
 
-##### Specification 
+#####  Spécification 
 ```ada
 -- nom : calcul_taille
 -- sémantique :  renvoie nombre de nœuds de l’arbre 
@@ -156,7 +156,7 @@ R2 : comment “ajouter le noeud courant + sosu arbre gauche + sous_arbre droit�
 function rechercher(racine : in  T_AB ; valeur : in T_element) return T_AB
 ```
 
-##### Rafinage 
+##### Raffinage 
 ```
 R0 : ”rechercher un noeud dans un arbre”
 R1 : comment “rechercher un noeud dans un arbre”  -- arbre : in  T_AB ; valeur : in 
@@ -377,7 +377,7 @@ function nextid() return Integer;
 --postconditions : retourne l’id dernier
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDUzMDMyMDg4LDIwMzE5NDcxNzMsLTYxMz
+eyJoaXN0b3J5IjpbNzcxNTgyNTA0LDIwMzE5NDcxNzMsLTYxMz
 MxNjI1NCwyMDMzODg5MDc2LC0xMDM4OTc1ODcwLDE4ODc1OTk1
 MSwtMTMzMzk4MDU5MCwtMTk0NDQ0NDQ4MywxNDgzNzM4MjMwLC
 0xMjc4MTE0NTUsNzg2NzA1MjExXX0=
