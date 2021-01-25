@@ -38,16 +38,16 @@ Afin d'assurer une bonne lisibilité et une bonne modularité, le code du projet
 Dans cette partie les modules constituant ce projet seront présenté avec leur but. Nous nous intéresserons qu'aux modules appartenant au projet et nous omettrons les modules standard de ada.
 
 Les modules développé sont : 
-- **``p_arbre_binaire``** : Ce module générique contient l'entièreté des fonctions et des types nécessaire pour faire fonctionner un arbre binaire non trié. On y trouve le type générique``T_AB`` et l.
+- **``p_arbre_binaire``** : Ce module générique contient l'entièreté des fonctions et des types nécessaire pour faire fonctionner un arbre binaire non trié. On y trouve le type générique``T_AB`` et les sous programmes permettant de le manipuler.
 *Paramètre de généricité* : 
 	- T : type des donnés
 	- "=" : comparaison entre deux T
-	- put(x:T) : procédure d'affichage de T
-- **````**
+	- put(x :T) : procédure d'affichage de T
+- **``p_personne``** : Ce module contient le type 
 - **``p_arbre_genealogique``** : Ce module et le module qui instancie ``p_arbre_binaire``
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwODM0MjM3NSwyMDMzODg5MDc2LC0xMD
+eyJoaXN0b3J5IjpbLTU3Nzg1MTIwNywyMDMzODg5MDc2LC0xMD
 M4OTc1ODcwLDE4ODc1OTk1MSwtMTMzMzk4MDU5MCwtMTk0NDQ0
 NDQ4MywxNDgzNzM4MjMwLC0xMjc4MTE0NTUsNzg2NzA1MjExXX
 0=
