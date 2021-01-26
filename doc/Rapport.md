@@ -299,7 +299,7 @@ R2 : comment “supprimer récursivement le noeud et ses antécédents" aka "sup
 
 #### Récupérer les ancêtres de génération n d'un individu : (``get_ancetre_generation``) : 
 
-Afin de pouvoir obtenir les ancêtres de génération n d'un individu il nous faudra en premier lieu parcourir l'arbre généalogique pour se faire on utilisera ``rechercher`` de ``p_arbre_binai`` 
+Afin de pouvoir obtenir les ancêtres de génération n d'un individu il nous faudra en premier lieu parcourir l'arbre généalogique pour se faire on utilisera ``rechercher`` de ``p_arbre_binaire`` afin de trouver la racine du sous arbre qui a l'individue comme ellement.
 
 ##### Spécification
 ```
@@ -336,11 +336,11 @@ R2 :  Comment “parcourir récursivement jusqu’a la bonne profondeur et ajout
 ### Fonctions et procédures de ``main`` : 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwNTc2Mjc2NywtNDQ5MDAwNzg4LC0xOD
-E0MzA5ODIyLDU5ODYxNzA3NSwtMTQ4MDQzNDUxOSwtNzAwMjA4
-OTIxLDEwMDQwNTIxMDAsLTE2MDA1MTA5OTAsLTY3OTg1MDkzMC
-wtMTg0NTM3NjQ5NywxMzIxMDg1Nzg1LDExNzQwMTQ1MzksMjAz
-MTk0NzE3MywtNjEzMzE2MjU0LDIwMzM4ODkwNzYsLTEwMzg5Nz
-U4NzAsMTg4NzU5OTUxLC0xMzMzOTgwNTkwLC0xOTQ0NDQ0NDgz
-LDE0ODM3MzgyMzBdfQ==
+eyJoaXN0b3J5IjpbNzAwMDA3ODE3LC00NDkwMDA3ODgsLTE4MT
+QzMDk4MjIsNTk4NjE3MDc1LC0xNDgwNDM0NTE5LC03MDAyMDg5
+MjEsMTAwNDA1MjEwMCwtMTYwMDUxMDk5MCwtNjc5ODUwOTMwLC
+0xODQ1Mzc2NDk3LDEzMjEwODU3ODUsMTE3NDAxNDUzOSwyMDMx
+OTQ3MTczLC02MTMzMTYyNTQsMjAzMzg4OTA3NiwtMTAzODk3NT
+g3MCwxODg3NTk5NTEsLTEzMzM5ODA1OTAsLTE5NDQ0NDQ0ODMs
+MTQ4MzczODIzMF19
 -->
