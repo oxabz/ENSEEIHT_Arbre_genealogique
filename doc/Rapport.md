@@ -113,7 +113,9 @@ Nous omettrons certaines fonctions et procédures qui ne sont pas complexe. La s
 
 ### Fonctions et procédures de ``P_AB`` : 
 
-#### Calculer la taille ````
+#### Calculer la taille (``calcul_taille``)
+
+Pour calculer la taille d'un ar
 
 #####  Spécification 
 ```ada
@@ -382,9 +384,9 @@ function nextid() return Integer;
 --postconditions : retourne l’id dernier
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTk5MjkxMDgsMTMyMTA4NTc4NSwxMT
-c0MDE0NTM5LDIwMzE5NDcxNzMsLTYxMzMxNjI1NCwyMDMzODg5
-MDc2LC0xMDM4OTc1ODcwLDE4ODc1OTk1MSwtMTMzMzk4MDU5MC
-wtMTk0NDQ0NDQ4MywxNDgzNzM4MjMwLC0xMjc4MTE0NTUsNzg2
-NzA1MjExXX0=
+eyJoaXN0b3J5IjpbMTM2MTU2NDk1OSwxMzIxMDg1Nzg1LDExNz
+QwMTQ1MzksMjAzMTk0NzE3MywtNjEzMzE2MjU0LDIwMzM4ODkw
+NzYsLTEwMzg5NzU4NzAsMTg4NzU5OTUxLC0xMzMzOTgwNTkwLC
+0xOTQ0NDQ0NDgzLDE0ODM3MzgyMzAsLTEyNzgxMTQ1NSw3ODY3
+MDUyMTFdfQ==
 -->
