@@ -299,7 +299,9 @@ R2 : comment “supprimer récursivement le noeud et ses antécédents" aka "sup
 
 #### Récupérer les ancêtres de génération n d'un individu : (``get_ancetre_generation``) : 
 
-##### Specification
+Afin de pouvoir obtenir les ancetres de generation n d'un incividu il nous faudra en premier lieu pa
+
+##### Spécification
 ```
 --Nom : get_ancetre_generation
 --sémantique : retourne la liste des ancêtres d’une certaine generation d’un individue
@@ -312,6 +314,9 @@ R2 : comment “supprimer récursivement le noeud et ses antécédents" aka "sup
 -- postconditions : 
 function get_ancetre_generation(arbre : in T_AG, persone : in integer, generation : integer) return L_Personne;
 ```
+
+##### Raffinage
+
 ```
 R0 : “retourne la liste des ancêtres d’une certaine generation d’un individue”
 R1 : Comment “retourne la liste des ancêtres d’une certaine generation d’un individue”
@@ -331,11 +336,11 @@ R2 :  Comment “parcourir récursivement jusqu’a la bonne profondeur et ajout
 ### Fonctions et procédures de ``main`` : 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM5MDc4ODYyLC00NDkwMDA3ODgsLTE4MT
-QzMDk4MjIsNTk4NjE3MDc1LC0xNDgwNDM0NTE5LC03MDAyMDg5
-MjEsMTAwNDA1MjEwMCwtMTYwMDUxMDk5MCwtNjc5ODUwOTMwLC
-0xODQ1Mzc2NDk3LDEzMjEwODU3ODUsMTE3NDAxNDUzOSwyMDMx
-OTQ3MTczLC02MTMzMTYyNTQsMjAzMzg4OTA3NiwtMTAzODk3NT
-g3MCwxODg3NTk5NTEsLTEzMzM5ODA1OTAsLTE5NDQ0NDQ0ODMs
-MTQ4MzczODIzMF19
+eyJoaXN0b3J5IjpbLTIwNTM1NjYxMzcsLTQ0OTAwMDc4OCwtMT
+gxNDMwOTgyMiw1OTg2MTcwNzUsLTE0ODA0MzQ1MTksLTcwMDIw
+ODkyMSwxMDA0MDUyMTAwLC0xNjAwNTEwOTkwLC02Nzk4NTA5Mz
+AsLTE4NDUzNzY0OTcsMTMyMTA4NTc4NSwxMTc0MDE0NTM5LDIw
+MzE5NDcxNzMsLTYxMzMxNjI1NCwyMDMzODg5MDc2LC0xMDM4OT
+c1ODcwLDE4ODc1OTk1MSwtMTMzMzk4MDU5MCwtMTk0NDQ0NDQ4
+MywxNDgzNzM4MjMwXX0=
 -->
