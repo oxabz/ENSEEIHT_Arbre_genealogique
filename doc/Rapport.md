@@ -334,7 +334,7 @@ R2 :  Comment “parcourir récursivement jusqu’a la bonne profondeur et ajout
 
 #### Obtenir l’ensemble des individus qui n’ont qu’un parent connu. (``get_un_parent``) : 
 
-Cette fonction necessite un algor
+Cette fonction nécessite un algorithme qui parcours l'arbre et qui a chaque nœud verifie le nombre 
 
 ##### Specification 
 ```
@@ -372,11 +372,11 @@ get_un_parent_rec(get_arbre_droit, resultat)
 ### Fonctions et procédures de ``main`` : 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTg4MzM2ODI1LDM1NTk2OTE2NSwtNDQ5MD
-AwNzg4LC0xODE0MzA5ODIyLDU5ODYxNzA3NSwtMTQ4MDQzNDUx
-OSwtNzAwMjA4OTIxLDEwMDQwNTIxMDAsLTE2MDA1MTA5OTAsLT
-Y3OTg1MDkzMCwtMTg0NTM3NjQ5NywxMzIxMDg1Nzg1LDExNzQw
-MTQ1MzksMjAzMTk0NzE3MywtNjEzMzE2MjU0LDIwMzM4ODkwNz
-YsLTEwMzg5NzU4NzAsMTg4NzU5OTUxLC0xMzMzOTgwNTkwLC0x
-OTQ0NDQ0NDgzXX0=
+eyJoaXN0b3J5IjpbLTEzNzkwMjU3MTUsMzU1OTY5MTY1LC00ND
+kwMDA3ODgsLTE4MTQzMDk4MjIsNTk4NjE3MDc1LC0xNDgwNDM0
+NTE5LC03MDAyMDg5MjEsMTAwNDA1MjEwMCwtMTYwMDUxMDk5MC
+wtNjc5ODUwOTMwLC0xODQ1Mzc2NDk3LDEzMjEwODU3ODUsMTE3
+NDAxNDUzOSwyMDMxOTQ3MTczLC02MTMzMTYyNTQsMjAzMzg4OT
+A3NiwtMTAzODk3NTg3MCwxODg3NTk5NTEsLTEzMzM5ODA1OTAs
+LTE5NDQ0NDQ0ODNdfQ==
 -->
