@@ -332,8 +332,9 @@ R2 :  Comment “parcourir récursivement jusqu’a la bonne profondeur et ajout
     get_ancetre_generation_rec(get_gauche(individu), resultat, generation-1);
 ```
 
-#### Identifier les descendants d’une génération donnée pour un nœud donné (````)
-
+#### Identifier les descendants d’une génération donnée pour un nœud donné (``get_descendant_generation``)
+##### Specification
+```
 --Nom : get_descendant_generation
 --sémantique : retourne le descendant de n-ieme generation d’un individue
 --paramètres :
@@ -344,7 +345,8 @@ R2 :  Comment “parcourir récursivement jusqu’a la bonne profondeur et ajout
 -- préconditions : arbre/=null
 -- postconditions : 
 function  get_decendant_generation(arbre : in T_AG, persone : in T_persone, generation : integer) return T_Personne;
-
+```
+####
 ```
 R0 : retourne le descendant de n-ieme generation d’un individue
     
@@ -410,11 +412,11 @@ get_un_parent_rec(get_arbre_droit, resultat)
 ### Fonctions et procédures de ``main`` : 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0NTkyMzI2MiwtMTM3OTAyNTcxNSwzNT
-U5NjkxNjUsLTQ0OTAwMDc4OCwtMTgxNDMwOTgyMiw1OTg2MTcw
-NzUsLTE0ODA0MzQ1MTksLTcwMDIwODkyMSwxMDA0MDUyMTAwLC
-0xNjAwNTEwOTkwLC02Nzk4NTA5MzAsLTE4NDUzNzY0OTcsMTMy
-MTA4NTc4NSwxMTc0MDE0NTM5LDIwMzE5NDcxNzMsLTYxMzMxNj
-I1NCwyMDMzODg5MDc2LC0xMDM4OTc1ODcwLDE4ODc1OTk1MSwt
-MTMzMzk4MDU5MF19
+eyJoaXN0b3J5IjpbNTc2NjU0MjMzLC0xMzc5MDI1NzE1LDM1NT
+k2OTE2NSwtNDQ5MDAwNzg4LC0xODE0MzA5ODIyLDU5ODYxNzA3
+NSwtMTQ4MDQzNDUxOSwtNzAwMjA4OTIxLDEwMDQwNTIxMDAsLT
+E2MDA1MTA5OTAsLTY3OTg1MDkzMCwtMTg0NTM3NjQ5NywxMzIx
+MDg1Nzg1LDExNzQwMTQ1MzksMjAzMTk0NzE3MywtNjEzMzE2Mj
+U0LDIwMzM4ODkwNzYsLTEwMzg5NzU4NzAsMTg4NzU5OTUxLC0x
+MzMzOTgwNTkwXX0=
 -->
