@@ -177,7 +177,7 @@ R1 : comment “rechercher un noeud dans un arbre”  -- arbre : in  T_AB ; vale
 
 #### afficher arbre
 
-On commence par déterminer ce a quoi on veut que l'affichage ressemble 
+On cherche à reproduire la trace ci-dessou. Pour se faire on utilise un algorithme récursif mais 
 
 ##### Trace 
 
@@ -405,9 +405,10 @@ function nextid() return Integer;
 --postconditions : retourne l’id dernier
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDA1MTA5OTAsLTY3OTg1MDkzMCwtMT
-g0NTM3NjQ5NywxMzIxMDg1Nzg1LDExNzQwMTQ1MzksMjAzMTk0
-NzE3MywtNjEzMzE2MjU0LDIwMzM4ODkwNzYsLTEwMzg5NzU4Nz
-AsMTg4NzU5OTUxLC0xMzMzOTgwNTkwLC0xOTQ0NDQ0NDgzLDE0
-ODM3MzgyMzAsLTEyNzgxMTQ1NSw3ODY3MDUyMTFdfQ==
+eyJoaXN0b3J5IjpbMTg5MzgyMDk0NywtMTYwMDUxMDk5MCwtNj
+c5ODUwOTMwLC0xODQ1Mzc2NDk3LDEzMjEwODU3ODUsMTE3NDAx
+NDUzOSwyMDMxOTQ3MTczLC02MTMzMTYyNTQsMjAzMzg4OTA3Ni
+wtMTAzODk3NTg3MCwxODg3NTk5NTEsLTEzMzM5ODA1OTAsLTE5
+NDQ0NDQ0ODMsMTQ4MzczODIzMCwtMTI3ODExNDU1LDc4NjcwNT
+IxMV19
 -->
