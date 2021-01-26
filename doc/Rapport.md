@@ -337,7 +337,7 @@ R2 :  Comment “parcourir récursivement jusqu’a la bonne profondeur et ajout
 
 #### Identifier le descendant d’une génération donnée pour un nœud donné (``get_descendant_generation``)
 
-Pour récupérer le descendant d'un individue il va nous falloir trouver l'individue. On pourrait utiliser ``re`` 
+Pour récupérer le descendant d'un individue il va nous falloir trouver l'individue. On pourrait utiliser ``rechercher`` mais nous allons avoir besoin de garder le chemin emprunté pour trouver l'individue. On fait donc une recherche recursive 
 
 ##### Spécification
 ```
@@ -418,7 +418,7 @@ get_un_parent_rec(get_arbre_droit, resultat)
 ### Fonctions et procédures de ``main`` : 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTAzNTAwNzYsLTEzNzkwMjU3MTUsMz
+eyJoaXN0b3J5IjpbLTE5NDM1OTk2MTksLTEzNzkwMjU3MTUsMz
 U1OTY5MTY1LC00NDkwMDA3ODgsLTE4MTQzMDk4MjIsNTk4NjE3
 MDc1LC0xNDgwNDM0NTE5LC03MDAyMDg5MjEsMTAwNDA1MjEwMC
 wtMTYwMDUxMDk5MCwtNjc5ODUwOTMwLC0xODQ1Mzc2NDk3LDEz
