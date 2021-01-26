@@ -334,9 +334,9 @@ R2 :  Comment “parcourir récursivement jusqu’a la bonne profondeur et ajout
 
 #### Obtenir l’ensemble des individus qui n’ont qu’un parent connu. (``get_un_parent``) : 
 
-Cette fonction nécessite un algorithme qui parcours l'arbre et qui a chaque nœud verifie le nombre 
+Cette fonction nécessite un algorithme qui parcours l'arbre et qui a chaque nœud vérifie les sous arbres pour avoir le nombre de parent. C'est le meme principe 
 
-##### Specification 
+##### Spécification 
 ```
 --Nom : get_un_parent
 --sémantique : --paramètres : retourne la liste des individus ayant un seul parent
@@ -372,11 +372,11 @@ get_un_parent_rec(get_arbre_droit, resultat)
 ### Fonctions et procédures de ``main`` : 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzkwMjU3MTUsMzU1OTY5MTY1LC00ND
-kwMDA3ODgsLTE4MTQzMDk4MjIsNTk4NjE3MDc1LC0xNDgwNDM0
-NTE5LC03MDAyMDg5MjEsMTAwNDA1MjEwMCwtMTYwMDUxMDk5MC
-wtNjc5ODUwOTMwLC0xODQ1Mzc2NDk3LDEzMjEwODU3ODUsMTE3
-NDAxNDUzOSwyMDMxOTQ3MTczLC02MTMzMTYyNTQsMjAzMzg4OT
-A3NiwtMTAzODk3NTg3MCwxODg3NTk5NTEsLTEzMzM5ODA1OTAs
-LTE5NDQ0NDQ0ODNdfQ==
+eyJoaXN0b3J5IjpbLTI0MjE4NzU1LC0xMzc5MDI1NzE1LDM1NT
+k2OTE2NSwtNDQ5MDAwNzg4LC0xODE0MzA5ODIyLDU5ODYxNzA3
+NSwtMTQ4MDQzNDUxOSwtNzAwMjA4OTIxLDEwMDQwNTIxMDAsLT
+E2MDA1MTA5OTAsLTY3OTg1MDkzMCwtMTg0NTM3NjQ5NywxMzIx
+MDg1Nzg1LDExNzQwMTQ1MzksMjAzMTk0NzE3MywtNjEzMzE2Mj
+U0LDIwMzM4ODkwNzYsLTEwMzg5NzU4NzAsMTg4NzU5OTUxLC0x
+MzMzOTgwNTkwXX0=
 -->
