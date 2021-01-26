@@ -428,15 +428,18 @@ Le fonctionnements de main est assez simple. Les applications menu sont en g√©n√
 R0 : Faire un menu permettant de manipuler un arbre genalogique 
 R1 : Comment "Faire un menu permettant de manipuler un arbre genalogique"? : 
 individu := Demander un individu;
-Initialiser l'arbre( arbre : in T_AB; individu : in )
-repeter
+Initialiser l'arbre( arbre : in T_AB; individu : in T_Personne)
+loop
+	choix := get_choix();
+	case choi is
+end loop
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQzNjQ3NjQyLDEzODMyOTkwMTcsMTMzNj
-Y5MDAwLC0xMzc5MDI1NzE1LDM1NTk2OTE2NSwtNDQ5MDAwNzg4
-LC0xODE0MzA5ODIyLDU5ODYxNzA3NSwtMTQ4MDQzNDUxOSwtNz
-AwMjA4OTIxLDEwMDQwNTIxMDAsLTE2MDA1MTA5OTAsLTY3OTg1
-MDkzMCwtMTg0NTM3NjQ5NywxMzIxMDg1Nzg1LDExNzQwMTQ1Mz
-ksMjAzMTk0NzE3MywtNjEzMzE2MjU0LDIwMzM4ODkwNzYsLTEw
-Mzg5NzU4NzBdfQ==
+eyJoaXN0b3J5IjpbNzA3NDQxMCwxMzgzMjk5MDE3LDEzMzY2OT
+AwMCwtMTM3OTAyNTcxNSwzNTU5NjkxNjUsLTQ0OTAwMDc4OCwt
+MTgxNDMwOTgyMiw1OTg2MTcwNzUsLTE0ODA0MzQ1MTksLTcwMD
+IwODkyMSwxMDA0MDUyMTAwLC0xNjAwNTEwOTkwLC02Nzk4NTA5
+MzAsLTE4NDUzNzY0OTcsMTMyMTA4NTc4NSwxMTc0MDE0NTM5LD
+IwMzE5NDcxNzMsLTYxMzMxNjI1NCwyMDMzODg5MDc2LC0xMDM4
+OTc1ODcwXX0=
 -->
