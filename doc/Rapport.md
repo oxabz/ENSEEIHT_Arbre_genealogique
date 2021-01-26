@@ -80,8 +80,8 @@ Pour ce faire il nous faut trois types :
 Nous allons vouloir représenter des individus. Pour ce faire on utilisera un type record ``T_Personne`` :
 ```
 - id : integer
-- nom : string
-- prenom : string
+- nom : unbounded_string
+- prenom : unbounded_string
 ```
 Le type ``T_personne`` n'est encore utilisé que pour contenir le nom et le prénom de l'individue mais le type pourrait être très facilement étendu en modifiant la déclaration du type.   
 
@@ -145,7 +145,7 @@ R2 : comment “ajouter le noeud courant + sosu arbre gauche + sous_arbre droit�
 
 #### Rechercher un nœud
 
-Rechercher fais partie des fonctions qui change entre un arbre binaire trié et non trié. Dans un arbre non trié nous n'avons aucune information pour trouver l'elemen,t
+Rechercher fais partie des fonctions qui change entre un arbre binaire trié et non trié. Dans un arbre non trié nous n'avons aucune information pour trouver l'élément. Il nous faut donc parcourir récursivement 
 
 ##### Specification 
 ```ada
@@ -385,9 +385,9 @@ function nextid() return Integer;
 --postconditions : retourne l’id dernier
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2MjM3NjM3NCwxMzIxMDg1Nzg1LDExNz
-QwMTQ1MzksMjAzMTk0NzE3MywtNjEzMzE2MjU0LDIwMzM4ODkw
-NzYsLTEwMzg5NzU4NzAsMTg4NzU5OTUxLC0xMzMzOTgwNTkwLC
-0xOTQ0NDQ0NDgzLDE0ODM3MzgyMzAsLTEyNzgxMTQ1NSw3ODY3
-MDUyMTFdfQ==
+eyJoaXN0b3J5IjpbLTE4NDUzNzY0OTcsMTMyMTA4NTc4NSwxMT
+c0MDE0NTM5LDIwMzE5NDcxNzMsLTYxMzMxNjI1NCwyMDMzODg5
+MDc2LC0xMDM4OTc1ODcwLDE4ODc1OTk1MSwtMTMzMzk4MDU5MC
+wtMTk0NDQ0NDQ4MywxNDgzNzM4MjMwLC0xMjc4MTE0NTUsNzg2
+NzA1MjExXX0=
 -->
