@@ -111,7 +111,7 @@ Dans cette partie nous nous intéresserons aux procédures et fonctions importan
 
 Nous omettrons certaines fonctions et procédures qui ne sont pas complexe. La spécification complète des packages avec la spécification des sous-programmes seront disponible en annexe. 
 
-### Fonctions et procédures de ``P_AB`` : 
+### Fonctions et procédures de ``P_arbre_binaire`` : 
 
 #### Calculer la taille (``calcul_taille``)
 
@@ -297,32 +297,8 @@ R2 : comment “supprimer récursivement le noeud et ses antécédents" aka "sup
 
 ### Fonctions et procédures de ``T_Persone`` : 
 
-#### Afficher
 
-```ada
---Nom : put
---sémantique : affiche les informations d’une personne
---paramètres : perso : in  T_personne
---préconditions : 
---postconditions : 
-procedure put(p:T_Person);
-```
 
-#### Comparaison 
-
-```ada
---Nom : "="
---sémantique : compare les identifiants des personnes
---paramètres :
-  -- o1 : in T_Persone
-  -- o2 : in T_Persone 
--- retour : boolean
---préconditions : 
-  -- o1.id /= 0
-  -- o2.id /= 0
---postconditions : null
-function "="(o1, o2) return boolean;
-```
 #### Initialisation
 
 ```ada
@@ -406,10 +382,10 @@ function nextid() return Integer;
 --postconditions : retourne l’id dernier
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4NTkxNjc4LC0xNjAwNTEwOTkwLC02Nz
-k4NTA5MzAsLTE4NDUzNzY0OTcsMTMyMTA4NTc4NSwxMTc0MDE0
-NTM5LDIwMzE5NDcxNzMsLTYxMzMxNjI1NCwyMDMzODg5MDc2LC
-0xMDM4OTc1ODcwLDE4ODc1OTk1MSwtMTMzMzk4MDU5MCwtMTk0
-NDQ0NDQ4MywxNDgzNzM4MjMwLC0xMjc4MTE0NTUsNzg2NzA1Mj
-ExXX0=
+eyJoaXN0b3J5IjpbLTExNjI2MDAyNTMsLTE2MDA1MTA5OTAsLT
+Y3OTg1MDkzMCwtMTg0NTM3NjQ5NywxMzIxMDg1Nzg1LDExNzQw
+MTQ1MzksMjAzMTk0NzE3MywtNjEzMzE2MjU0LDIwMzM4ODkwNz
+YsLTEwMzg5NzU4NzAsMTg4NzU5OTUxLC0xMzMzOTgwNTkwLC0x
+OTQ0NDQ0NDgzLDE0ODM3MzgyMzAsLTEyNzgxMTQ1NSw3ODY3MD
+UyMTFdfQ==
 -->
