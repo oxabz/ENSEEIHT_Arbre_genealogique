@@ -420,7 +420,7 @@ get_un_parent_rec(get_arbre_droit, resultat)
 
 ### Fonctions et procédures de ``main`` : 
 
-Le fonctionnements de main est assez simple. Les applications menu sont en général constituée d'un loop qui contient un switch en fonction qui exécute des instruction sur le modèle en fonction des entré de l'utilisateur 
+Le fonctionnements de main est assez simple. Les applications menu sont en général constituée d'un loop qui contient un switch en fonction qui exécute des sous-programmes sur le modèle en fonction des entré de l'utilisateur 
 
 ##### Raffinage 
 
@@ -442,11 +442,11 @@ loop
 end loop
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTY5MjgxNTYzLC0yMDcwMTkwMTA4LDEzOD
-MyOTkwMTcsMTMzNjY5MDAwLC0xMzc5MDI1NzE1LDM1NTk2OTE2
-NSwtNDQ5MDAwNzg4LC0xODE0MzA5ODIyLDU5ODYxNzA3NSwtMT
-Q4MDQzNDUxOSwtNzAwMjA4OTIxLDEwMDQwNTIxMDAsLTE2MDA1
-MTA5OTAsLTY3OTg1MDkzMCwtMTg0NTM3NjQ5NywxMzIxMDg1Nz
-g1LDExNzQwMTQ1MzksMjAzMTk0NzE3MywtNjEzMzE2MjU0LDIw
-MzM4ODkwNzZdfQ==
+eyJoaXN0b3J5IjpbLTE5Nzg4OTQ4MTcsLTIwNzAxOTAxMDgsMT
+M4MzI5OTAxNywxMzM2NjkwMDAsLTEzNzkwMjU3MTUsMzU1OTY5
+MTY1LC00NDkwMDA3ODgsLTE4MTQzMDk4MjIsNTk4NjE3MDc1LC
+0xNDgwNDM0NTE5LC03MDAyMDg5MjEsMTAwNDA1MjEwMCwtMTYw
+MDUxMDk5MCwtNjc5ODUwOTMwLC0xODQ1Mzc2NDk3LDEzMjEwOD
+U3ODUsMTE3NDAxNDUzOSwyMDMxOTQ3MTczLC02MTMzMTYyNTQs
+MjAzMzg4OTA3Nl19
 -->
