@@ -145,7 +145,7 @@ R2 : comment “ajouter le noeud courant + sosu arbre gauche + sous_arbre droit�
 
 #### Rechercher un nœud
 
-Rechercher fais partie des fonctions qui change entre un arbre binaire trié et non trié. Dans un arbre non trié nous n'avons aucune information pour trouver l'élément. Il nous faut donc parcourir récursivement 
+Rechercher fais partie des fonctions qui change entre un arbre binaire trié et non trié. Dans un arbre non trié nous n'avons aucune information pour trouver l'élément. Il nous faut donc parcourir récursivement l'arbre pour trouver l'element. 
 
 ##### Specification 
 ```ada
@@ -176,6 +176,8 @@ R1 : comment “rechercher un noeud dans un arbre”  -- arbre : in  T_AB ; vale
 ```
 
 #### afficher arbre
+
+##### Trace 
 
 ##### Spécification 
 ```ada
@@ -385,9 +387,9 @@ function nextid() return Integer;
 --postconditions : retourne l’id dernier
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDUzNzY0OTcsMTMyMTA4NTc4NSwxMT
-c0MDE0NTM5LDIwMzE5NDcxNzMsLTYxMzMxNjI1NCwyMDMzODg5
-MDc2LC0xMDM4OTc1ODcwLDE4ODc1OTk1MSwtMTMzMzk4MDU5MC
-wtMTk0NDQ0NDQ4MywxNDgzNzM4MjMwLC0xMjc4MTE0NTUsNzg2
-NzA1MjExXX0=
+eyJoaXN0b3J5IjpbLTY3OTg1MDkzMCwtMTg0NTM3NjQ5NywxMz
+IxMDg1Nzg1LDExNzQwMTQ1MzksMjAzMTk0NzE3MywtNjEzMzE2
+MjU0LDIwMzM4ODkwNzYsLTEwMzg5NzU4NzAsMTg4NzU5OTUxLC
+0xMzMzOTgwNTkwLC0xOTQ0NDQ0NDgzLDE0ODM3MzgyMzAsLTEy
+NzgxMTQ1NSw3ODY3MDUyMTFdfQ==
 -->
