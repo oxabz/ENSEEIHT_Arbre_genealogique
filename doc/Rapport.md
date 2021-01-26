@@ -420,13 +420,13 @@ get_un_parent_rec(get_arbre_droit, resultat)
 
 ### Fonctions et procédures de ``main`` : 
 
-Le fonctionement de 
+Le fonctionnements de main est assez simple. Les applications menu sont en generale constitué d'un loop qui contient un switch en fonction qui execute des instruction sur le model en fonction des entré de
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxNjU3MzUzNCwxMzM2NjkwMDAsLTEzNz
-kwMjU3MTUsMzU1OTY5MTY1LC00NDkwMDA3ODgsLTE4MTQzMDk4
-MjIsNTk4NjE3MDc1LC0xNDgwNDM0NTE5LC03MDAyMDg5MjEsMT
-AwNDA1MjEwMCwtMTYwMDUxMDk5MCwtNjc5ODUwOTMwLC0xODQ1
-Mzc2NDk3LDEzMjEwODU3ODUsMTE3NDAxNDUzOSwyMDMxOTQ3MT
-czLC02MTMzMTYyNTQsMjAzMzg4OTA3NiwtMTAzODk3NTg3MCwx
-ODg3NTk5NTFdfQ==
+eyJoaXN0b3J5IjpbLTE2NDU2MDA5MjcsMTMzNjY5MDAwLC0xMz
+c5MDI1NzE1LDM1NTk2OTE2NSwtNDQ5MDAwNzg4LC0xODE0MzA5
+ODIyLDU5ODYxNzA3NSwtMTQ4MDQzNDUxOSwtNzAwMjA4OTIxLD
+EwMDQwNTIxMDAsLTE2MDA1MTA5OTAsLTY3OTg1MDkzMCwtMTg0
+NTM3NjQ5NywxMzIxMDg1Nzg1LDExNzQwMTQ1MzksMjAzMTk0Nz
+E3MywtNjEzMzE2MjU0LDIwMzM4ODkwNzYsLTEwMzg5NzU4NzAs
+MTg4NzU5OTUxXX0=
 -->
