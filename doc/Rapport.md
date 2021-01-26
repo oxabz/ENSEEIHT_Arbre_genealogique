@@ -338,9 +338,9 @@ R2 :  Comment “parcourir récursivement jusqu’a la bonne profondeur et ajout
 #### Identifier le descendant d’une génération donnée pour un nœud donné (``get_descendant_generation``)
 
 Pour récupérer le descendant d'un individue il va nous falloir trouver l'individue. On pourrait utiliser ``rechercher`` mais nous allons avoir besoin de garder le chemin emprunté pour trouver l'individue. On fait donc une recherche récursive. Une fois l'individu trouvé on fait redescendre sa profondeur. 
-Quand la profondeur du descendant rempli le critère``profndeur_cible + profondeur_noeud  = profondeur_ancetre``  on fait remonter l'élément du nœud.
+Quand la profondeur du descendant rempli le critère ``profndeur_cible + profondeur_noeud  = profondeur_ancetre``  on fait remonter l'élément du nœud.
 
-Pour identifier la suite des decendants d'une generation donné pour un individu donné on utilise la meme me
+Pour identifier la suite des descendants d'une génération donné pour un individu donné on utilise la même méthode il faut juste changer la structure des donnés de sortie et la condition de validité : ``profndeur_cible + profondeur_noeud  = profondeur_ancetre`` devient ``profndeur_cible + profondeur_noeud   profondeur_ancetre``
 
 ##### Spécification
 ```
@@ -421,11 +421,11 @@ get_un_parent_rec(get_arbre_droit, resultat)
 ### Fonctions et procédures de ``main`` : 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDk5OTc5NTEsMTMzNjY5MDAwLC0xMz
-c5MDI1NzE1LDM1NTk2OTE2NSwtNDQ5MDAwNzg4LC0xODE0MzA5
-ODIyLDU5ODYxNzA3NSwtMTQ4MDQzNDUxOSwtNzAwMjA4OTIxLD
-EwMDQwNTIxMDAsLTE2MDA1MTA5OTAsLTY3OTg1MDkzMCwtMTg0
-NTM3NjQ5NywxMzIxMDg1Nzg1LDExNzQwMTQ1MzksMjAzMTk0Nz
-E3MywtNjEzMzE2MjU0LDIwMzM4ODkwNzYsLTEwMzg5NzU4NzAs
-MTg4NzU5OTUxXX0=
+eyJoaXN0b3J5IjpbNTk1MDk2NzY5LDEzMzY2OTAwMCwtMTM3OT
+AyNTcxNSwzNTU5NjkxNjUsLTQ0OTAwMDc4OCwtMTgxNDMwOTgy
+Miw1OTg2MTcwNzUsLTE0ODA0MzQ1MTksLTcwMDIwODkyMSwxMD
+A0MDUyMTAwLC0xNjAwNTEwOTkwLC02Nzk4NTA5MzAsLTE4NDUz
+NzY0OTcsMTMyMTA4NTc4NSwxMTc0MDE0NTM5LDIwMzE5NDcxNz
+MsLTYxMzMxNjI1NCwyMDMzODg5MDc2LC0xMDM4OTc1ODcwLDE4
+ODc1OTk1MV19
 -->
