@@ -431,19 +431,22 @@ individu := Demander un individu;
 Initialiser l'arbre( arbre : in T_AB; individu : in T_Personne)
 loop
 	choix := get_choix();
+	exit when choix = choix_de_sortie;
 	case choix is
 		when un_choix =>
 			demander les infos necessaire
 			appeler la foctions correspondante
-			
+		when others =>
+			afficher message d'erreur
+	end case;
 end loop
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4OTcxNDYyNywtMjA3MDE5MDEwOCwxMz
-gzMjk5MDE3LDEzMzY2OTAwMCwtMTM3OTAyNTcxNSwzNTU5Njkx
-NjUsLTQ0OTAwMDc4OCwtMTgxNDMwOTgyMiw1OTg2MTcwNzUsLT
-E0ODA0MzQ1MTksLTcwMDIwODkyMSwxMDA0MDUyMTAwLC0xNjAw
-NTEwOTkwLC02Nzk4NTA5MzAsLTE4NDUzNzY0OTcsMTMyMTA4NT
-c4NSwxMTc0MDE0NTM5LDIwMzE5NDcxNzMsLTYxMzMxNjI1NCwy
-MDMzODg5MDc2XX0=
+eyJoaXN0b3J5IjpbOTY5MjgxNTYzLC0yMDcwMTkwMTA4LDEzOD
+MyOTkwMTcsMTMzNjY5MDAwLC0xMzc5MDI1NzE1LDM1NTk2OTE2
+NSwtNDQ5MDAwNzg4LC0xODE0MzA5ODIyLDU5ODYxNzA3NSwtMT
+Q4MDQzNDUxOSwtNzAwMjA4OTIxLDEwMDQwNTIxMDAsLTE2MDA1
+MTA5OTAsLTY3OTg1MDkzMCwtMTg0NTM3NjQ5NywxMzIxMDg1Nz
+g1LDExNzQwMTQ1MzksMjAzMTk0NzE3MywtNjEzMzE2MjU0LDIw
+MzM4ODkwNzZdfQ==
 -->
