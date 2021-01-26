@@ -337,7 +337,7 @@ R2 :  Comment “parcourir récursivement jusqu’a la bonne profondeur et ajout
 
 #### Identifier le descendant d’une génération donnée pour un nœud donné (``get_descendant_generation``)
 
-Pour récupérer le descendant d'un individue il va nous falloir trouver l'individue. On pourrait utiliser ``rechercher`` mais nous allons avoir besoin de garder le chemin emprunté pour trouver l'individue. On fait donc une recherche récursive. Une fois l'individu trouvé on fait redescendre sa profondeur .
+Pour récupérer le descendant d'un individue il va nous falloir trouver l'individue. On pourrait utiliser ``rechercher`` mais nous allons avoir besoin de garder le chemin emprunté pour trouver l'individue. On fait donc une recherche récursive. Une fois l'individu trouvé on fait redescendre sa profondeur. Si la profondeur d correspond ``profondeur_ ``
 
 ##### Spécification
 ```
@@ -418,11 +418,11 @@ get_un_parent_rec(get_arbre_droit, resultat)
 ### Fonctions et procédures de ``main`` : 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3MTg3OTM3LDEzMzY2OTAwMCwtMTM3OT
-AyNTcxNSwzNTU5NjkxNjUsLTQ0OTAwMDc4OCwtMTgxNDMwOTgy
-Miw1OTg2MTcwNzUsLTE0ODA0MzQ1MTksLTcwMDIwODkyMSwxMD
-A0MDUyMTAwLC0xNjAwNTEwOTkwLC02Nzk4NTA5MzAsLTE4NDUz
-NzY0OTcsMTMyMTA4NTc4NSwxMTc0MDE0NTM5LDIwMzE5NDcxNz
-MsLTYxMzMxNjI1NCwyMDMzODg5MDc2LC0xMDM4OTc1ODcwLDE4
-ODc1OTk1MV19
+eyJoaXN0b3J5IjpbLTEzMjQ0MzgxMzYsMTMzNjY5MDAwLC0xMz
+c5MDI1NzE1LDM1NTk2OTE2NSwtNDQ5MDAwNzg4LC0xODE0MzA5
+ODIyLDU5ODYxNzA3NSwtMTQ4MDQzNDUxOSwtNzAwMjA4OTIxLD
+EwMDQwNTIxMDAsLTE2MDA1MTA5OTAsLTY3OTg1MDkzMCwtMTg0
+NTM3NjQ5NywxMzIxMDg1Nzg1LDExNzQwMTQ1MzksMjAzMTk0Nz
+E3MywtNjEzMzE2MjU0LDIwMzM4ODkwNzYsLTEwMzg5NzU4NzAs
+MTg4NzU5OTUxXX0=
 -->
