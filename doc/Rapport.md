@@ -337,7 +337,7 @@ R2 :  Comment “parcourir récursivement jusqu’a la bonne profondeur et ajout
 
 #### Identifier le descendant d’une génération donnée pour un nœud donné (``get_descendant_generation``)
 
-Pour récupérer le descendant d'un individue il va nous falloir trouver l'individue. On pourrait utiliser ``rechercher`` mais nous allons avoir besoin de garder le chemin emprunté pour trouver l'individue. On fait donc une recherche recursive 
+Pour récupérer le descendant d'un individue il va nous falloir trouver l'individue. On pourrait utiliser ``rechercher`` mais nous allons avoir besoin de garder le chemin emprunté pour trouver l'individue. On fait donc une recherche récursive une fois l'individu trouvé il nous suffit de 
 
 ##### Spécification
 ```
@@ -365,10 +365,10 @@ R2 : Comment “Parcourir récursivement l’arbre afin de trouver la profondeur
     Renvoyer le descendant si le noeud courrent est le descendant
 R3 : Comment “Parcourir recursivement pour trouver la profondeur de l’ancetre”
     if(arbre = null) then return -1; end if;
-            if(get_racine_element(arbre) = persone) then
-                return profondeur;
-            end if;
-            profondeur_ancetre:= get_decendant_generation_rec(get_SA_droit(arbre), persone, descendant, generation, profondeur+1);
+    if(get_racine_element(arbre) = persone) then
+        return profondeur;
+    end if;
+    profondeur_ancetre:= get_decendant_generation_rec(get_SA_droit(arbre), persone, descendant, generation, profondeur+1);
             if (profondeur_ancetre = -1) then
                 profondeur_ancetre:= get_decendant_generation_rec(get_SA_gauche(arbre), persone, descendant, generation, profondeur+1);
             end if;
@@ -418,11 +418,11 @@ get_un_parent_rec(get_arbre_droit, resultat)
 ### Fonctions et procédures de ``main`` : 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDM1OTk2MTksLTEzNzkwMjU3MTUsMz
-U1OTY5MTY1LC00NDkwMDA3ODgsLTE4MTQzMDk4MjIsNTk4NjE3
-MDc1LC0xNDgwNDM0NTE5LC03MDAyMDg5MjEsMTAwNDA1MjEwMC
-wtMTYwMDUxMDk5MCwtNjc5ODUwOTMwLC0xODQ1Mzc2NDk3LDEz
-MjEwODU3ODUsMTE3NDAxNDUzOSwyMDMxOTQ3MTczLC02MTMzMT
-YyNTQsMjAzMzg4OTA3NiwtMTAzODk3NTg3MCwxODg3NTk5NTEs
-LTEzMzM5ODA1OTBdfQ==
+eyJoaXN0b3J5IjpbMTI2Mjg1NjYyMiwtMTM3OTAyNTcxNSwzNT
+U5NjkxNjUsLTQ0OTAwMDc4OCwtMTgxNDMwOTgyMiw1OTg2MTcw
+NzUsLTE0ODA0MzQ1MTksLTcwMDIwODkyMSwxMDA0MDUyMTAwLC
+0xNjAwNTEwOTkwLC02Nzk4NTA5MzAsLTE4NDUzNzY0OTcsMTMy
+MTA4NTc4NSwxMTc0MDE0NTM5LDIwMzE5NDcxNzMsLTYxMzMxNj
+I1NCwyMDMzODg5MDc2LC0xMDM4OTc1ODcwLDE4ODc1OTk1MSwt
+MTMzMzk4MDU5MF19
 -->
