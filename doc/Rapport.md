@@ -297,58 +297,41 @@ R2 : comment “supprimer récursivement le noeud et ses antécédents" aka "sup
 
 ### Fonctions et procédures de ``p_arbre genealogique`` :
 
-#### Récupérer les ancêtres de génération n d'un individu : (````) : 
+#### Récupérer les ancêtres de génération n d'un individu : (``get_ancetre_generation``) : 
 
+##### Specification
+```
 --Nom : get_ancetre_generation
-
 --sémantique : retourne la liste des ancêtres d’une certaine generation d’un individue
-
---paramètres :
-
+ --paramètres :
 -- arbre : T_AG
-
--- persone : integer
-
+-- persone : integer 
 -- generation : integer
-
 -- retour : List<T_Person>
-
 -- préconditions : arbre/=null
-
--- postconditions :
-
-function get_ancetre_generation(arbre : in T_AG, persone : in integer, generation : integer) return List<T_Person>;
-
-  
-
+-- postconditions : 
+function get_ancetre_generation(arbre : in T_AG, persone : in integer, generation : integer) return L_Personne;
+```
+```
 R0 : “retourne la liste des ancêtres d’une certaine generation d’un individue”
-
 R1 : Comment “retourne la liste des ancêtres d’une certaine generation d’un individue”
+    individu = find(arbre, get_dummy(personne));
+parcourir récursivement jusqu’a la bonne profondeur et ajouter les ancetre une fois a la bonne profondeur -- individu : in T_AG; resultat : in out L_Personne; generation : in integer 
+R2 :  Comment “parcourir récursivement jusqu’a la bonne profondeur et ajouter les ancetre une fois a la bonne profondeur ” aka “get_ancetre_generation_rec”  -- individu : in T_AG; resultat : in out L_Personne; generation : in integer
+    if(individu = null) then return; end if;
+    if(generation = 0) then 
+       add(resultat, get_element(individu))
+       return;
+    end if;
+    get_ancetre_generation_rec(get_droit(individu), resultat, generation-1);
+    get_ancetre_generation_rec(get_gauche(individu), resultat, generation-1);
+```
 
-individu = find(arbre, get_dummy(personne));
-
-parcourir récursivement jusqu’a la bonne profondeur et ajouter les ancetre une fois a la bonne profondeur -- individu : in T_AG; resultat : in out List<T_Person>; generation : in integer
-
-R2 : Comment “parcourir récursivement jusqu’a la bonne profondeur et ajouter les ancetre une fois a la bonne profondeur ” aka “get_ancetre_generation_rec” -- individu : in T_AG; resultat : in out List<T_Person>; generation : in integer
-
-if(individu = null) then return; end if;
-
-if(generation = 0) then
-
-add(resultat, get_element(individu))
-
-return;
-
-end if;
-
-get_ancetre_generation_rec(get_droit(individu), resultat, generation-1);
-
-get_ancetre_generation_rec(get_gauche(individu), resultat, generation-1);
 
 ### Fonctions et procédures de ``main`` : 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzA1OTkyMzc1LC00NDkwMDA3ODgsLTE4MT
+eyJoaXN0b3J5IjpbMjM5MDc4ODYyLC00NDkwMDA3ODgsLTE4MT
 QzMDk4MjIsNTk4NjE3MDc1LC0xNDgwNDM0NTE5LC03MDAyMDg5
 MjEsMTAwNDA1MjEwMCwtMTYwMDUxMDk5MCwtNjc5ODUwOTMwLC
 0xODQ1Mzc2NDk3LDEzMjEwODU3ODUsMTE3NDAxNDUzOSwyMDMx
