@@ -177,7 +177,7 @@ R1 : comment “rechercher un noeud dans un arbre”  -- arbre : in  T_AB ; vale
 
 #### afficher arbre
 
-On cherche à reproduire la trace ci-dessou. Pour se faire on utilise un algorithme récursif mais 
+On cherche à reproduire la trace ci-dessou. Pour ce faire on vas utiliser un algorithme récursif. Mais cependant on voit que afficher un sous arbre n'est pas la meme chose qu'afficher un arbre en effet la tabulation varie en fonction de la profondeur il nous faudra donc passer la profondeur dans les param
 
 ##### Trace 
 
@@ -405,10 +405,10 @@ function nextid() return Integer;
 --postconditions : retourne l’id dernier
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5MzgyMDk0NywtMTYwMDUxMDk5MCwtNj
-c5ODUwOTMwLC0xODQ1Mzc2NDk3LDEzMjEwODU3ODUsMTE3NDAx
-NDUzOSwyMDMxOTQ3MTczLC02MTMzMTYyNTQsMjAzMzg4OTA3Ni
-wtMTAzODk3NTg3MCwxODg3NTk5NTEsLTEzMzM5ODA1OTAsLTE5
-NDQ0NDQ0ODMsMTQ4MzczODIzMCwtMTI3ODExNDU1LDc4NjcwNT
-IxMV19
+eyJoaXN0b3J5IjpbMTI0ODk3NTAwLC0xNjAwNTEwOTkwLC02Nz
+k4NTA5MzAsLTE4NDUzNzY0OTcsMTMyMTA4NTc4NSwxMTc0MDE0
+NTM5LDIwMzE5NDcxNzMsLTYxMzMxNjI1NCwyMDMzODg5MDc2LC
+0xMDM4OTc1ODcwLDE4ODc1OTk1MSwtMTMzMzk4MDU5MCwtMTk0
+NDQ0NDQ4MywxNDgzNzM4MjMwLC0xMjc4MTE0NTUsNzg2NzA1Mj
+ExXX0=
 -->
