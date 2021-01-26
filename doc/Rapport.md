@@ -425,14 +425,16 @@ Le fonctionnements de main est assez simple. Les applications menu sont en g√©n√
 ##### Raffinage 
 
 ```
-R0 : Faire un menu permettant de manipuler 
+R0 : Faire un menu permettant de manipuler un arbre genalogique 
+R1 : Comment "Faire un menu permettant de manipuler un arbre genalogique"? : 
+Initialiser l'arbre 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTM3NzE1OTgsMTM4MzI5OTAxNywxMz
-M2NjkwMDAsLTEzNzkwMjU3MTUsMzU1OTY5MTY1LC00NDkwMDA3
-ODgsLTE4MTQzMDk4MjIsNTk4NjE3MDc1LC0xNDgwNDM0NTE5LC
-03MDAyMDg5MjEsMTAwNDA1MjEwMCwtMTYwMDUxMDk5MCwtNjc5
-ODUwOTMwLC0xODQ1Mzc2NDk3LDEzMjEwODU3ODUsMTE3NDAxND
-UzOSwyMDMxOTQ3MTczLC02MTMzMTYyNTQsMjAzMzg4OTA3Niwt
-MTAzODk3NTg3MF19
+eyJoaXN0b3J5IjpbLTM5MjAyNTMxNCwxMzgzMjk5MDE3LDEzMz
+Y2OTAwMCwtMTM3OTAyNTcxNSwzNTU5NjkxNjUsLTQ0OTAwMDc4
+OCwtMTgxNDMwOTgyMiw1OTg2MTcwNzUsLTE0ODA0MzQ1MTksLT
+cwMDIwODkyMSwxMDA0MDUyMTAwLC0xNjAwNTEwOTkwLC02Nzk4
+NTA5MzAsLTE4NDUzNzY0OTcsMTMyMTA4NTc4NSwxMTc0MDE0NT
+M5LDIwMzE5NDcxNzMsLTYxMzMxNjI1NCwyMDMzODg5MDc2LC0x
+MDM4OTc1ODcwXX0=
 -->
