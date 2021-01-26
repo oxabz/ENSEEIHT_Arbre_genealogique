@@ -297,33 +297,10 @@ R2 : comment “supprimer récursivement le noeud et ses antécédents" aka "sup
 
 ### Fonctions et procédures de ``P_Personne`` : 
 
-Il n'y a pas d'algorithme compliqué dans ``P_personne``
+Il n'y a pas d'algorithme compliqué dans ``P_personne``. On attribue juste une un nouvel id 
 
-#### Initialisation
-
-```ada
---Nom : init
---sémantique : initialise personne avec un nom et prenom 
---paramètres :
--- persone : out T_Persone
---  nom : string
--- prenom : string
---préconditions : 
---postconditions : id/=0
-
-```
-
-#### Others
-
-```ada
--- Nom : nextid
---sémantique : renvoi un nouveau id unique
---préconditions : null
---postconditions : retourne l’id prochain
-function nextid() return Integer;
-```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyMDU5NzgyOSwxMDA0MDUyMTAwLC0xNj
+eyJoaXN0b3J5IjpbLTcwMDIwODkyMSwxMDA0MDUyMTAwLC0xNj
 AwNTEwOTkwLC02Nzk4NTA5MzAsLTE4NDUzNzY0OTcsMTMyMTA4
 NTc4NSwxMTc0MDE0NTM5LDIwMzE5NDcxNzMsLTYxMzMxNjI1NC
 wyMDMzODg5MDc2LC0xMDM4OTc1ODcwLDE4ODc1OTk1MSwtMTMz
