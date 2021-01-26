@@ -295,18 +295,15 @@ R2 : comment “supprimer récursivement le noeud et ses antécédents" aka "sup
   return res;
 ```
 
-### Fonctions et procédures de ``P_Personne`` : 
-
-Il n'y a pas d'algorithme compliqué dans ``P_personne``. On attribue juste un nouvel id. Pour chaque 
-
+### Fonctions et procedures de ``p_arbre genealogique`` :
 ### Fonctions et procédures de ``main`` : 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk4NjE3MDc1LC0xNDgwNDM0NTE5LC03MD
-AyMDg5MjEsMTAwNDA1MjEwMCwtMTYwMDUxMDk5MCwtNjc5ODUw
-OTMwLC0xODQ1Mzc2NDk3LDEzMjEwODU3ODUsMTE3NDAxNDUzOS
-wyMDMxOTQ3MTczLC02MTMzMTYyNTQsMjAzMzg4OTA3NiwtMTAz
-ODk3NTg3MCwxODg3NTk5NTEsLTEzMzM5ODA1OTAsLTE5NDQ0ND
-Q0ODMsMTQ4MzczODIzMCwtMTI3ODExNDU1LDc4NjcwNTIxMV19
-
+eyJoaXN0b3J5IjpbNjI5OTQxNjQsNTk4NjE3MDc1LC0xNDgwND
+M0NTE5LC03MDAyMDg5MjEsMTAwNDA1MjEwMCwtMTYwMDUxMDk5
+MCwtNjc5ODUwOTMwLC0xODQ1Mzc2NDk3LDEzMjEwODU3ODUsMT
+E3NDAxNDUzOSwyMDMxOTQ3MTczLC02MTMzMTYyNTQsMjAzMzg4
+OTA3NiwtMTAzODk3NTg3MCwxODg3NTk5NTEsLTEzMzM5ODA1OT
+AsLTE5NDQ0NDQ0ODMsMTQ4MzczODIzMCwtMTI3ODExNDU1LDc4
+NjcwNTIxMV19
 -->
