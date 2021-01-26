@@ -369,9 +369,9 @@ R3 : Comment “Parcourir recursivement pour trouver la profondeur de l’ancetr
         return profondeur;
     end if;
     profondeur_ancetre:= get_decendant_generation_rec(get_SA_droit(arbre), persone, descendant, generation, profondeur+1);
-            if (profondeur_ancetre = -1) then
-                profondeur_ancetre:= get_decendant_generation_rec(get_SA_gauche(arbre), persone, descendant, generation, profondeur+1);
-            end if;
+    if (profondeur_ancetre = -1) then
+        profondeur_ancetre:= get_decendant_generation_rec(get_SA_gauche(arbre), persone, descendant, generation, profondeur+1);
+    end if;
 R3 : Comment “Renvoyer le descendant si le noeud courrent est le descendant”
             if (profondeur_ancetre = profondeur+generation) then
                 descendant := get_racine_element(arbre);
@@ -418,7 +418,7 @@ get_un_parent_rec(get_arbre_droit, resultat)
 ### Fonctions et procédures de ``main`` : 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2Mjg1NjYyMiwtMTM3OTAyNTcxNSwzNT
+eyJoaXN0b3J5IjpbMTc0ODAyOTM1OCwtMTM3OTAyNTcxNSwzNT
 U5NjkxNjUsLTQ0OTAwMDc4OCwtMTgxNDMwOTgyMiw1OTg2MTcw
 NzUsLTE0ODA0MzQ1MTksLTcwMDIwODkyMSwxMDA0MDUyMTAwLC
 0xNjAwNTEwOTkwLC02Nzk4NTA5MzAsLTE4NDUzNzY0OTcsMTMy
