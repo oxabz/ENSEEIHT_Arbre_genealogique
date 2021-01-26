@@ -297,13 +297,14 @@ R2 : comment “supprimer récursivement le noeud et ses antécédents" aka "sup
 
 ### Fonctions et procédures de ``P_Personne`` : 
 
-Il n'y a pas d'algorithme compliqué dans ``P_personne``. On attribue juste une nouvel id 
+Il n'y a pas d'algorithme compliqué dans ``P_personne``. On attribue juste un nouvel id. Pour chaque 
 
+### Fonctions et procédures de ``main``
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3NjI4MTg5NCwtNzAwMjA4OTIxLDEwMD
-QwNTIxMDAsLTE2MDA1MTA5OTAsLTY3OTg1MDkzMCwtMTg0NTM3
-NjQ5NywxMzIxMDg1Nzg1LDExNzQwMTQ1MzksMjAzMTk0NzE3My
-wtNjEzMzE2MjU0LDIwMzM4ODkwNzYsLTEwMzg5NzU4NzAsMTg4
-NzU5OTUxLC0xMzMzOTgwNTkwLC0xOTQ0NDQ0NDgzLDE0ODM3Mz
-gyMzAsLTEyNzgxMTQ1NSw3ODY3MDUyMTFdfQ==
+eyJoaXN0b3J5IjpbLTE0ODA0MzQ1MTksLTcwMDIwODkyMSwxMD
+A0MDUyMTAwLC0xNjAwNTEwOTkwLC02Nzk4NTA5MzAsLTE4NDUz
+NzY0OTcsMTMyMTA4NTc4NSwxMTc0MDE0NTM5LDIwMzE5NDcxNz
+MsLTYxMzMxNjI1NCwyMDMzODg5MDc2LC0xMDM4OTc1ODcwLDE4
+ODc1OTk1MSwtMTMzMzk4MDU5MCwtMTk0NDQ0NDQ4MywxNDgzNz
+M4MjMwLC0xMjc4MTE0NTUsNzg2NzA1MjExXX0=
 -->
