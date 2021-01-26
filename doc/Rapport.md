@@ -332,7 +332,11 @@ R2 :  Comment “parcourir récursivement jusqu’a la bonne profondeur et ajout
     get_ancetre_generation_rec(get_gauche(individu), resultat, generation-1);
 ```
 
-#### Obtenir l’ensemble des individus qui n’ont qu’un parent connu. 
+#### Obtenir l’ensemble des individus qui n’ont qu’un parent connu. (``get_un_parent``) : 
+
+Cette fonction necessite un algor
+
+##### Specification 
 ```
 --Nom : get_un_parent
 --sémantique : --paramètres : retourne la liste des individus ayant un seul parent
@@ -341,6 +345,8 @@ R2 :  Comment “parcourir récursivement jusqu’a la bonne profondeur et ajout
 -- préconditions : arbre/=null
 -- postconditions : 
 function get_un_parent(arbre : in T_AG) return L_Person;
+```
+
 ```
 R0 : Obtenir l’ensemble des individus qui n’ont qu’un parent connu.
 R1 : Comment “Obtenir l’ensemble des individus qui n’ont qu’un parent connu" ? : in T_AB
@@ -361,13 +367,12 @@ end if;
 
 get_un_parent_rec(get_arbre_gauche, resultat);
 get_un_parent_rec(get_arbre_droit, resultat)
-
-
+```
 
 ### Fonctions et procédures de ``main`` : 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzc0NjY5NDYzLDM1NTk2OTE2NSwtNDQ5MD
+eyJoaXN0b3J5IjpbNTg4MzM2ODI1LDM1NTk2OTE2NSwtNDQ5MD
 AwNzg4LC0xODE0MzA5ODIyLDU5ODYxNzA3NSwtMTQ4MDQzNDUx
 OSwtNzAwMjA4OTIxLDEwMDQwNTIxMDAsLTE2MDA1MTA5OTAsLT
 Y3OTg1MDkzMCwtMTg0NTM3NjQ5NywxMzIxMDg1Nzg1LDExNzQw
