@@ -332,15 +332,49 @@ R2 :  Comment “parcourir récursivement jusqu’a la bonne profondeur et ajout
     get_ancetre_generation_rec(get_gauche(individu), resultat, generation-1);
 ```
 
+--Nom : get_un_parent
+--sémantique : --paramètres : retourne la liste des individus ayant un seul parent
+-- arbre : T_AG
+-- retour : List<T_Person>;
+-- préconditions : arbre/=null
+-- postconditions : 
+function get_un_parent(arbre : in T_AG) return List<T_Person>;
+
+R0 : Obtenir l’ensemble des individus qui n’ont qu’un parent connu.
+R1 : Comment “Obtenir l’ensemble des individus qui n’ont qu’un parent connu” : in T_AB
+	init_liste(liste)                            
+	parcourir l’arbre récursivement aka “get_un_parent_rec” et remplir liste
+	return liste
+
+R2 : comment “parcourir l’arbre récursivement aka “get_un_parent_rec””
+
+if(arbre =null) then
+return
+
+end if;
+
+if(get_arbre_gauche(arbre)=null and get_arbre_droit /=null ) then
+inserer_liste(fl, get_arbre_element(arbre))
+
+end if;
+
+if (get_arbre_gauche(arbre)/=null and get_arbre_droit =null ) then
+inserer_liste(fl, get_arbre_element(arbre))
+end if;
+
+get_un_parent_rec(get_arbre_gauche, resultat);
+get_un_parent_rec(get_arbre_droit, resultat)
+
+
 
 ### Fonctions et procédures de ``main`` : 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzU1OTY5MTY1LC00NDkwMDA3ODgsLTE4MT
-QzMDk4MjIsNTk4NjE3MDc1LC0xNDgwNDM0NTE5LC03MDAyMDg5
-MjEsMTAwNDA1MjEwMCwtMTYwMDUxMDk5MCwtNjc5ODUwOTMwLC
-0xODQ1Mzc2NDk3LDEzMjEwODU3ODUsMTE3NDAxNDUzOSwyMDMx
-OTQ3MTczLC02MTMzMTYyNTQsMjAzMzg4OTA3NiwtMTAzODk3NT
-g3MCwxODg3NTk5NTEsLTEzMzM5ODA1OTAsLTE5NDQ0NDQ0ODMs
-MTQ4MzczODIzMF19
+eyJoaXN0b3J5IjpbLTE4NjEzMDA0NTksMzU1OTY5MTY1LC00ND
+kwMDA3ODgsLTE4MTQzMDk4MjIsNTk4NjE3MDc1LC0xNDgwNDM0
+NTE5LC03MDAyMDg5MjEsMTAwNDA1MjEwMCwtMTYwMDUxMDk5MC
+wtNjc5ODUwOTMwLC0xODQ1Mzc2NDk3LDEzMjEwODU3ODUsMTE3
+NDAxNDUzOSwyMDMxOTQ3MTczLC02MTMzMTYyNTQsMjAzMzg4OT
+A3NiwtMTAzODk3NTg3MCwxODg3NTk5NTEsLTEzMzM5ODA1OTAs
+LTE5NDQ0NDQ0ODNdfQ==
 -->
