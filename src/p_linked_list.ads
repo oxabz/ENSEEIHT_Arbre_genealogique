@@ -1,7 +1,7 @@
 generic
   type T is private;
   with procedure afficher (X: in T);
-package linked_list is
+package p_linked_list is
   type T_linked_list_cell is private;
   type T_linked_list is access T_linked_list_cell;
 
@@ -24,4 +24,4 @@ package linked_list is
     value: T;
     next: T_linked_list;
   end record;
-end linked_list;
+end p_linked_list;

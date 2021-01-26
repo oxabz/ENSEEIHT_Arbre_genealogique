@@ -329,7 +329,7 @@ function  get_racine_element (arbre: T_AB) return  T_Element;
 --paramètres : perso : in  T_personne
 --préconditions : 
 --postconditions : 
-procedure put(p:T_Person);
+procedure put(p:T_Personne);
 ```
 
 #### Comparaison 

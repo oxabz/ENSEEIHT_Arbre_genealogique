@@ -1,6 +1,6 @@
 with Ada.Text_IO; use Ada.Text_IO;
 
-package body ArbreBinaire is
+package body p_arbre_binaire is
     -- nom : init
     -- sémantique:  Crée un arbre binaire avec un noeud racine. 
     -- paramètres:
@@ -134,8 +134,8 @@ package body ArbreBinaire is
     -- pré-condition : 
     -- post-condition : 
     -- Tests de la procédure :
-    procedure supprimer(arbre: in out T_AB;  element : in T_Element)is 
-        function supprimer_rec (arbre: in out T_AB;  element : in T_Element) return boolean is
+    procedure supprimer(arbre: in T_AB;  element : in T_Element)is 
+        function supprimer_rec (arbre: in T_AB;  element : in T_Element) return boolean is
             res : boolean;
         begin
             if(arbre=null) then
@@ -191,4 +191,4 @@ package body ArbreBinaire is
     begin
         return arbre = null;
     end is_null;
-end ArbreBinaire;
+end p_arbre_binaire;

@@ -1,11 +1,9 @@
-with Ada.Strings.Unbounded; use Ada.Strings.Unbounded;
 with Ada.Strings; use Ada.Strings;
-with Ada.Integer_Text_IO;use Ada.Integer_Text_IO;
 with Ada.Text_IO; use Ada.Text_IO;
 with Ada.Text_IO.Unbounded_IO; use Ada.Text_IO.Unbounded_IO;
 
 
-package body Persone is
+package body P_Personne is
 
     --Nom : init
     --sémantique : initialise personne avec un nom et prenom 
@@ -15,7 +13,7 @@ package body Persone is
     --  prenom : string
     --préconditions : 
     --postconditions : id/=0
-    procedure init (persone : out T_person; nom,prenom : in unbounded_string)is
+    procedure init (persone : out T_Personne; nom,prenom : in unbounded_string)is
 
     begin
         persone.id := next_id;
@@ -30,7 +28,7 @@ package body Persone is
     --  retour : integer
     --préconditions : id/=0
     --postconditions : 
-    function get_id(personne : in T_Person) return integer is
+    function get_id(personne : in T_Personne) return integer is
 
     begin
         return personne.id;
@@ -43,7 +41,7 @@ package body Persone is
     --  retour : string
     --préconditions : id/=0
     --postconditions : 
-    function get_nom(personne : in T_Person) return unbounded_string is
+    function get_nom(personne : in T_Personne) return unbounded_string is
 
     begin
         return personne.nom;
@@ -56,7 +54,7 @@ package body Persone is
     --  retour : string
     --préconditions : id/=0
     --postconditions : 
-    function get_prenom(personne : in T_Person) return unbounded_string is
+    function get_prenom(personne : in T_Personne) return unbounded_string is
 
     begin
         return personne.prenom;
@@ -69,7 +67,7 @@ package body Persone is
     --  nom : in string
     --préconditions : id/=0
     --postconditions : personne.nom= nom
-    procedure set_nom(personne : in out T_person ; nom : unbounded_string) is
+    procedure set_nom(personne : in out T_Personne ; nom : unbounded_string) is
     begin 
         personne.nom := nom;
     end set_nom;
@@ -80,7 +78,7 @@ package body Persone is
     --        prenom : string
     --préconditions : id/=0
     --postconditions : personne.nom= nom
-    procedure set_prenom(personne : in out T_person ; prenom : unbounded_string) is
+    procedure set_prenom(personne : in out T_Personne ; prenom : unbounded_string) is
     begin 
         personne.prenom := prenom;
     end set_prenom;
@@ -100,7 +98,7 @@ package body Persone is
     --paramètres : perso : in  T_personne
     --préconditions : 
     --postconditions : 
-    procedure put(p: in T_Person)is 
+    procedure put(p: in T_Personne)is 
     begin
         put("[");
         put(trim(source=>To_Unbounded_String(integer'image(p.id)), Side=>Both));
@@ -120,16 +118,16 @@ package body Persone is
     --  o1.id /= 0
     --  o2.id /= 0
     --postconditions : null
-    function "="(o1, o2 : in T_Person) return boolean is
+    function "="(o1, o2 : in T_Personne) return boolean is
     begin
         return o1.id = o2.id;
     end "=";
 
-    function get_dummy (id: in integer) return T_person is
-        p : T_person;
+    function get_dummy (id: in integer) return T_Personne is
+        p : T_Personne;
     begin 
         p.id := id;
         return p;
     end get_dummy;
 
-end Persone;
+end P_Personne;

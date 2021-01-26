@@ -1,5 +1,5 @@
 with Ada.Text_IO; use Ada.Text_IO;
-package body linked_list is
+package body p_linked_list is
 
   procedure init(list : out T_linked_list)is
   begin
@@ -99,4 +99,4 @@ package body linked_list is
     removerec(list,e);
   end remove;
 
-end linked_list;
+end p_linked_list;

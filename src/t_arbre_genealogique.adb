@@ -6,7 +6,8 @@ with Ada.Strings.Unbounded; use Ada.Strings.Unbounded;
 
 procedure T_arbre_genealogique is
     arbre: T_AG;
-    p0,p1,p2,p3,p4,p5,p6,p7 : T_Person;
+    p0,p1,p2,p3,p4,p5,p6,p7 : T_Personne;
+    nb: integer;
 begin
     put_line("############ Init + Affichage #############");
     init(p0, To_Unbounded_String("bernard"), To_Unbounded_String("ermite"));
@@ -33,7 +34,9 @@ begin
     new_line;
 
     put_line("############# Nombre ancetres #############");
-    put("Nombre ancetres de 1 : "); put(nombre_ancetres(arbre,get_id(p0))); new_line;
+    nb := nombre_ancetres(arbre,get_id(p0));
+    put("Nombre ancetres de 1 : "); put(nb); new_line;
+    pragma Assert(nb=8, "Nombre d'ancetres incorecte");
     put("Nombre ancetres de 6 : "); put(nombre_ancetres(arbre,get_id(p5))); new_line;
     new_line;
 

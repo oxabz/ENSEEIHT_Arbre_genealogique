@@ -1,5 +1,4 @@
-package body arbregenealogique is
-
+package body p_arbre_genealogique is
     --Nom :ajout_parent
     --sémantique : ajouter un parent à un noeud donné
     --paramètres : 
@@ -7,9 +6,9 @@ package body arbregenealogique is
     --  parent : E_Parent
     --  fils :Integer
     --  person  : T_personne
-    --préconditions : arbre /=null
-    --postconditions : 
-    procedure ajout_parent(arbre : T_AG; parent : E_Parent; fils : in Integer; person : in T_person) is 
+    --préconditions : arbre /=null && fils > 0 && noeud est dans l'arbre 
+    --postconditions :
+    procedure ajout_parent(arbre : T_AG; parent : E_Parent; fils : in Integer; person : in T_Personne) is 
         SA_fils: T_AG;
     begin 
         SA_fils:=rechercher(arbre, get_dummy(fils));
@@ -30,7 +29,7 @@ package body arbregenealogique is
     --  arbre : T_AG
     --  individu : Integer 
     --retour : integer
-    --préconditions : arbre/=null
+    --préconditions : arbre/=null && individu apartien a l'arbre 
     --postconditions : 
     function nombre_ancetres(arbre : in T_AG; individu : in Integer) return integer is
         SA_individu: T_AG;
@@ -50,7 +49,7 @@ package body arbregenealogique is
     --  arbre : T_AG
     --  individu : integer 
     --  generation : integer
-    --retour : List<T_Person>
+    --retour : List<T_Personne>
     --préconditions : arbre/=null
     --postconditions : 
     function get_ancetre_generation(arbre : in T_AG; individu, generation : in integer) return L_Personne is
@@ -111,7 +110,7 @@ package body arbregenealogique is
     --sémantique : retourne la liste des individus ayant un seul parent
     --paramètres :
     --  arbre : T_AG
-    --retour : List<T_Person>
+    --retour : List<T_Personne>
     --préconditions : arbre/=null
     --postconditions : 
     function get_un_parent(arbre : in T_AG) return L_Personne is 
@@ -140,7 +139,7 @@ package body arbregenealogique is
     --sémantique : retourne la liste des individus ayant deux parents
     --paramètres :
     --  arbre : T_AB
-    --retour : List<T_Person>
+    --retour : List<T_Personne>
     --préconditions : arbre/=null
     --postconditions : 
     function get_deux_parent(arbre : in T_AG) return L_Personne  is 
@@ -169,7 +168,7 @@ package body arbregenealogique is
     --sémantique : retourne la liste des individus ayant aucun parents
     --paramètres :
     --  arbre : T_AG
-    --retour : List<T_Person>;
+    --retour : List<T_Personne>;
     --préconditions : arbre/=null
     --postconditions : 
     function get_zero_parent(arbre : in T_AG) return L_Personne  is 
@@ -245,9 +244,9 @@ package body arbregenealogique is
     --retour : T_Personne
     --préconditions : arbre/=null
     --postconditions : 
-    function  get_decendant_generation(arbre : in T_AG; persone : in integer; generation : integer) return T_Person is
+    function  get_decendant_generation(arbre : in T_AG; persone : in integer; generation : integer) return T_Personne is
 
-        function get_decendant_generation_rec(arbre : in T_AG; persone : in T_person; descendant : out T_person; generation, profondeur : integer) return integer is
+        function get_decendant_generation_rec(arbre : in T_AG; persone : in T_Personne; descendant : out T_Personne; generation, profondeur : integer) return integer is
             profondeur_ancetre:integer;
         begin 
             if(is_null(arbre)) then return -1; end if;
@@ -264,7 +263,7 @@ package body arbregenealogique is
             return profondeur_ancetre;
         end get_decendant_generation_rec;
 
-        descendant : T_Person;
+        descendant : T_Personne;
     begin 
         if(get_decendant_generation_rec(arbre, get_dummy(persone), descendant, generation, 0) = -1)then 
             raise NOEUD_ABSENT_ERROR;
@@ -282,7 +281,7 @@ package body arbregenealogique is
     --postconditions : 
     function get_sucession_decendant_generation(arbre : in T_AG; persone : in integer; generation : integer) return L_Personne is
 
-        function get_decendant_generation_rec(arbre : in T_AG; persone : in T_person; descendants : in out L_personne; generation, profondeur : integer) return integer is
+        function get_decendant_generation_rec(arbre : in T_AG; persone : in T_Personne; descendants : in out L_personne; generation, profondeur : integer) return integer is
             profondeur_ancetre:integer;
         begin 
             if(is_null(arbre)) then return -1; end if;
@@ -308,4 +307,4 @@ package body arbregenealogique is
         return descendants;
     end get_sucession_decendant_generation;
 
-end arbregenealogique;
+end p_arbre_genealogique;
