@@ -177,7 +177,17 @@ R1 : comment “rechercher un noeud dans un arbre”  -- arbre : in  T_AB ; vale
 
 #### afficher arbre
 
+
+
 ##### Trace 
+
+```
+[1] Minet Bernard
+   Pere : [2] Minet Jack
+      Pere : [4] Minet Pierre
+      Mere : [5] Brosse Anne
+   Mere : [3] Legrand Jean
+```
 
 ##### Spécification 
 ```ada
@@ -387,9 +397,9 @@ function nextid() return Integer;
 --postconditions : retourne l’id dernier
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3OTg1MDkzMCwtMTg0NTM3NjQ5NywxMz
-IxMDg1Nzg1LDExNzQwMTQ1MzksMjAzMTk0NzE3MywtNjEzMzE2
-MjU0LDIwMzM4ODkwNzYsLTEwMzg5NzU4NzAsMTg4NzU5OTUxLC
-0xMzMzOTgwNTkwLC0xOTQ0NDQ0NDgzLDE0ODM3MzgyMzAsLTEy
-NzgxMTQ1NSw3ODY3MDUyMTFdfQ==
+eyJoaXN0b3J5IjpbLTE3MTQxNDI0MDUsLTY3OTg1MDkzMCwtMT
+g0NTM3NjQ5NywxMzIxMDg1Nzg1LDExNzQwMTQ1MzksMjAzMTk0
+NzE3MywtNjEzMzE2MjU0LDIwMzM4ODkwNzYsLTEwMzg5NzU4Nz
+AsMTg4NzU5OTUxLC0xMzMzOTgwNTkwLC0xOTQ0NDQ0NDgzLDE0
+ODM3MzgyMzAsLTEyNzgxMTQ1NSw3ODY3MDUyMTFdfQ==
 -->
