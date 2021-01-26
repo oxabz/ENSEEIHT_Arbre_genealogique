@@ -420,8 +420,9 @@ get_un_parent_rec(get_arbre_droit, resultat)
 
 ### Fonctions et procédures de ``main`` : 
 
+Le fonctionement de 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzMDMwNDU0MSwxMzM2NjkwMDAsLTEzNz
+eyJoaXN0b3J5IjpbLTQxNjU3MzUzNCwxMzM2NjkwMDAsLTEzNz
 kwMjU3MTUsMzU1OTY5MTY1LC00NDkwMDA3ODgsLTE4MTQzMDk4
 MjIsNTk4NjE3MDc1LC0xNDgwNDM0NTE5LC03MDAyMDg5MjEsMT
 AwNDA1MjEwMCwtMTYwMDUxMDk5MCwtNjc5ODUwOTMwLC0xODQ1
