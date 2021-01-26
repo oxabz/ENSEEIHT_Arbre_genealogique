@@ -188,14 +188,13 @@ On commence par déterminer ce a quoi on veut que l'affichage ressemble
       Mere : [5] Brosse Anne
    Mere : [3] Legrand Jean
 ```
-
-
+plus generalement : 
 ```
 <element>
-   Pere : <element>
-      Pere : <element>
-      Mere : <element>
-   Mere : <element>
+   <label-gauche> : <element>
+      <label-gauche> : <element>
+      <label-droit> : <element>
+   <label-droit> : <element>
 ```
 
 ##### Spécification 
@@ -406,7 +405,7 @@ function nextid() return Integer;
 --postconditions : retourne l’id dernier
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTE3NzUwNTEsLTY3OTg1MDkzMCwtMT
+eyJoaXN0b3J5IjpbLTE2MDA1MTA5OTAsLTY3OTg1MDkzMCwtMT
 g0NTM3NjQ5NywxMzIxMDg1Nzg1LDExNzQwMTQ1MzksMjAzMTk0
 NzE3MywtNjEzMzE2MjU0LDIwMzM4ODkwNzYsLTEwMzg5NzU4Nz
 AsMTg4NzU5OTUxLC0xMzMzOTgwNTkwLC0xOTQ0NDQ0NDgzLDE0
