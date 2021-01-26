@@ -250,8 +250,9 @@ R2 : Comment afficher sous arbres gauche -- arbre : in  T_AB; profondeur : in in
 
 ```
 
-
 #### Supprimer élément
+
+La suppression d'un élément est très similaire avec la recherche. On fait juste attention a rechercher avec un d'avance 
 
 ##### Spécification 
 ```ada
@@ -405,7 +406,7 @@ function nextid() return Integer;
 --postconditions : retourne l’id dernier
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2MTIyNDE0MSwtMTYwMDUxMDk5MCwtNj
+eyJoaXN0b3J5IjpbLTc5Mjc3NjEwNywtMTYwMDUxMDk5MCwtNj
 c5ODUwOTMwLC0xODQ1Mzc2NDk3LDEzMjEwODU3ODUsMTE3NDAx
 NDUzOSwyMDMxOTQ3MTczLC02MTMzMTYyNTQsMjAzMzg4OTA3Ni
 wtMTAzODk3NTg3MCwxODg3NTk5NTEsLTEzMzM5ODA1OTAsLTE5
