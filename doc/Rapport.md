@@ -295,15 +295,15 @@ R2 : comment “supprimer récursivement le noeud et ses antécédents" aka "sup
   return res;
 ```
 
-### Fonctions et procedures de ``p_arbre genealogique`` :
+### Fonctions et procédures de ``p_arbre genealogique`` :
 ### Fonctions et procédures de ``main`` : 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjI5OTQxNjQsNTk4NjE3MDc1LC0xNDgwND
-M0NTE5LC03MDAyMDg5MjEsMTAwNDA1MjEwMCwtMTYwMDUxMDk5
-MCwtNjc5ODUwOTMwLC0xODQ1Mzc2NDk3LDEzMjEwODU3ODUsMT
-E3NDAxNDUzOSwyMDMxOTQ3MTczLC02MTMzMTYyNTQsMjAzMzg4
-OTA3NiwtMTAzODk3NTg3MCwxODg3NTk5NTEsLTEzMzM5ODA1OT
-AsLTE5NDQ0NDQ0ODMsMTQ4MzczODIzMCwtMTI3ODExNDU1LDc4
-NjcwNTIxMV19
+eyJoaXN0b3J5IjpbLTk5NzAyNjY5Niw1OTg2MTcwNzUsLTE0OD
+A0MzQ1MTksLTcwMDIwODkyMSwxMDA0MDUyMTAwLC0xNjAwNTEw
+OTkwLC02Nzk4NTA5MzAsLTE4NDUzNzY0OTcsMTMyMTA4NTc4NS
+wxMTc0MDE0NTM5LDIwMzE5NDcxNzMsLTYxMzMxNjI1NCwyMDMz
+ODg5MDc2LC0xMDM4OTc1ODcwLDE4ODc1OTk1MSwtMTMzMzk4MD
+U5MCwtMTk0NDQ0NDQ4MywxNDgzNzM4MjMwLC0xMjc4MTE0NTUs
+Nzg2NzA1MjExXX0=
 -->
