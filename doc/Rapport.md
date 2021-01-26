@@ -332,6 +332,44 @@ R2 :  Comment “parcourir récursivement jusqu’a la bonne profondeur et ajout
     get_ancetre_generation_rec(get_gauche(individu), resultat, generation-1);
 ```
 
+#### Identifier les descendants d’une génération donnée pour un nœud donné
+
+--Nom : get_descendant_generation
+--sémantique : retourne le descendant de n-ieme generation d’un individue
+--paramètres :
+-- arbre : T_AG
+-- personne : id 
+-- generation : integer
+-- retour : T_Personne
+-- préconditions : arbre/=null
+-- postconditions : 
+function  get_decendant_generation(arbre : in T_AG, persone : in T_persone, generation : integer) return T_Personne;
+
+```
+R0 : retourne le descendant de n-ieme generation d’un individue
+    
+R1 : comment “retourne le descendant de n-ieme generation d’un individue”
+    Parcourir récursivement l’arbre afin de trouver la profondeur de l’ancetre et de trouver l’individue lors du depilement de la recursion --arbre : in T_AG, persone : in T_persone; descendant : out T_person; generation, profondeur : integer 
+    return descendant
+
+R2 : Comment “Parcourir récursivement l’arbre afin de trouver la profondeur de l’ancetre et de trouver l’individue lors du depilement de la recursion” aka
+    Parcourir recursivement pour trouver la profondeur de l’ancetre
+    Renvoyer le descendant si le noeud courrent est le descendant
+R3 : Comment “Parcourir recursivement pour trouver la profondeur de l’ancetre”
+    if(arbre = null) then return -1; end if;
+            if(get_racine_element(arbre) = persone) then
+                return profondeur;
+            end if;
+            profondeur_ancetre:= get_decendant_generation_rec(get_SA_droit(arbre), persone, descendant, generation, profondeur+1);
+            if (profondeur_ancetre = -1) then
+                profondeur_ancetre:= get_decendant_generation_rec(get_SA_gauche(arbre), persone, descendant, generation, profondeur+1);
+            end if;
+R3 : Comment “Renvoyer le descendant si le noeud courrent est le descendant”
+            if (profondeur_ancetre = profondeur+generation) then
+                descendant := get_racine_element(arbre);
+            end if;
+    return profondeur_ancetre;
+```
 #### Obtenir l’ensemble des individus qui n’ont qu’un parent connu. (``get_un_parent``) : 
 
 Cette fonction nécessite un algorithme qui parcours l'arbre et qui a chaque nœud vérifie les sous arbres pour avoir le nombre de parents. C'est le même principe pour 2 ou 0 parent 
@@ -372,11 +410,11 @@ get_un_parent_rec(get_arbre_droit, resultat)
 ### Fonctions et procédures de ``main`` : 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzk3MjgxODgzLC0xMzc5MDI1NzE1LDM1NT
-k2OTE2NSwtNDQ5MDAwNzg4LC0xODE0MzA5ODIyLDU5ODYxNzA3
-NSwtMTQ4MDQzNDUxOSwtNzAwMjA4OTIxLDEwMDQwNTIxMDAsLT
-E2MDA1MTA5OTAsLTY3OTg1MDkzMCwtMTg0NTM3NjQ5NywxMzIx
-MDg1Nzg1LDExNzQwMTQ1MzksMjAzMTk0NzE3MywtNjEzMzE2Mj
-U0LDIwMzM4ODkwNzYsLTEwMzg5NzU4NzAsMTg4NzU5OTUxLC0x
-MzMzOTgwNTkwXX0=
+eyJoaXN0b3J5IjpbODkyNjMzMDcsLTEzNzkwMjU3MTUsMzU1OT
+Y5MTY1LC00NDkwMDA3ODgsLTE4MTQzMDk4MjIsNTk4NjE3MDc1
+LC0xNDgwNDM0NTE5LC03MDAyMDg5MjEsMTAwNDA1MjEwMCwtMT
+YwMDUxMDk5MCwtNjc5ODUwOTMwLC0xODQ1Mzc2NDk3LDEzMjEw
+ODU3ODUsMTE3NDAxNDUzOSwyMDMxOTQ3MTczLC02MTMzMTYyNT
+QsMjAzMzg4OTA3NiwtMTAzODk3NTg3MCwxODg3NTk5NTEsLTEz
+MzM5ODA1OTBdfQ==
 -->
