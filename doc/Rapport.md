@@ -340,7 +340,7 @@ R2 :  Comment “parcourir récursivement jusqu’a la bonne profondeur et ajout
 Pour récupérer le descendant d'un individue il va nous falloir trouver l'individue. On pourrait utiliser ``rechercher`` mais nous allons avoir besoin de garder le chemin emprunté pour trouver l'individue. On fait donc une recherche récursive. Une fois l'individu trouvé on fait redescendre sa profondeur. 
 Quand la profondeur du descendant rempli le critère ``profndeur_cible + profondeur_noeud  = profondeur_ancetre``  on fait remonter l'élément du nœud.
 
-Pour identifier la suite des descendants d'une génération donné pour un individu donné on utilise la même méthode il faut juste changer la structure des donnés de sortie et la condition de validité : ``profndeur_cible + profondeur_noeud  = profondeur_ancetre`` devient ``profndeur_cible + profondeur_noeud   profondeur_ancetre``
+Pour identifier la suite des descendants d'une génération donné pour un individu donné on utilise la même méthode il faut juste changer la structure des donnés de sortie et la condition de validité : ``T_personne`` devient ``L_Personne`` et ``profndeur_cible + profondeur_noeud  = profondeur_ancetre`` devient ``profndeur_cible + profondeur_noeud  > profondeur_ancetre``
 
 ##### Spécification
 ```
@@ -421,11 +421,11 @@ get_un_parent_rec(get_arbre_droit, resultat)
 ### Fonctions et procédures de ``main`` : 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk1MDk2NzY5LDEzMzY2OTAwMCwtMTM3OT
-AyNTcxNSwzNTU5NjkxNjUsLTQ0OTAwMDc4OCwtMTgxNDMwOTgy
-Miw1OTg2MTcwNzUsLTE0ODA0MzQ1MTksLTcwMDIwODkyMSwxMD
-A0MDUyMTAwLC0xNjAwNTEwOTkwLC02Nzk4NTA5MzAsLTE4NDUz
-NzY0OTcsMTMyMTA4NTc4NSwxMTc0MDE0NTM5LDIwMzE5NDcxNz
-MsLTYxMzMxNjI1NCwyMDMzODg5MDc2LC0xMDM4OTc1ODcwLDE4
-ODc1OTk1MV19
+eyJoaXN0b3J5IjpbMjA2MjE5NzQ4NywxMzM2NjkwMDAsLTEzNz
+kwMjU3MTUsMzU1OTY5MTY1LC00NDkwMDA3ODgsLTE4MTQzMDk4
+MjIsNTk4NjE3MDc1LC0xNDgwNDM0NTE5LC03MDAyMDg5MjEsMT
+AwNDA1MjEwMCwtMTYwMDUxMDk5MCwtNjc5ODUwOTMwLC0xODQ1
+Mzc2NDk3LDEzMjEwODU3ODUsMTE3NDAxNDUzOSwyMDMxOTQ3MT
+czLC02MTMzMTYyNTQsMjAzMzg4OTA3NiwtMTAzODk3NTg3MCwx
+ODg3NTk5NTFdfQ==
 -->
