@@ -252,7 +252,7 @@ R2 : Comment afficher sous arbres gauche -- arbre : in  T_AB; profondeur : in in
 
 #### Supprimer élément(``supprimer``)
 
-La suppression d'un élément est très similaire avec la recherche. On fait juste attention à rechercher avec une profondeur d'avance afin de pouvoir set le bon pointeur de sous arbre à null.
+La suppression d'un élément est très similaire à la recherche. On fait juste attention à rechercher avec une profondeur d'avance afin de pouvoir mettre le bon pointeur de sous arbre à null.
 
 ##### Spécification 
 ```ada
@@ -421,7 +421,7 @@ get_un_parent_rec(get_arbre_droit, resultat)
 ### Fonctions et procédures de ``main`` : 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2MjE5NzQ4NywxMzM2NjkwMDAsLTEzNz
+eyJoaXN0b3J5IjpbMjEzMDMwNDU0MSwxMzM2NjkwMDAsLTEzNz
 kwMjU3MTUsMzU1OTY5MTY1LC00NDkwMDA3ODgsLTE4MTQzMDk4
 MjIsNTk4NjE3MDc1LC0xNDgwNDM0NTE5LC03MDAyMDg5MjEsMT
 AwNDA1MjEwMCwtMTYwMDUxMDk5MCwtNjc5ODUwOTMwLC0xODQ1
