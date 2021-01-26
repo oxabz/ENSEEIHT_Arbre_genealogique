@@ -295,9 +295,9 @@ R2 : comment “supprimer récursivement le noeud et ses antécédents" aka "sup
   return res;
 ```
 
-### Fonctions et procédures de ``T_Persone`` : 
+### Fonctions et procédures de ``P_Personne`` : 
 
-Il n'y a pas d'algorithme compliqué dans 
+Il n'y a pas d'algorithme compliqué dans ``P_personne``
 
 #### Initialisation
 
@@ -323,10 +323,10 @@ Il n'y a pas d'algorithme compliqué dans
 function nextid() return Integer;
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNDA1MjEwMCwtMTYwMDUxMDk5MCwtNj
-c5ODUwOTMwLC0xODQ1Mzc2NDk3LDEzMjEwODU3ODUsMTE3NDAx
-NDUzOSwyMDMxOTQ3MTczLC02MTMzMTYyNTQsMjAzMzg4OTA3Ni
-wtMTAzODk3NTg3MCwxODg3NTk5NTEsLTEzMzM5ODA1OTAsLTE5
-NDQ0NDQ0ODMsMTQ4MzczODIzMCwtMTI3ODExNDU1LDc4NjcwNT
-IxMV19
+eyJoaXN0b3J5IjpbLTMyMDU5NzgyOSwxMDA0MDUyMTAwLC0xNj
+AwNTEwOTkwLC02Nzk4NTA5MzAsLTE4NDUzNzY0OTcsMTMyMTA4
+NTc4NSwxMTc0MDE0NTM5LDIwMzE5NDcxNzMsLTYxMzMxNjI1NC
+wyMDMzODg5MDc2LC0xMDM4OTc1ODcwLDE4ODc1OTk1MSwtMTMz
+Mzk4MDU5MCwtMTk0NDQ0NDQ4MywxNDgzNzM4MjMwLC0xMjc4MT
+E0NTUsNzg2NzA1MjExXX0=
 -->
