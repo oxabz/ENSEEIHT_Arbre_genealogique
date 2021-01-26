@@ -50,7 +50,7 @@ Les modules développé sont :
 - **``p_personne``** : Ce module contient le type ``t_personne`` qui représente un individu. Il y a aussi les différents sous-programmes permettant de le manipuler (init/getter/setter/comparaison/affichage).
 - **``p_arbre_genealogique``** : Ce module instancie ``p_arbre_binaire`` avec ``t_persone`` et ses sous programme associé. Dans ce module on retrouve aussi toutes les procédures de manipulation d'un arbre généalogique qui ne n'ont pas de sens dans un arbre binaire non trié quelconque.  Dans ce module on renomme ``T_AB`` en ``T_AG``. Dans ce module on instancie aussi ``p_linked_list `` avec ``t_personne`` car certaines fonctions ont besoin de renvoyer une liste d'individus.
 - **``p_front``** : dans ce module on retrouve toutes les procédures et fonction d'entré/sortie nécessaire pour le programme principal(``main``).
-- **``main``** et le programme principal il contient la logique du menu et fait les appels à ``p_arbre_généalogique`` et à ``p_arbre_binaire`` en fonction des entré de l'utilisateur. main mets e
+- **``main``** et le programme principal il contient la logique du menu et fait les appels à ``p_arbre_généalogique`` et à ``p_arbre_binaire`` en fonction des entré de l'utilisateur. ``main`` mets en relation le modèle et le frontend qui interagit avec l'utilisateur.
 
 
 ## Choix de conception 
@@ -333,6 +333,9 @@ R2 :  Comment “parcourir récursivement jusqu’a la bonne profondeur et ajout
 ```
 
 #### Identifier les descendants d’une génération donnée pour un nœud donné (``get_descendant_generation``)
+
+
+
 ##### Spécification
 ```
 --Nom : get_descendant_generation
@@ -412,11 +415,11 @@ get_un_parent_rec(get_arbre_droit, resultat)
 ### Fonctions et procédures de ``main`` : 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzkwNDIxOTAsLTEzNzkwMjU3MTUsMz
-U1OTY5MTY1LC00NDkwMDA3ODgsLTE4MTQzMDk4MjIsNTk4NjE3
-MDc1LC0xNDgwNDM0NTE5LC03MDAyMDg5MjEsMTAwNDA1MjEwMC
-wtMTYwMDUxMDk5MCwtNjc5ODUwOTMwLC0xODQ1Mzc2NDk3LDEz
-MjEwODU3ODUsMTE3NDAxNDUzOSwyMDMxOTQ3MTczLC02MTMzMT
-YyNTQsMjAzMzg4OTA3NiwtMTAzODk3NTg3MCwxODg3NTk5NTEs
-LTEzMzM5ODA1OTBdfQ==
+eyJoaXN0b3J5IjpbMTQwMTg5MTI3NywtMTM3OTAyNTcxNSwzNT
+U5NjkxNjUsLTQ0OTAwMDc4OCwtMTgxNDMwOTgyMiw1OTg2MTcw
+NzUsLTE0ODA0MzQ1MTksLTcwMDIwODkyMSwxMDA0MDUyMTAwLC
+0xNjAwNTEwOTkwLC02Nzk4NTA5MzAsLTE4NDUzNzY0OTcsMTMy
+MTA4NTc4NSwxMTc0MDE0NTM5LDIwMzE5NDcxNzMsLTYxMzMxNj
+I1NCwyMDMzODg5MDc2LC0xMDM4OTc1ODcwLDE4ODc1OTk1MSwt
+MTMzMzk4MDU5MF19
 -->
