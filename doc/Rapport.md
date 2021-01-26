@@ -297,16 +297,62 @@ R2 : comment “supprimer récursivement le noeud et ses antécédents" aka "sup
 
 ### Fonctions et procédures de ``p_arbre genealogique`` :
 
-#### 
+#### Récupérer les ancêtres de génération n d'un individu : (````) : 
+
+--Nom : get_ancetre_generation
+
+--sémantique : retourne la liste des ancêtres d’une certaine generation d’un individue
+
+--paramètres :
+
+-- arbre : T_AG
+
+-- persone : integer
+
+-- generation : integer
+
+-- retour : List<T_Person>
+
+-- préconditions : arbre/=null
+
+-- postconditions :
+
+function get_ancetre_generation(arbre : in T_AG, persone : in integer, generation : integer) return List<T_Person>;
+
+  
+
+R0 : “retourne la liste des ancêtres d’une certaine generation d’un individue”
+
+R1 : Comment “retourne la liste des ancêtres d’une certaine generation d’un individue”
+
+individu = find(arbre, get_dummy(personne));
+
+parcourir récursivement jusqu’a la bonne profondeur et ajouter les ancetre une fois a la bonne profondeur -- individu : in T_AG; resultat : in out List<T_Person>; generation : in integer
+
+R2 : Comment “parcourir récursivement jusqu’a la bonne profondeur et ajouter les ancetre une fois a la bonne profondeur ” aka “get_ancetre_generation_rec” -- individu : in T_AG; resultat : in out List<T_Person>; generation : in integer
+
+if(individu = null) then return; end if;
+
+if(generation = 0) then
+
+add(resultat, get_element(individu))
+
+return;
+
+end if;
+
+get_ancetre_generation_rec(get_droit(individu), resultat, generation-1);
+
+get_ancetre_generation_rec(get_gauche(individu), resultat, generation-1);
 
 ### Fonctions et procédures de ``main`` : 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0OTAwMDc4OCwtMTgxNDMwOTgyMiw1OT
-g2MTcwNzUsLTE0ODA0MzQ1MTksLTcwMDIwODkyMSwxMDA0MDUy
-MTAwLC0xNjAwNTEwOTkwLC02Nzk4NTA5MzAsLTE4NDUzNzY0OT
-csMTMyMTA4NTc4NSwxMTc0MDE0NTM5LDIwMzE5NDcxNzMsLTYx
-MzMxNjI1NCwyMDMzODg5MDc2LC0xMDM4OTc1ODcwLDE4ODc1OT
-k1MSwtMTMzMzk4MDU5MCwtMTk0NDQ0NDQ4MywxNDgzNzM4MjMw
-LC0xMjc4MTE0NTVdfQ==
+eyJoaXN0b3J5IjpbNzA1OTkyMzc1LC00NDkwMDA3ODgsLTE4MT
+QzMDk4MjIsNTk4NjE3MDc1LC0xNDgwNDM0NTE5LC03MDAyMDg5
+MjEsMTAwNDA1MjEwMCwtMTYwMDUxMDk5MCwtNjc5ODUwOTMwLC
+0xODQ1Mzc2NDk3LDEzMjEwODU3ODUsMTE3NDAxNDUzOSwyMDMx
+OTQ3MTczLC02MTMzMTYyNTQsMjAzMzg4OTA3NiwtMTAzODk3NT
+g3MCwxODg3NTk5NTEsLTEzMzM5ODA1OTAsLTE5NDQ0NDQ0ODMs
+MTQ4MzczODIzMF19
 -->
