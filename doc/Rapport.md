@@ -334,7 +334,7 @@ R2 :  Comment “parcourir récursivement jusqu’a la bonne profondeur et ajout
 
 #### Identifier les descendants d’une génération donnée pour un nœud donné (``get_descendant_generation``)
 
-
+Pour récupérer les 
 
 ##### Spécification
 ```
@@ -377,7 +377,7 @@ R3 : Comment “Renvoyer le descendant si le noeud courrent est le descendant”
 ```
 #### Obtenir l’ensemble des individus qui n’ont qu’un parent connu. (``get_un_parent``) : 
 
-Cette fonction nécessite un algorithme qui parcours l'arbre et qui a chaque nœud vérifie les sous arbres pour avoir le nombre de parents. C'est le même principe pour 2 ou 0 parent 
+Cette fonction nécessite un algorithme qui parcours l'arbre et qui a chaque nœud vérifie les sous arbres pour avoir le nombre de parents. C'est le même principe pour 2 ou 0 parents
 
 ##### Spécification 
 ```
@@ -415,11 +415,11 @@ get_un_parent_rec(get_arbre_droit, resultat)
 ### Fonctions et procédures de ``main`` : 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzg3NDI1ODI5LC0xMzc5MDI1NzE1LDM1NT
-k2OTE2NSwtNDQ5MDAwNzg4LC0xODE0MzA5ODIyLDU5ODYxNzA3
-NSwtMTQ4MDQzNDUxOSwtNzAwMjA4OTIxLDEwMDQwNTIxMDAsLT
-E2MDA1MTA5OTAsLTY3OTg1MDkzMCwtMTg0NTM3NjQ5NywxMzIx
-MDg1Nzg1LDExNzQwMTQ1MzksMjAzMTk0NzE3MywtNjEzMzE2Mj
-U0LDIwMzM4ODkwNzYsLTEwMzg5NzU4NzAsMTg4NzU5OTUxLC0x
-MzMzOTgwNTkwXX0=
+eyJoaXN0b3J5IjpbLTE0NjcyMTEwODksLTEzNzkwMjU3MTUsMz
+U1OTY5MTY1LC00NDkwMDA3ODgsLTE4MTQzMDk4MjIsNTk4NjE3
+MDc1LC0xNDgwNDM0NTE5LC03MDAyMDg5MjEsMTAwNDA1MjEwMC
+wtMTYwMDUxMDk5MCwtNjc5ODUwOTMwLC0xODQ1Mzc2NDk3LDEz
+MjEwODU3ODUsMTE3NDAxNDUzOSwyMDMxOTQ3MTczLC02MTMzMT
+YyNTQsMjAzMzg4OTA3NiwtMTAzODk3NTg3MCwxODg3NTk5NTEs
+LTEzMzM5ODA1OTBdfQ==
 -->
