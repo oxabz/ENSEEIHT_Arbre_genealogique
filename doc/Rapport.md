@@ -334,7 +334,7 @@ R2 :  Comment “parcourir récursivement jusqu’a la bonne profondeur et ajout
 
 #### Obtenir l’ensemble des individus qui n’ont qu’un parent connu. (``get_un_parent``) : 
 
-Cette fonction nécessite un algorithme qui parcours l'arbre et qui a chaque nœud vérifie les sous arbres pour avoir le nombre de parent. C'est le meme principe 
+Cette fonction nécessite un algorithme qui parcours l'arbre et qui a chaque nœud vérifie les sous arbres pour avoir le nombre de parents. C'est le même principe pour 2 ou 0 parent 
 
 ##### Spécification 
 ```
@@ -346,7 +346,7 @@ Cette fonction nécessite un algorithme qui parcours l'arbre et qui a chaque nœ
 -- postconditions : 
 function get_un_parent(arbre : in T_AG) return L_Person;
 ```
-
+##### Rafinage
 ```
 R0 : Obtenir l’ensemble des individus qui n’ont qu’un parent connu.
 R1 : Comment “Obtenir l’ensemble des individus qui n’ont qu’un parent connu" ? : in T_AB
@@ -372,7 +372,7 @@ get_un_parent_rec(get_arbre_droit, resultat)
 ### Fonctions et procédures de ``main`` : 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0MjE4NzU1LC0xMzc5MDI1NzE1LDM1NT
+eyJoaXN0b3J5IjpbNzk3MjgxODgzLC0xMzc5MDI1NzE1LDM1NT
 k2OTE2NSwtNDQ5MDAwNzg4LC0xODE0MzA5ODIyLDU5ODYxNzA3
 NSwtMTQ4MDQzNDUxOSwtNzAwMjA4OTIxLDEwMDQwNTIxMDAsLT
 E2MDA1MTA5OTAsLTY3OTg1MDkzMCwtMTg0NTM3NjQ5NywxMzIx
