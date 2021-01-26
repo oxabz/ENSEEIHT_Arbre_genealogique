@@ -115,7 +115,7 @@ Nous omettrons certaines fonctions et procédures qui ne sont pas complexe. La s
 
 #### Calculer la taille (``calcul_taille``)
 
-Pour calculer la taille d'un ar
+Pour calculer la taille d'un arbre binaire se calcule avec un algorithme de récursion. En effet on peut des 
 
 #####  Spécification 
 ```ada
@@ -384,7 +384,7 @@ function nextid() return Integer;
 --postconditions : retourne l’id dernier
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2MTU2NDk1OSwxMzIxMDg1Nzg1LDExNz
+eyJoaXN0b3J5IjpbMTE4NDk2NjkzNCwxMzIxMDg1Nzg1LDExNz
 QwMTQ1MzksMjAzMTk0NzE3MywtNjEzMzE2MjU0LDIwMzM4ODkw
 NzYsLTEwMzg5NzU4NzAsMTg4NzU5OTUxLC0xMzMzOTgwNTkwLC
 0xOTQ0NDQ0NDgzLDE0ODM3MzgyMzAsLTEyNzgxMTQ1NSw3ODY3
