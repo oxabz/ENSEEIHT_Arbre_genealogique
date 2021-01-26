@@ -143,7 +143,7 @@ R2 : comment “ajouter le noeud courant + sosu arbre gauche + sous_arbre droit�
   end if;
 ```
 
-#### Rechercher un nœud
+#### Rechercher un nœud (``rechercher``)
 
 Rechercher fais partie des fonctions qui change entre un arbre binaire trié et non trié. Dans un arbre non trié nous n'avons aucune information pour trouver l'élément. Il nous faut donc parcourir récursivement l'arbre pour trouver l'element. 
 
@@ -175,9 +175,9 @@ R1 : comment “rechercher un noeud dans un arbre”  -- arbre : in  T_AB ; vale
   return result;
 ```
 
-#### afficher arbre
+#### afficher arbre (``afficher``);
 
-On cherche à reproduire la trace ci-dessou. Pour ce faire on vas utiliser un algorithme récursif. Mais cependant on voit que afficher un sous arbre n'est pas la meme chose qu'afficher un arbre en effet la tabulation varie en fonction de la profondeur il nous faudra donc passer la profondeur dans les param
+On cherche à reproduire la trace ci-dessou. Pour ce faire on va utiliser un algorithme récursif. Mais cependant on voit qu’afficher un sous arbre n'est pas la même chose qu'afficher un arbre en effet la tabulation varie en fonction de la profondeur il nous faudra donc passer la profondeur dans les paramètres.
 
 ##### Trace 
 
@@ -188,7 +188,7 @@ On cherche à reproduire la trace ci-dessou. Pour ce faire on vas utiliser un al
       Mere : [5] Brosse Anne
    Mere : [3] Legrand Jean
 ```
-plus generalement : 
+plus généralement : 
 ```
 <element>
    <label-gauche> : <element>
@@ -405,10 +405,10 @@ function nextid() return Integer;
 --postconditions : retourne l’id dernier
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0ODk3NTAwLC0xNjAwNTEwOTkwLC02Nz
-k4NTA5MzAsLTE4NDUzNzY0OTcsMTMyMTA4NTc4NSwxMTc0MDE0
-NTM5LDIwMzE5NDcxNzMsLTYxMzMxNjI1NCwyMDMzODg5MDc2LC
-0xMDM4OTc1ODcwLDE4ODc1OTk1MSwtMTMzMzk4MDU5MCwtMTk0
-NDQ0NDQ4MywxNDgzNzM4MjMwLC0xMjc4MTE0NTUsNzg2NzA1Mj
-ExXX0=
+eyJoaXN0b3J5IjpbMTU3MTk1NzM2MCwtMTYwMDUxMDk5MCwtNj
+c5ODUwOTMwLC0xODQ1Mzc2NDk3LDEzMjEwODU3ODUsMTE3NDAx
+NDUzOSwyMDMxOTQ3MTczLC02MTMzMTYyNTQsMjAzMzg4OTA3Ni
+wtMTAzODk3NTg3MCwxODg3NTk5NTEsLTEzMzM5ODA1OTAsLTE5
+NDQ0NDQ0ODMsMTQ4MzczODIzMCwtMTI3ODExNDU1LDc4NjcwNT
+IxMV19
 -->
