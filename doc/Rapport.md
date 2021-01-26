@@ -177,7 +177,7 @@ R1 : comment “rechercher un noeud dans un arbre”  -- arbre : in  T_AB ; vale
 
 #### afficher arbre
 
-
+On commence par déterminer ce a quoi on veut que l'affichage ressemble 
 
 ##### Trace 
 
@@ -187,6 +187,15 @@ R1 : comment “rechercher un noeud dans un arbre”  -- arbre : in  T_AB ; vale
       Pere : [4] Minet Pierre
       Mere : [5] Brosse Anne
    Mere : [3] Legrand Jean
+```
+
+
+```
+<element>
+   Pere : <element>
+      Pere : <element>
+      Mere : <element>
+   Mere : <element>
 ```
 
 ##### Spécification 
@@ -397,7 +406,7 @@ function nextid() return Integer;
 --postconditions : retourne l’id dernier
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTQxNDI0MDUsLTY3OTg1MDkzMCwtMT
+eyJoaXN0b3J5IjpbLTE4MTE3NzUwNTEsLTY3OTg1MDkzMCwtMT
 g0NTM3NjQ5NywxMzIxMDg1Nzg1LDExNzQwMTQ1MzksMjAzMTk0
 NzE3MywtNjEzMzE2MjU0LDIwMzM4ODkwNzYsLTEwMzg5NzU4Nz
 AsMTg4NzU5OTUxLC0xMzMzOTgwNTkwLC0xOTQ0NDQ0NDgzLDE0
