@@ -297,7 +297,7 @@ R2 : comment “supprimer récursivement le noeud et ses antécédents" aka "sup
 
 ### Fonctions et procédures de ``T_Persone`` : 
 
-
+Il n'y a pas d'algorithme compliqué dans 
 
 #### Initialisation
 
@@ -312,59 +312,6 @@ R2 : comment “supprimer récursivement le noeud et ses antécédents" aka "sup
 --postconditions : id/=0
 
 ```
-#### Getter 
-```ada
---Nom : get_id 
---sémantique : retourne l’id de la persone
---paramètres :
--- persone : in T_Persone
--- retour : integer
---préconditions : id/=0
---postconditions : 
-function get_id(personne : in T_Personne) return integer;
-```
-```ada
---Nom : get_nom
---sémantique : retourne le nom de la persone
---paramètres :
--- persone : in T_Persone
--- retour : string
---préconditions : id/=0
---postconditions : 
-function get_nom(personne : in T_Personne) return string;
-```
-
-```ada
---Nom : get_prenom
---sémantique : retourne le prenom de la persone
---paramètres :
--- persone : in T_Persone
--- retour : string
---préconditions : id/=0
---postconditions : 
-function get_prenom(personne : in T_Personne) return string;
-```
-
-#### Setter 
-
-```ada
---Nom : set_nom
---sémantique : attribuer une valeur au champ nom
---paramètres : personne :  in out T_personne
---        nom : in string
---préconditions : id/=0
---postconditions : personne.nom= nom
-procedure set_nom(personne : in out T_personne ; nom : string);
-```
-```ada
- --Nom : set_prenom
---sémantique : attribuer une valeur au champ prenom
---paramètres : personne : T_personne
---        prenom : string
---préconditions : id/=0
---postconditions : personne.nom= nom
-procedure set_prenom(personne : in out T_personne ; prenom : string);
-```
 
 #### Others
 
@@ -375,17 +322,11 @@ procedure set_prenom(personne : in out T_personne ; prenom : string);
 --postconditions : retourne l’id prochain
 function nextid() return Integer;
 ```
-```ada
---Nom : lastid
---sémantique : renvoi l’id dernièrement utiliser;
---préconditions : 
---postconditions : retourne l’id dernier
-```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjI2MDAyNTMsLTE2MDA1MTA5OTAsLT
-Y3OTg1MDkzMCwtMTg0NTM3NjQ5NywxMzIxMDg1Nzg1LDExNzQw
-MTQ1MzksMjAzMTk0NzE3MywtNjEzMzE2MjU0LDIwMzM4ODkwNz
-YsLTEwMzg5NzU4NzAsMTg4NzU5OTUxLC0xMzMzOTgwNTkwLC0x
-OTQ0NDQ0NDgzLDE0ODM3MzgyMzAsLTEyNzgxMTQ1NSw3ODY3MD
-UyMTFdfQ==
+eyJoaXN0b3J5IjpbMTAwNDA1MjEwMCwtMTYwMDUxMDk5MCwtNj
+c5ODUwOTMwLC0xODQ1Mzc2NDk3LDEzMjEwODU3ODUsMTE3NDAx
+NDUzOSwyMDMxOTQ3MTczLC02MTMzMTYyNTQsMjAzMzg4OTA3Ni
+wtMTAzODk3NTg3MCwxODg3NTk5NTEsLTEzMzM5ODA1OTAsLTE5
+NDQ0NDQ0ODMsMTQ4MzczODIzMCwtMTI3ODExNDU1LDc4NjcwNT
+IxMV19
 -->
