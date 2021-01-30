@@ -487,12 +487,33 @@ end;
 | ``p_linked_list``         | x : On fait confiance au package développé dans les TP qui ont été testé à ce moment |
 
 
+
+
+## Difficultés :
+
+### Difficultés rencontrées :
+
+Voici une liste des difficultés principales qui ont été rencontré dans la conception du projet : 
+- La gestion rigide des dimensions des structures de donné d'ada rends leur manipulation compliquée. Les strings sont demande beaucoup de manipulations pour faire des choses très simple et les arrays d'ada ne laisse pas d'autre options que les surdimensionner ce qui a des couts en ressource
+- L'absence de bibliothèque de tests a été un problème pour structurer les tests correctement. 
+- Le passage des structures de donnés en privé à grandement compliqué les préconditions et postconditions en effet en ada elles n'ont pas accès aux structures.
+- L'arbre binaire en privé a rendu la conception de l'arbre généalogique compliqué en effet le package n'a pas la capacité de modifier la structure. Et il n'existe de structures protégé comme dans un langage comme java.
+-  L'absence des fonction lambda et de l'orienté objet rend difficile la non-répétitivité du code dans certains cas.
+
+### Solutions appliquée :
+
+Ci-dessous sont détaillées les solutions aux problèmes précédemment soulevé :
+- Bien qu'il aurait été possible d'utiliser les types de base d'ada. Il a été décidé d'utiliser le ``T_linked_list`` qui avait été précédemment développé dans un TP et le type ``unbounded_string`` de la bibliothèque standard d'ada.
+- La solution employée est détaillé dans la section dédiée aux tests.
+- L'ajout de getter nous a permis d'évaluer beaucoup plus facilement les préconditions et postcondition.
+- La mise en place de setter et de getter a permis aux algorithme d'arbre généalogique de parcourir l'arbre. Ce problème est de taillé dans la partie choix technique.
+- Ce problème a nécessité plus de temps sur la conception afin de réduire au maximum les dupliquât. Cependant on a fait attention à ne pas trop sacrifier la lisibilité pour reduire le volume du code
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTcwMTE0MjQsMjc0NzM3MjcwLC01OD
-I0MDc2ODIsLTEwODY2NTUwMDQsMTUwMTY4MzI0NywtNzIxODI5
-MzQyLDQ5ODc3MDI5MywtMTk3ODg5NDgxNywtMjA3MDE5MDEwOC
-wxMzgzMjk5MDE3LDEzMzY2OTAwMCwtMTM3OTAyNTcxNSwzNTU5
-NjkxNjUsLTQ0OTAwMDc4OCwtMTgxNDMwOTgyMiw1OTg2MTcwNz
-UsLTE0ODA0MzQ1MTksLTcwMDIwODkyMSwxMDA0MDUyMTAwLC0x
-NjAwNTEwOTkwXX0=
+eyJoaXN0b3J5IjpbLTYyNjk5NjA4MywtMTY1NzAxMTQyNCwyNz
+Q3MzcyNzAsLTU4MjQwNzY4MiwtMTA4NjY1NTAwNCwxNTAxNjgz
+MjQ3LC03MjE4MjkzNDIsNDk4NzcwMjkzLC0xOTc4ODk0ODE3LC
+0yMDcwMTkwMTA4LDEzODMyOTkwMTcsMTMzNjY5MDAwLC0xMzc5
+MDI1NzE1LDM1NTk2OTE2NSwtNDQ5MDAwNzg4LC0xODE0MzA5OD
+IyLDU5ODYxNzA3NSwtMTQ4MDQzNDUxOSwtNzAwMjA4OTIxLDEw
+MDQwNTIxMDBdfQ==
 -->
