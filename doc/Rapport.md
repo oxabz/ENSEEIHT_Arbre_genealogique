@@ -457,6 +457,8 @@ On essaie de couvrir chaque cas d'utilisation des méthodes qu'il soit correcte 
 
 Typiquement sur les projet on utilise des libraire pour effectuer les tests. Elles permettent d'avoir un bon aperçu de la progression du test et de ce qui est passé ou pas. Afin de ne pas surcharger le projet et de ne pas poser de problèmes de dépendance, nous allons utiliser les instruction pragma de ada. Afin de faciliter la lisibilité du test on utilisera aussi ada text io qui nous permettra d'indiquer progressivement les progrès des tests.
 
+Une autre fonction
+
 ### Exemple 
 
 #### Test d'une fonction 
@@ -485,7 +487,7 @@ end;
 | ``p_front``               | x : Fait uniquement de l'IO est donc ne peut pas être testé |
 | ``p_linked_list``         | x : On fait confiance au package développé dans les TP qui ont été testé à ce moment |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNzU5NzI3OCwtNTgyNDA3NjgyLC0xMD
+eyJoaXN0b3J5IjpbMTgwNzQ1ODQwNywtNTgyNDA3NjgyLC0xMD
 g2NjU1MDA0LDE1MDE2ODMyNDcsLTcyMTgyOTM0Miw0OTg3NzAy
 OTMsLTE5Nzg4OTQ4MTcsLTIwNzAxOTAxMDgsMTM4MzI5OTAxNy
 wxMzM2NjkwMDAsLTEzNzkwMjU3MTUsMzU1OTY5MTY1LC00NDkw
