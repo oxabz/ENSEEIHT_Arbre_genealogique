@@ -445,13 +445,15 @@ end loop
 
 ## Tests
 
-Pour la realisation des tests nous avons decidé de tester individuellement 
+### Méthodologie
+
+Pour la réalisation des tests nous avons décidé de tester individuellement chaque package du programme avec sa propre procedure de test 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg1Nzg4OTEyLDE1MDE2ODMyNDcsLTcyMT
-gyOTM0Miw0OTg3NzAyOTMsLTE5Nzg4OTQ4MTcsLTIwNzAxOTAx
-MDgsMTM4MzI5OTAxNywxMzM2NjkwMDAsLTEzNzkwMjU3MTUsMz
-U1OTY5MTY1LC00NDkwMDA3ODgsLTE4MTQzMDk4MjIsNTk4NjE3
-MDc1LC0xNDgwNDM0NTE5LC03MDAyMDg5MjEsMTAwNDA1MjEwMC
-wtMTYwMDUxMDk5MCwtNjc5ODUwOTMwLC0xODQ1Mzc2NDk3LDEz
-MjEwODU3ODVdfQ==
+eyJoaXN0b3J5IjpbLTEzNzgyMzM3MTgsMTUwMTY4MzI0NywtNz
+IxODI5MzQyLDQ5ODc3MDI5MywtMTk3ODg5NDgxNywtMjA3MDE5
+MDEwOCwxMzgzMjk5MDE3LDEzMzY2OTAwMCwtMTM3OTAyNTcxNS
+wzNTU5NjkxNjUsLTQ0OTAwMDc4OCwtMTgxNDMwOTgyMiw1OTg2
+MTcwNzUsLTE0ODA0MzQ1MTksLTcwMDIwODkyMSwxMDA0MDUyMT
+AwLC0xNjAwNTEwOTkwLC02Nzk4NTA5MzAsLTE4NDUzNzY0OTcs
+MTMyMTA4NTc4NV19
 -->
