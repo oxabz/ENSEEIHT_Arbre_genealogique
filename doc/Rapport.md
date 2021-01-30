@@ -561,12 +561,59 @@ Ci-dessous sont détaillées les solutions aux problèmes précédemment soulev�
 - L'ajout de getter nous a permis d'évaluer beaucoup plus facilement les préconditions et postcondition.
 - La mise en place de setter et de getter a permis aux algorithme d'arbre généalogique de parcourir l'arbre. Ce problème est de taillé dans la partie choix technique.
 - Ce problème a nécessité plus de temps sur la conception afin de réduire au maximum les dupliquât. Cependant on a fait attention à ne pas trop sacrifier la lisibilité pour reduire le volume du code
+
+## État du projet :
+
+### État du projet :
+
+Le projet dans l'état actuel est complet et répond aux attentes du sujet du projet.
+La couverture de tests couvre toutes les fonctions du modèle.
+Chaque fonctionnalité majeure a été raffiné et développée.
+
+### Amélioration possible :
+
+- Étendre les commentaires dans le code.
+- Ajouter un système de sérialisation qui augmenterais l'intérêt du projet.
+- Ajouter des fonctionnalité supplémentaire pour la manipulation de l'arbre et des individus.
+
+
+## Bilan personnel :
+
+### Intérêt personnel : 
+
+Bien que le sujet lui-même ne soit pas extrêmement complexe, il apporte suffisamment de question et pour permettre de mettre en place et de travailler sur des méthodes de conception et des méthodes de gestion de projets. 
+
+J'avais déjà travaillé sur un certains nombre de projets en informatique qui m'ont appris à programmer, à concevoir et à gérer un projet. Cependant ces projets sont des fois pas assez encadrer ou trop cour pour mettre en place une rigueur dans la méthodologie. 
+Ce projet nous permets et nous laisse le temps de mettre en place cette rigueurs et de nous entrainer à être rigoureux.
+
+Ce projet m'a aussi permis de travailler sur les testes qui ont pour longtemps été ma bête noire.
+
+### Temps de travail
+
+En addition des 32 heures de travail qui nous ont été alloué pour le projet durant les heures de j'ai rajouté à peu près 8/10 heures de travail personnels.
+
+### Répartition du temps
+
+Voici la répartition du temps de travail pour ce projet :
+- 55% : Conception
+	- 25% : Conception des structures de donnés 
+	- 30% : Raffinage
+- 25% : Programmation
+- 20% : Rapport 
+
+On peut remarquer le rapport a été un charge de travail importante pour moi. Ce qui n'est pas particulièrement étonnant en considérant que cela fait partie de mes  faiblesses.
+
+### Enseignement tiré du projet
+
+Un des principale enseignement tirés de ce projet est l'importance du temps accordé à la conception du projet. Du temps qu'on pourrait considérer comme gaspiller est en fait du temps qui permet de faciliter l'implémentation et qui éviter les problèmes qui peuvent apparaitre lors d'un développement qui n'est pas guidé.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5MzIzNzUyOSwxMzAwODI0Mzg3LDIwNz
-U4OTE3NywxODQwNjQyMTQ3LDI2ODY4NTc1LC0xNjU3MDExNDI0
-LDI3NDczNzI3MCwtNTgyNDA3NjgyLC0xMDg2NjU1MDA0LDE1MD
-E2ODMyNDcsLTcyMTgyOTM0Miw0OTg3NzAyOTMsLTE5Nzg4OTQ4
-MTcsLTIwNzAxOTAxMDgsMTM4MzI5OTAxNywxMzM2NjkwMDAsLT
-EzNzkwMjU3MTUsMzU1OTY5MTY1LC00NDkwMDA3ODgsLTE4MTQz
-MDk4MjJdfQ==
+eyJoaXN0b3J5IjpbLTIwNzc3MDc4MTYsLTU5MzIzNzUyOSwxMz
+AwODI0Mzg3LDIwNzU4OTE3NywxODQwNjQyMTQ3LDI2ODY4NTc1
+LC0xNjU3MDExNDI0LDI3NDczNzI3MCwtNTgyNDA3NjgyLC0xMD
+g2NjU1MDA0LDE1MDE2ODMyNDcsLTcyMTgyOTM0Miw0OTg3NzAy
+OTMsLTE5Nzg4OTQ4MTcsLTIwNzAxOTAxMDgsMTM4MzI5OTAxNy
+wxMzM2NjkwMDAsLTEzNzkwMjU3MTUsMzU1OTY5MTY1LC00NDkw
+MDA3ODhdfQ==
 -->
