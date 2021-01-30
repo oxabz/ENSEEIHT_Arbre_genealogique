@@ -444,12 +444,14 @@ end loop
 > Remarque : On ne detaillera pas le comment "demender les infos necessaire" et "appeler la fonction correspondante" car le principe est le meme pour chaque option et car ca rendrait le raffinage moin lisible
 
 ## Tests
+
+Pour la realisation des tests nous avons decidé de tester individuellement 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwMTY4MzI0NywtNzIxODI5MzQyLDQ5OD
-c3MDI5MywtMTk3ODg5NDgxNywtMjA3MDE5MDEwOCwxMzgzMjk5
-MDE3LDEzMzY2OTAwMCwtMTM3OTAyNTcxNSwzNTU5NjkxNjUsLT
-Q0OTAwMDc4OCwtMTgxNDMwOTgyMiw1OTg2MTcwNzUsLTE0ODA0
-MzQ1MTksLTcwMDIwODkyMSwxMDA0MDUyMTAwLC0xNjAwNTEwOT
-kwLC02Nzk4NTA5MzAsLTE4NDUzNzY0OTcsMTMyMTA4NTc4NSwx
-MTc0MDE0NTM5XX0=
+eyJoaXN0b3J5IjpbNzg1Nzg4OTEyLDE1MDE2ODMyNDcsLTcyMT
+gyOTM0Miw0OTg3NzAyOTMsLTE5Nzg4OTQ4MTcsLTIwNzAxOTAx
+MDgsMTM4MzI5OTAxNywxMzM2NjkwMDAsLTEzNzkwMjU3MTUsMz
+U1OTY5MTY1LC00NDkwMDA3ODgsLTE4MTQzMDk4MjIsNTk4NjE3
+MDc1LC0xNDgwNDM0NTE5LC03MDAyMDg5MjEsMTAwNDA1MjEwMC
+wtMTYwMDUxMDk5MCwtNjc5ODUwOTMwLC0xODQ1Mzc2NDk3LDEz
+MjEwODU3ODVdfQ==
 -->
