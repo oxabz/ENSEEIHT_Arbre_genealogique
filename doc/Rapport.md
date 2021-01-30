@@ -441,13 +441,13 @@ loop
 	end case;
 end loop
 ```
-> Remarque : On ne detaillera pas le comment "demender les infos necessaire" et "appeler la fonction correspondante"
+> Remarque : On ne detaillera pas le comment "demender les infos necessaire" et "appeler la fonction correspondante" car 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk4NzcwMjkzLC0xOTc4ODk0ODE3LC0yMD
-cwMTkwMTA4LDEzODMyOTkwMTcsMTMzNjY5MDAwLC0xMzc5MDI1
-NzE1LDM1NTk2OTE2NSwtNDQ5MDAwNzg4LC0xODE0MzA5ODIyLD
-U5ODYxNzA3NSwtMTQ4MDQzNDUxOSwtNzAwMjA4OTIxLDEwMDQw
-NTIxMDAsLTE2MDA1MTA5OTAsLTY3OTg1MDkzMCwtMTg0NTM3Nj
-Q5NywxMzIxMDg1Nzg1LDExNzQwMTQ1MzksMjAzMTk0NzE3Mywt
-NjEzMzE2MjU0XX0=
+eyJoaXN0b3J5IjpbLTE3MTEwODMxMTcsNDk4NzcwMjkzLC0xOT
+c4ODk0ODE3LC0yMDcwMTkwMTA4LDEzODMyOTkwMTcsMTMzNjY5
+MDAwLC0xMzc5MDI1NzE1LDM1NTk2OTE2NSwtNDQ5MDAwNzg4LC
+0xODE0MzA5ODIyLDU5ODYxNzA3NSwtMTQ4MDQzNDUxOSwtNzAw
+MjA4OTIxLDEwMDQwNTIxMDAsLTE2MDA1MTA5OTAsLTY3OTg1MD
+kzMCwtMTg0NTM3NjQ5NywxMzIxMDg1Nzg1LDExNzQwMTQ1Mzks
+MjAzMTk0NzE3M119
 -->
