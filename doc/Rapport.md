@@ -488,7 +488,6 @@ end;
 
 
 
-
 ## Difficultés :
 
 ### Difficultés rencontrées :
@@ -509,11 +508,11 @@ Ci-dessous sont détaillées les solutions aux problèmes précédemment soulev�
 - La mise en place de setter et de getter a permis aux algorithme d'arbre généalogique de parcourir l'arbre. Ce problème est de taillé dans la partie choix technique.
 - Ce problème a nécessité plus de temps sur la conception afin de réduire au maximum les dupliquât. Cependant on a fait attention à ne pas trop sacrifier la lisibilité pour reduire le volume du code
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyNjk5NjA4MywtMTY1NzAxMTQyNCwyNz
-Q3MzcyNzAsLTU4MjQwNzY4MiwtMTA4NjY1NTAwNCwxNTAxNjgz
-MjQ3LC03MjE4MjkzNDIsNDk4NzcwMjkzLC0xOTc4ODk0ODE3LC
-0yMDcwMTkwMTA4LDEzODMyOTkwMTcsMTMzNjY5MDAwLC0xMzc5
-MDI1NzE1LDM1NTk2OTE2NSwtNDQ5MDAwNzg4LC0xODE0MzA5OD
-IyLDU5ODYxNzA3NSwtMTQ4MDQzNDUxOSwtNzAwMjA4OTIxLDEw
-MDQwNTIxMDBdfQ==
+eyJoaXN0b3J5IjpbMjY4Njg1NzUsLTE2NTcwMTE0MjQsMjc0Nz
+M3MjcwLC01ODI0MDc2ODIsLTEwODY2NTUwMDQsMTUwMTY4MzI0
+NywtNzIxODI5MzQyLDQ5ODc3MDI5MywtMTk3ODg5NDgxNywtMj
+A3MDE5MDEwOCwxMzgzMjk5MDE3LDEzMzY2OTAwMCwtMTM3OTAy
+NTcxNSwzNTU5NjkxNjUsLTQ0OTAwMDc4OCwtMTgxNDMwOTgyMi
+w1OTg2MTcwNzUsLTE0ODA0MzQ1MTksLTcwMDIwODkyMSwxMDA0
+MDUyMTAwXX0=
 -->
