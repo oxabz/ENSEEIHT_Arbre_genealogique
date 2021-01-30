@@ -445,12 +445,51 @@ end loop
 
 
 
+## Tests
+
+### Méthodologie
+
+Pour la réalisation des tests nous avons décidé de tester individuellement chaque package du programme avec sa propre procédure de test. On essaiera de suivre une méthode similaire aux tests unitaires.
+
+Dans chaque programme de test on testera toutes les fonctions et procédure public associé au package. Cependant on exclura les getter et comparaison a null des tests en effet il est impossible de les tester correctement ces méthodes dans le langage.
+
+On essaie de couvrir chaque cas d'utilisation des méthodes qu'il soit correcte ou non correcte. Cependant on considérera que les sous programmes seront appelé avec respect pour les préconditions. On vérifiera les valeurs de retour des fonctions et les exceptions quand elles sont levé.
+
+Typiquement sur les projet on utilise des libraire pour effectuer les tests. Elles permettent d'avoir un bon aperçu de la progression du test et de ce qui est passé ou pas. Afin de ne pas surcharger le projet et de ne pas poser de problèmes de dépendance, nous allons utiliser les instruction pragma de ada. Afin de faciliter la lisibilité du test on utilisera aussi ada text io qui nous permettra d'indiquer progressivement les progrès des tests.
+
+### Exemple 
+
+#### Test d'une fonction 
+```ada
+tp := get_decendant_generation(arbre, get_id(p4),2);
+put("descendant de 5 de deuxieme generation : "); put(tp); new_line;
+pragma Assert(get_id(tp) = 1);
+```
+#### Test d'une erreur
+```ada
+begin
+    l := get_sucession_decendant_generation(arbre, 90, 2);
+    raise TEST_ECHOUE;
+exception
+    when  p_AB_Person.NOEUD_ABSENT_ERROR=>
+        put_line("Erreur attendu levée");
+end;
+``` 
+
+### Couverture 
+| package                   | test                            |
+|---------------------------|---------------------------------|
+| ``p_personne``            | ✓ : ``test_personne.adb``           |
+| ``p_arbre_binaire``       | ✓ : ``test_arbre_binaire.adb``      |
+| ``p_arbre_genealogique``  | ✓ : ``test_arbre_genealogique.adb`` |
+| ``p_front``               | x : Fait uniquement de l'IO est donc ne peut pas être testé |
+| ``p_linked_list``         | x : On fait confiance au package développé dans les TP qui ont été testé à ce moment |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4MjQwNzY4MiwtMTA4NjY1NTAwNCwxNT
-AxNjgzMjQ3LC03MjE4MjkzNDIsNDk4NzcwMjkzLC0xOTc4ODk0
-ODE3LC0yMDcwMTkwMTA4LDEzODMyOTkwMTcsMTMzNjY5MDAwLC
-0xMzc5MDI1NzE1LDM1NTk2OTE2NSwtNDQ5MDAwNzg4LC0xODE0
-MzA5ODIyLDU5ODYxNzA3NSwtMTQ4MDQzNDUxOSwtNzAwMjA4OT
-IxLDEwMDQwNTIxMDAsLTE2MDA1MTA5OTAsLTY3OTg1MDkzMCwt
-MTg0NTM3NjQ5N119
+eyJoaXN0b3J5IjpbMTAwNzU5NzI3OCwtNTgyNDA3NjgyLC0xMD
+g2NjU1MDA0LDE1MDE2ODMyNDcsLTcyMTgyOTM0Miw0OTg3NzAy
+OTMsLTE5Nzg4OTQ4MTcsLTIwNzAxOTAxMDgsMTM4MzI5OTAxNy
+wxMzM2NjkwMDAsLTEzNzkwMjU3MTUsMzU1OTY5MTY1LC00NDkw
+MDA3ODgsLTE4MTQzMDk4MjIsNTk4NjE3MDc1LC0xNDgwNDM0NT
+E5LC03MDAyMDg5MjEsMTAwNDA1MjEwMCwtMTYwMDUxMDk5MCwt
+Njc5ODUwOTMwXX0=
 -->
