@@ -449,9 +449,10 @@ end loop
 
 Pour la réalisation des tests nous avons décidé de tester individuellement chaque package du programme avec sa propre procédure de test. 
 Dans chaque programme de test on testera toutes les fonctions et procédure public associé au package. Cependant on exclura les getter et comparaison a null des tests en effet il est impossible de les tester correctement ces méthodes dans le langage.
-On essaie de couvrir chaque cas d'utilisation qu'il soit correcte ou non correcte. 
+On essaie de couvrir chaque cas d'utilisation des méthodes qu'il soit correcte ou non correcte. Cependant on considérera que les sous programmes seront appelé avec respect pour les préconditions.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5MTIwNzQ2NCwxNTAxNjgzMjQ3LC03Mj
+eyJoaXN0b3J5IjpbMTMxOTQ3MTQ3NywxNTAxNjgzMjQ3LC03Mj
 E4MjkzNDIsNDk4NzcwMjkzLC0xOTc4ODk0ODE3LC0yMDcwMTkw
 MTA4LDEzODMyOTkwMTcsMTMzNjY5MDAwLC0xMzc5MDI1NzE1LD
 M1NTk2OTE2NSwtNDQ5MDAwNzg4LC0xODE0MzA5ODIyLDU5ODYx
