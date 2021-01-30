@@ -605,15 +605,15 @@ On peut remarquer le rapport a été un charge de travail importante pour moi. C
 
 ### Enseignement tiré du projet
 
-Un des principale enseignement tirés de ce projet est l'importance du temps accordé à la conception du projet. Du temps qu'on pourrait considérer comme gaspiller est en fait du temps qui permet de faciliter l'implémentation et qui éviter les problèmes qui peuvent apparaitre lors d'un développement qui n'est pas guidé.
+Un des principale enseignement tirés de ce projet est l'importance du temps accordé à la conception du projet. En effet du temps qu'on pourrait considérer comme gaspiller est en fait du temps qui permet de faciliter l'implémentation et qui éviter les problèmes qui peuvent apparaitre lors d'un développement qui n'est pas guidé.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzc3MDc4MTYsLTU5MzIzNzUyOSwxMz
-AwODI0Mzg3LDIwNzU4OTE3NywxODQwNjQyMTQ3LDI2ODY4NTc1
-LC0xNjU3MDExNDI0LDI3NDczNzI3MCwtNTgyNDA3NjgyLC0xMD
-g2NjU1MDA0LDE1MDE2ODMyNDcsLTcyMTgyOTM0Miw0OTg3NzAy
-OTMsLTE5Nzg4OTQ4MTcsLTIwNzAxOTAxMDgsMTM4MzI5OTAxNy
-wxMzM2NjkwMDAsLTEzNzkwMjU3MTUsMzU1OTY5MTY1LC00NDkw
-MDA3ODhdfQ==
+eyJoaXN0b3J5IjpbLTEzNjk3NTgwOTUsLTIwNzc3MDc4MTYsLT
+U5MzIzNzUyOSwxMzAwODI0Mzg3LDIwNzU4OTE3NywxODQwNjQy
+MTQ3LDI2ODY4NTc1LC0xNjU3MDExNDI0LDI3NDczNzI3MCwtNT
+gyNDA3NjgyLC0xMDg2NjU1MDA0LDE1MDE2ODMyNDcsLTcyMTgy
+OTM0Miw0OTg3NzAyOTMsLTE5Nzg4OTQ4MTcsLTIwNzAxOTAxMD
+gsMTM4MzI5OTAxNywxMzM2NjkwMDAsLTEzNzkwMjU3MTUsMzU1
+OTY5MTY1XX0=
 -->
