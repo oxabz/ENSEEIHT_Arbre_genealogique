@@ -447,13 +447,13 @@ end loop
 
 ### Méthodologie
 
-Pour la réalisation des tests nous avons décidé de tester individuellement chaque package du programme avec sa propre procedure de test 
+Pour la réalisation des tests nous avons décidé de tester individuellement chaque package du programme avec sa propre procédure de test. On essaie de couvrir chaque cas d'utilisation que ça soit un cas d'utilisation qu'il soit correcte ou non correcte. Dans chaque programmes de test on testera toutes les fonctions et procedure 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzgyMzM3MTgsMTUwMTY4MzI0NywtNz
-IxODI5MzQyLDQ5ODc3MDI5MywtMTk3ODg5NDgxNywtMjA3MDE5
-MDEwOCwxMzgzMjk5MDE3LDEzMzY2OTAwMCwtMTM3OTAyNTcxNS
-wzNTU5NjkxNjUsLTQ0OTAwMDc4OCwtMTgxNDMwOTgyMiw1OTg2
-MTcwNzUsLTE0ODA0MzQ1MTksLTcwMDIwODkyMSwxMDA0MDUyMT
-AwLC0xNjAwNTEwOTkwLC02Nzk4NTA5MzAsLTE4NDUzNzY0OTcs
-MTMyMTA4NTc4NV19
+eyJoaXN0b3J5IjpbMjA4MjkwNDgzMSwxNTAxNjgzMjQ3LC03Mj
+E4MjkzNDIsNDk4NzcwMjkzLC0xOTc4ODk0ODE3LC0yMDcwMTkw
+MTA4LDEzODMyOTkwMTcsMTMzNjY5MDAwLC0xMzc5MDI1NzE1LD
+M1NTk2OTE2NSwtNDQ5MDAwNzg4LC0xODE0MzA5ODIyLDU5ODYx
+NzA3NSwtMTQ4MDQzNDUxOSwtNzAwMjA4OTIxLDEwMDQwNTIxMD
+AsLTE2MDA1MTA5OTAsLTY3OTg1MDkzMCwtMTg0NTM3NjQ5Nywx
+MzIxMDg1Nzg1XX0=
 -->
