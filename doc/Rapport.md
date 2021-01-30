@@ -451,14 +451,16 @@ Pour la réalisation des tests nous avons décidé de tester individuellement ch
 
 Dans chaque programme de test on testera toutes les fonctions et procédure public associé au package. Cependant on exclura les getter et comparaison a null des tests en effet il est impossible de les tester correctement ces méthodes dans le langage.
 
-On essaie de couvrir chaque cas d'utilisation des méthodes qu'il soit correcte ou non correcte. Cependant on considérera que les sous programmes seront appelé avec respect pour les préconditions. On vérifiera les valeurs de retour des fonctions 
+On essaie de couvrir chaque cas d'utilisation des méthodes qu'il soit correcte ou non correcte. Cependant on considérera que les sous programmes seront appelé avec respect pour les préconditions. On vérifiera les valeurs de retour des fonctions et les exceptions quand elle sont levé.
+
+Typiquement sur les projet on utilise des libraire pour effectué les tests. Elles permettent d'avoir un bon appercu de la progression du test 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODY2NTUwMDQsMTUwMTY4MzI0NywtNz
-IxODI5MzQyLDQ5ODc3MDI5MywtMTk3ODg5NDgxNywtMjA3MDE5
-MDEwOCwxMzgzMjk5MDE3LDEzMzY2OTAwMCwtMTM3OTAyNTcxNS
-wzNTU5NjkxNjUsLTQ0OTAwMDc4OCwtMTgxNDMwOTgyMiw1OTg2
-MTcwNzUsLTE0ODA0MzQ1MTksLTcwMDIwODkyMSwxMDA0MDUyMT
-AwLC0xNjAwNTEwOTkwLC02Nzk4NTA5MzAsLTE4NDUzNzY0OTcs
-MTMyMTA4NTc4NV19
+eyJoaXN0b3J5IjpbLTE1MTc2MTQwMCwtMTA4NjY1NTAwNCwxNT
+AxNjgzMjQ3LC03MjE4MjkzNDIsNDk4NzcwMjkzLC0xOTc4ODk0
+ODE3LC0yMDcwMTkwMTA4LDEzODMyOTkwMTcsMTMzNjY5MDAwLC
+0xMzc5MDI1NzE1LDM1NTk2OTE2NSwtNDQ5MDAwNzg4LC0xODE0
+MzA5ODIyLDU5ODYxNzA3NSwtMTQ4MDQzNDUxOSwtNzAwMjA4OT
+IxLDEwMDQwNTIxMDAsLTE2MDA1MTA5OTAsLTY3OTg1MDkzMCwt
+MTg0NTM3NjQ5N119
 -->
