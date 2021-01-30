@@ -104,6 +104,61 @@ On utilisera le type ``T_AG`` qui est une implémentation de ``T_AB`` avec ``T_p
 Les sous programmes de ce module nécessite de faire des listes de personnes nous implémenterons donc le module ``p_linked_list`` avec ``T_personne`` pour obtenir une ``t_linked_list`` qu'on renommera en ``L_personne``.
 
 
+## Choix de conception et choix technique : 
+
+### Séparation des fonctionnalité en package et généricité: 
+
+Dans tout projet le code est divisée en plusieurs modules afin de pouvoir améliorer la réutilisation du code, faciliter la lisibilité et pour la généricité.
+
+#### Idéalement 
+
+Idéalement le programme devrais être séparé en module à responsabilité unique chacun ne laissant apparaitre que des structures de donnés privé et des sous programmes pour interagir avec les structure. Les paquets ne devrai contenir que des méthodes en rapport direct avec la méthode. Il est aussi important d'appliquer la généricité à ce qui pourrait être réutilisé pour plusieurs types  de donnés.
+
+Pour chaque fonctionnalité/sous programme, on se demande s'il correspond a un module existant ou si elle ne serait pas logique dans le module. 
+
+> Ex : supprimer un element est generale a tout arbre binaire trouver un element qui est l'encetre d'un autre n'est pas logique  
+
+#### Compromis
+
+Typiquement on utilise l'orienté objet d'atteindre ces objectifs. Mais ce n'est pas dans le domaine du projet et ada n'est pas le langage idéal pour l'orienté objet.   
+
+L'orienté objet aurait pu nous permet d'implémenter et d'étendre des classes générique. Sans briser la contrainte de n'exposer que ce qui est nécessaire à l'utilisateur finale. On aurait pu nous utiliser le protected pour étendre et implémenter ``p_arbre_binaire`` avec des nouvelles méthodes dans ``p_arbre_genealogique``.
+
+Pour essayer de respecter le mieux possible ces objectifs nous allons rendre les structures de donnés privé et nous allons rendre disponible des getter et des setter pour ``T_arbre_binaire`` afin que des packages basé sur  ``P_arbre_binaire`` puissent accéder à l'arbre.
+
+### UX / UI : Expérience utilisateur et interface  utilisateur :
+
+On sait que le projet doit être un programme menu mais il y a plusieurs moyen de répondre à ces contraintes.
+
+#### Apparence ciblée :
+
+Cette application  va prendre inspiration d'application textuelle comme top/htop, vim et nano. 
+
+L'utilisateur pourra designer par les nœud par leur id mais ce n'est pas pratique pour l'utilisateur car ça nécessite de la mémorisation. Pour résoudre le problème on gardera l'arbre affiché de manière permanente. 
+
+On mettra aussi des menus contextuels pour chaque action plutôt que d'utiliser un affichage linaire dans le terminal.
+
+On pourra aussi utiliser des couleurs pour différencier les erreurs du reste des sorties.
+
+#### NCurse : 
+
+Une des méthode qui a été considéré est d'utiliser  la bibliothèque ncurse qui fournie de nombreux outils pour créer des interfaces textuel. 
+
+Cependant ncurse pose un problème de dépendance et de surcharge du projet. ncurse est bien plus gros que ce qui est nécessaire pour l'objectif. De plus ncurse est une dépendance qui n'est pas facilement disponible donc elle pourrait compliquer grandement l'installation de notre projet qui n'utilise que la bibliothèque standard.
+
+#### ANSII escape character : 
+
+L'alternative à ncurse qui a été choisi est l'utilisation des character d'échappement ANSII. Ces characters sont des characters qui transmis au terminal permettent de donner des commande qui permettent de bouger un curseur, supprimer des parties du terminal, changer les couleur du texte... 
+
+Cette option bien que moins étendu nous permet d'avoir une interface textuelle sans rajouter de dépendances.
+
+### Division pseudo MVC (Modèle, Vue, Contrôler) : 
+
+Une bonne pratique appliqué dans plusieurs projet est de séparer les structure de donné les programmes principaux et les interface. Dans le patron MVC le contrôler fait les appels au modèles et a l'interface et est celui qui fait le lien entre les deux.
+
+Pour ce projet on essaie de respecter cette philosophie en mettant l'interface dans des package qui leur sont spécifique. Similairement les modèles sont représentés par les packages qui contiennent les types.
+
+
 ## Fonctions Et Procédures
 
 Dans cette partie nous nous intéresserons aux procédures et fonctions importantes de chaque module.
@@ -507,11 +562,11 @@ Ci-dessous sont détaillées les solutions aux problèmes précédemment soulev�
 - La mise en place de setter et de getter a permis aux algorithme d'arbre généalogique de parcourir l'arbre. Ce problème est de taillé dans la partie choix technique.
 - Ce problème a nécessité plus de temps sur la conception afin de réduire au maximum les dupliquât. Cependant on a fait attention à ne pas trop sacrifier la lisibilité pour reduire le volume du code
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwMDgyNDM4NywyMDc1ODkxNzcsMTg0MD
-Y0MjE0NywyNjg2ODU3NSwtMTY1NzAxMTQyNCwyNzQ3MzcyNzAs
-LTU4MjQwNzY4MiwtMTA4NjY1NTAwNCwxNTAxNjgzMjQ3LC03Mj
-E4MjkzNDIsNDk4NzcwMjkzLC0xOTc4ODk0ODE3LC0yMDcwMTkw
-MTA4LDEzODMyOTkwMTcsMTMzNjY5MDAwLC0xMzc5MDI1NzE1LD
-M1NTk2OTE2NSwtNDQ5MDAwNzg4LC0xODE0MzA5ODIyLDU5ODYx
-NzA3NV19
+eyJoaXN0b3J5IjpbLTU5MzIzNzUyOSwxMzAwODI0Mzg3LDIwNz
+U4OTE3NywxODQwNjQyMTQ3LDI2ODY4NTc1LC0xNjU3MDExNDI0
+LDI3NDczNzI3MCwtNTgyNDA3NjgyLC0xMDg2NjU1MDA0LDE1MD
+E2ODMyNDcsLTcyMTgyOTM0Miw0OTg3NzAyOTMsLTE5Nzg4OTQ4
+MTcsLTIwNzAxOTAxMDgsMTM4MzI5OTAxNywxMzM2NjkwMDAsLT
+EzNzkwMjU3MTUsMzU1OTY5MTY1LC00NDkwMDA3ODgsLTE4MTQz
+MDk4MjJdfQ==
 -->
