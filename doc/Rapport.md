@@ -53,7 +53,9 @@ Les modules développé sont :
 - **``main``** et le programme principal il contient la logique du menu et fait les appels à ``p_arbre_généalogique`` et à ``p_arbre_binaire`` en fonction des entré de l'utilisateur. ``main`` mets en relation le modèle et le frontend qui interagit avec l'utilisateur.
 
 
-## Choix de conception 
+## Choix de conception et choix technique
+
+
 
 
 ## Types
@@ -508,11 +510,11 @@ Ci-dessous sont détaillées les solutions aux problèmes précédemment soulev�
 - La mise en place de setter et de getter a permis aux algorithme d'arbre généalogique de parcourir l'arbre. Ce problème est de taillé dans la partie choix technique.
 - Ce problème a nécessité plus de temps sur la conception afin de réduire au maximum les dupliquât. Cependant on a fait attention à ne pas trop sacrifier la lisibilité pour reduire le volume du code
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY4Njg1NzUsLTE2NTcwMTE0MjQsMjc0Nz
-M3MjcwLC01ODI0MDc2ODIsLTEwODY2NTUwMDQsMTUwMTY4MzI0
-NywtNzIxODI5MzQyLDQ5ODc3MDI5MywtMTk3ODg5NDgxNywtMj
-A3MDE5MDEwOCwxMzgzMjk5MDE3LDEzMzY2OTAwMCwtMTM3OTAy
-NTcxNSwzNTU5NjkxNjUsLTQ0OTAwMDc4OCwtMTgxNDMwOTgyMi
-w1OTg2MTcwNzUsLTE0ODA0MzQ1MTksLTcwMDIwODkyMSwxMDA0
-MDUyMTAwXX0=
+eyJoaXN0b3J5IjpbMTg0MDY0MjE0NywyNjg2ODU3NSwtMTY1Nz
+AxMTQyNCwyNzQ3MzcyNzAsLTU4MjQwNzY4MiwtMTA4NjY1NTAw
+NCwxNTAxNjgzMjQ3LC03MjE4MjkzNDIsNDk4NzcwMjkzLC0xOT
+c4ODk0ODE3LC0yMDcwMTkwMTA4LDEzODMyOTkwMTcsMTMzNjY5
+MDAwLC0xMzc5MDI1NzE1LDM1NTk2OTE2NSwtNDQ5MDAwNzg4LC
+0xODE0MzA5ODIyLDU5ODYxNzA3NSwtMTQ4MDQzNDUxOSwtNzAw
+MjA4OTIxXX0=
 -->
