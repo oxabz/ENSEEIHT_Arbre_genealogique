@@ -443,24 +443,14 @@ end loop
 ```
 > Remarque : On ne detaillera pas le comment "demender les infos necessaire" et "appeler la fonction correspondante" car le principe est le meme pour chaque option et car ca rendrait le raffinage moin lisible
 
-## Tests
 
-### Méthodologie
-
-Pour la réalisation des tests nous avons décidé de tester individuellement chaque package du programme avec sa propre procédure de test. On essaiera de suivre une methode similaire aux tests unitaires.
-
-Dans chaque programme de test on testera toutes les fonctions et procédure public associé au package. Cependant on exclura les getter et comparaison a null des tests en effet il est impossible de les tester correctement ces méthodes dans le langage.
-
-On essaie de couvrir chaque cas d'utilisation des méthodes qu'il soit correcte ou non correcte. Cependant on considérera que les sous programmes seront appelé avec respect pour les préconditions. On vérifiera les valeurs de retour des fonctions et les exceptions quand elle sont levé.
-
-Typiquement sur les projet on utilise des libraire pour effectué les tests. Elles permettent d'avoir un bon appercu de la progression du test et de ce qui est passé ou pas. Afin de ne pas surcharger de 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDY4NzQwNjksLTEwODY2NTUwMDQsMT
-UwMTY4MzI0NywtNzIxODI5MzQyLDQ5ODc3MDI5MywtMTk3ODg5
-NDgxNywtMjA3MDE5MDEwOCwxMzgzMjk5MDE3LDEzMzY2OTAwMC
-wtMTM3OTAyNTcxNSwzNTU5NjkxNjUsLTQ0OTAwMDc4OCwtMTgx
-NDMwOTgyMiw1OTg2MTcwNzUsLTE0ODA0MzQ1MTksLTcwMDIwOD
-kyMSwxMDA0MDUyMTAwLC0xNjAwNTEwOTkwLC02Nzk4NTA5MzAs
-LTE4NDUzNzY0OTddfQ==
+eyJoaXN0b3J5IjpbLTU4MjQwNzY4MiwtMTA4NjY1NTAwNCwxNT
+AxNjgzMjQ3LC03MjE4MjkzNDIsNDk4NzcwMjkzLC0xOTc4ODk0
+ODE3LC0yMDcwMTkwMTA4LDEzODMyOTkwMTcsMTMzNjY5MDAwLC
+0xMzc5MDI1NzE1LDM1NTk2OTE2NSwtNDQ5MDAwNzg4LC0xODE0
+MzA5ODIyLDU5ODYxNzA3NSwtMTQ4MDQzNDUxOSwtNzAwMjA4OT
+IxLDEwMDQwNTIxMDAsLTE2MDA1MTA5OTAsLTY3OTg1MDkzMCwt
+MTg0NTM3NjQ5N119
 -->
