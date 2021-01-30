@@ -1,5 +1,6 @@
 #!/bin/sh
 
+mkdir target
 mkdir target/test
 cd src/test
 for t in ./test_*.adb; do

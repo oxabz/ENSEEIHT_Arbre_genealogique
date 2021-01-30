@@ -5,6 +5,7 @@ with p_personne; use p_personne;
 with Ada.Strings.Unbounded; use Ada.Strings.Unbounded;
 
 procedure test_arbre_genealogique is
+    TEST_ECHOUE : exception;
     arbre,ab_test: T_AG;
     t : integer;
     p0,p1,p2,p3,p4,p5,p6,p7,tp: T_Personne;
@@ -35,12 +36,14 @@ begin
     ajout_parent(arbre, MERE, get_id(p5), p7);
     begin
         ajout_parent(arbre, PERE, 90, p7);
+        raise TEST_ECHOUE;
     exception
         when  p_AB_Person.NOEUD_ABSENT_ERROR=>
             put_line("Erreur attendu levée");
     end;
     begin
         ajout_parent(arbre, PERE, get_id(p5), p7);
+        raise TEST_ECHOUE;
     exception
         when  p_AB_Person.INSERTION_ERROR=>
             put_line("Erreur attendu levée");
@@ -85,6 +88,7 @@ begin
     pragma Assert(t=3, "nombre incorecte");
     begin
         t:=nombre_ancetres(arbre, 90);
+        raise TEST_ECHOUE;
     exception
         when  p_AB_Person.NOEUD_ABSENT_ERROR=>
             put_line("Erreur attendu levée");
@@ -100,6 +104,7 @@ begin
     pragma Assert(not isEmpty(find(l, p7)) and not isEmpty(find(l, p6)));
     begin
         l := get_ancetre_generation(arbre, 90, 2);
+        raise TEST_ECHOUE;
     exception
         when  p_AB_Person.NOEUD_ABSENT_ERROR=>
             put_line("Erreur attendu levée");
@@ -119,6 +124,7 @@ begin
     pragma Assert(not isEmpty(find(l, p7)) and not isEmpty(find(l, p6)));
     begin
         supprimer(arbre, get_dummy(90));
+        raise TEST_ECHOUE;
     exception
         when  p_AB_Person.NOEUD_ABSENT_ERROR=>
             put_line("Erreur attendu levée");
@@ -181,6 +187,7 @@ begin
     );
     begin
         ab_test := get_succession_ancetre_generation(arbre, 90, 2);
+        raise TEST_ECHOUE;
     exception
         when  p_AB_Person.NOEUD_ABSENT_ERROR=>
             put_line("Erreur attendu levée");
@@ -193,6 +200,7 @@ begin
     pragma Assert(get_id(tp) = 1);
     begin
         tp := get_decendant_generation(arbre, 90, 2);
+        raise TEST_ECHOUE;
     exception
         when  p_AB_Person.NOEUD_ABSENT_ERROR=>
             put_line("Erreur attendu levée");
@@ -202,6 +210,7 @@ begin
     pragma Assert(not isEmpty(find(l, p0)) and not isEmpty(find(l, p1)));
     begin
         l := get_sucession_decendant_generation(arbre, 90, 2);
+        raise TEST_ECHOUE;
     exception
         when  p_AB_Person.NOEUD_ABSENT_ERROR=>
             put_line("Erreur attendu levée");
