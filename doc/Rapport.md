@@ -588,7 +588,7 @@ end;
 | ``p_arbre_binaire``       | ✓ : ``test_arbre_binaire.adb``      |
 | ``p_arbre_genealogique``  | ✓ : ``test_arbre_genealogique.adb`` |
 | ``p_front``               | x : *Fait uniquement de l'IO est donc ne peut pas être testé* |
-| ``p_linked_list``         | x : *On fait confiance au package développé dans les TP qui ont été testé à ce moment |
+| ``p_linked_list``         | x : *On fait confiance au package développé dans les TP qui ont été testé à ce moment* |
 
 
 
