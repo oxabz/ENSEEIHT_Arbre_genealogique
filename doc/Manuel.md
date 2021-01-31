@@ -31,9 +31,9 @@ Le script effectuera la compilation du programme et met, le résultat dans le do
 
 - Renommer l'exécutable ``main`` localisé dans ``target`` et le renommer en le nom de la commande voulu.
 - Déplacer l'exécutable vers ~/.local/bin
-- ajouter ``export PATH=$PATH:~/.loca
+- ajouter ``export PATH=$PATH:~/.local/bin`` au fichier ``.bashrc``/``.zshrc``.
 
 ## Utilisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODI3OTYzMTY3LC01NzAyMDk4ODldfQ==
+eyJoaXN0b3J5IjpbLTE5MTIyNDkwMjMsLTU3MDIwOTg4OV19
 -->
