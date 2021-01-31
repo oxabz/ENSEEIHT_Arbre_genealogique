@@ -39,9 +39,9 @@ Le script effectuera la compilation du programme et met, le résultat dans le do
 - Remplissez les demandes de l'application afin d'initialiser l'arbre
 - L'arbre sera visible en haut de l'écran. 
 	- On peut modifier et faire des requête sur l'arbre en entrant les lettres correspondant a une commande et en suivant les demandes faite par le programme. Les lettres des commandes sont encadré dans les interface pour les mettre en évidence
-> Exemple : [r]einitialiser l'arbre -> La commande est r. 
-	- On peut quitter le programme entrant ``e``
+`` Exemple : [r]einitialiser l'arbre -> La commande est r.`` 
+	- On peut quitter le programme entrant la commende ``e``.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjQwNDU5MjEsMjEzOTA0Nzc4OCwtNT
-cwMjA5ODg5XX0=
+eyJoaXN0b3J5IjpbMTg4MzI5NDIwMiwyMTM5MDQ3Nzg4LC01Nz
+AyMDk4ODldfQ==
 -->
