@@ -37,7 +37,7 @@ Le script effectuera la compilation du programme et met, le résultat dans le do
 
 - exécuter la commande/exécutable
 - Remplissez les demandes de l'application afin d'initialiser l'arbre
-- L'arbre sera visible en haut de l'ecran 
+- L'arbre sera visible en haut de l'écran 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDQyOTA5LC01NzAyMDk4ODldfQ==
+eyJoaXN0b3J5IjpbLTE5MjkwMTE1NDUsLTU3MDIwOTg4OV19
 -->
