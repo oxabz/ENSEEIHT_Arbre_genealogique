@@ -75,12 +75,14 @@ package p_arbre_binaire is
     -- paramètres :
         -- arbre : in  T_AB -- Arbre qu’on veut afficher
     -- profondeur : in integer -- Profondeur de cette arbre pour affichage (déterminé le décalage de l’arbre)
-    -- etiquette_gauche : in string(0..10)  -- Étiquette pour la partie gauche 
-    -- etiquette_droite : in string(0..10) -- Étiquette pour la partie droite
+    -- etiquette_gauche : in string  -- Étiquette pour la partie gauche 
+    -- etiquette_droite : in strin(0..10) -- Étiquette pour la partie droite
     -- pré-condition : 
+        -- arbre != null
     -- post-condition : 
     -- Tests de la procédure :
-    procedure afficher(arbre : in T_AB; profondeur : in integer; etiquette_gauche, etiquette_droite : in string);
+    procedure afficher(arbre : in T_AB; profondeur : in integer; etiquette_gauche, etiquette_droite : in string) with
+    pre => not is_null(arbre);
 
     -- nom : supprimer
     -- sémantique :  suprime un noeud de l’arbre 

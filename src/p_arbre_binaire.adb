@@ -65,7 +65,7 @@ package body p_arbre_binaire is
         if(arbre = null) then
             return 0;
         else
-            return 1+ calcul_taille(arbre.all.gauche) + calcul_taille(arbre.all.droite);
+            return 1 + calcul_taille(arbre.all.gauche) + calcul_taille(arbre.all.droite);
         end if;
     end calcul_taille;
 
@@ -83,13 +83,18 @@ package body p_arbre_binaire is
     function rechercher(arbre : in  T_AB ; valeur : in T_element) return T_AB is 
         result: T_AB;
     begin
+        -- Si l'element est le bon retourner le noeud si l'arbre est vide retourner null
         if(arbre = null or else arbre.all.element = valeur) then
             return arbre;
         end if;
+
+        -- Si ce noeud ne contient pas l'element rechercher à gauche puis à droite
         result := rechercher(arbre.all.gauche,valeur);
         if(result = null) then
             result := rechercher(arbre.all.droite,valeur);
         end if;
+
+        -- retourner le resultat de la recherche sur les sous arbres du noeuds 
         return result;
     end rechercher;
 
@@ -105,23 +110,29 @@ package body p_arbre_binaire is
     -- Tests de la procédure :
     procedure afficher(arbre : in T_AB; profondeur : in integer; etiquette_gauche, etiquette_droite : in string)is
     begin 
-        if(arbre = null) then raise UNINTIALISE_ERROR; end if;
+        -- Afficher l'element
         afficher_element(arbre.all.element);
         new_line;
         if(arbre.all.droite /= null )then 
+            -- Afficher la tabulation du sous arbre droit 
             for i in 0..profondeur loop
                 put("   ");
             end loop;
+            -- Afficher l'etiquette du sous arbre droit
             put(etiquette_droite);
             put(" : ");
+            -- Affichage du sous arbre droit
             afficher(arbre.all.droite, profondeur+1, etiquette_gauche, etiquette_droite);
         end if;
-        if(arbre.all.gauche /= null )then 
+        if(arbre.all.gauche /= null )then
+            -- Afficher la tabulation du sous arbre gauche
             for i in 0..profondeur loop
                 put("   ");
             end loop;
+            -- Afficher l'etiquette du sous arbre gauche
             put(etiquette_gauche);
             put(" : ");
+            -- Affichage du sous arbre gauche
             afficher(arbre.all.gauche, profondeur+1, etiquette_droite, etiquette_gauche); 
         end if;
     end afficher;
@@ -138,17 +149,22 @@ package body p_arbre_binaire is
         function supprimer_rec (arbre: in T_AB;  element : in T_Element) return boolean is
             res : boolean;
         begin
+            -- Cas ou on arrive sur une feuille de l'arbre sans trouver l'element 
             if(arbre=null) then
-                return false;
+                return false; -- On renvoie false pour indiquer l'absence de supression dans cette ligne de recursion
             end if;
+
+            -- Cas ou on atteint un noeud contenant l'element a supprimer
             if(arbre.all.gauche /= null and then arbre.all.gauche.all.element = element) then
-                arbre.all.gauche:=null;
-                return true;
+                arbre.all.gauche:=null; -- Supression du noeud
+                return true; -- On renvoie true pour indquer que l'element a été supprimé
             end if;
             if(arbre.all.droite /= null and then arbre.all.droite.all.element = element) then
-                arbre.all.droite:=null;
-                return true;
+                arbre.all.droite:=null; -- Supression du noeud
+                return true; -- On renvoie true pour indquer que l'element a été supprimé
             end if;
+            
+            -- Cas ou aucune suppression a été effectué on continue a chercher dans les sous arbre 
             res := supprimer_rec(arbre.all.droite,element);
             if(not res) then 
                 res := supprimer_rec(arbre.all.gauche, element);
@@ -156,6 +172,7 @@ package body p_arbre_binaire is
             return res;
         end;
     begin
+        -- Appel de la fonction recursive de supression de l'element a supprimer
         if(supprimer_rec(arbre, element) = false) then
             raise NOEUD_ABSENT_ERROR;
         end if;
