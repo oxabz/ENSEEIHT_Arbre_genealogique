@@ -289,7 +289,9 @@ plus généralement :
 -- sémantique :  affiche un arbre  
 -- paramètres :
   -- arbre : in  T_AB -- Arbre qu’on veut afficher
-  -- profondeur : in integer -- Profondeur de cette arbre pour affichage (déterminé le décalage de l’arbre)
+  -- profondeur : in integer 
+        -- Profondeur de cette arbre pour affichage 
+        -- (déterminé le décalage de l’arbre)
   -- etiquette_gauche : in unbounded_string
         -- Étiquette pour la partie gauche 
   -- etiquette_droite : in unbounded_string
@@ -582,12 +584,12 @@ end;
 ``` 
 
 ### Couverture 
-| package                   | test                            |
-|---------------------------|---------------------------------|
-| ``p_personne``            | ✓ : ``test_personne.adb``           |
-| ``p_arbre_binaire``       | ✓ : ``test_arbre_binaire.adb``      |
-| ``p_arbre_genealogique``  | ✓ : ``test_arbre_genealogique.adb`` |
-| ``p_front``               | x : *Fait uniquement de l'IO est donc ne peut pas être testé* |
+| package                   | test                                                                                   |
+|---------------------------|----------------------------------------------------------------------------------------|
+| ``p_personne``            | ✓ : ``test_personne.adb``                                                              |
+| ``p_arbre_binaire``       | ✓ : ``test_arbre_binaire.adb``                                                         |
+| ``p_arbre_genealogique``  | ✓ : ``test_arbre_genealogique.adb``                                                    |
+| ``p_front``               | x : *Fait uniquement de l'IO est donc ne peut pas être testé*                          |
 | ``p_linked_list``         | x : *On fait confiance au package développé dans les TP qui ont été testé à ce moment* |
 
 
