@@ -25,12 +25,14 @@ Le script effectuera la compilation du programme et met, le résultat dans le do
 
 #### Installation administrateur :
 - Renommer l'exécutable ``main`` localisé dans ``target`` et le renommer en le nom de la commande voulu.
-- Déplacer l'exécutable vers /bin/  
+- Déplacer l'exécutable vers /bin/ ou vers /usr/bin/
 
 #### Installation utilisateur : 
 
+- Renommer l'exécutable ``main`` localisé dans ``target`` et le renommer en le nom de la commande voulu.
+- Déplacer l'exécutable vers /bin/ ou vers /usr/bin/
 
 ## Utilisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1NTA0Mzg2NCwtNTcwMjA5ODg5XX0=
+eyJoaXN0b3J5IjpbLTY5MTA1NTA1MiwtNTcwMjA5ODg5XX0=
 -->
