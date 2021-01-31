@@ -34,6 +34,10 @@ Le script effectuera la compilation du programme et met, le résultat dans le do
 - ajouter ``export PATH=$PATH:~/.local/bin`` au fichier ``.bashrc``/``.zshrc``.
 
 ## Utilisation
+
+- exécuter la commande/exécutable
+- Remplissez les demandes de l'application afin d'initialiser l'arbre
+- Interagisez
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTIyNDkwMjMsLTU3MDIwOTg4OV19
+eyJoaXN0b3J5IjpbMTk3NTk3MDMwMiwtNTcwMjA5ODg5XX0=
 -->
