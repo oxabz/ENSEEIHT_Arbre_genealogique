@@ -25,12 +25,12 @@ Le script effectuera la compilation du programme et met, le résultat dans le do
 
 #### Installation administrateur :
 - Renommer l'exécutable ``main`` localisé dans ``target`` et le renommer en le nom de la commande voulu.
-- Déplacer l'exécutable vers /bin/ ou vers /usr/bin/
+- Déplacer l'exécutable vers ``/bin/`` ou vers ``/usr/bin/``
 
 #### Installation utilisateur : 
 
 - Renommer l'exécutable ``main`` localisé dans ``target`` et le renommer en le nom de la commande voulu.
-- Déplacer l'exécutable vers ~/.local/bin
+- Déplacer l'exécutable vers ``~/.local/bin``
 - ajouter ``export PATH=$PATH:~/.local/bin`` au fichier ``.bashrc``/``.zshrc``.
 
 ## Utilisation
@@ -38,9 +38,9 @@ Le script effectuera la compilation du programme et met, le résultat dans le do
 - exécuter la commande/exécutable
 - Remplissez les demandes de l'application afin d'initialiser l'arbre
 - L'arbre sera visible en haut de l'écran. 
-	- On peut modifier et faire des requête sur l'arbre en entrant les lettres correspondant a une commande et en suivant les demandes faite par le programme
-	- On peut quitter le programme 
+	- On peut modifier et faire des requête sur l'arbre en entrant les lettres correspondant a une commande et en suivant les demandes faite par le programme. Les lettres des commandes sont encadré dans les interface po 
+	- On peut quitter le programme entrant ``e``
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTQ5MDY0MzksMjEzOTA0Nzc4OCwtNT
-cwMjA5ODg5XX0=
+eyJoaXN0b3J5IjpbMzkyNzM1NzQ4LDIxMzkwNDc3ODgsLTU3MD
+IwOTg4OV19
 -->
