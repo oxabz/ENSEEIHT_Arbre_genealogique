@@ -29,7 +29,38 @@ Les modules étant déjà une sous-division structurante du projet du programme 
 
 Le rapport suivra le plan suivant : 
 
-[TOC]
+- [Objectif du rapport](#objectif-du-rapport) - p1
+- [Introduction](#introduction) - p1
+- [Plan](#plan) - p2
+- [Architecture du programme :](#architecture-du-programme-) - p3
+- [Types](#types) -p4
+  - [``p_arbre_binaire`` :](#p_arbre_binaire-)
+  - [``p_personne``](#p_personne)
+  - [``P_linked_list``](#p_linked_list)
+  - [``p_arbre_genealogique``](#p_arbre_genealogique)
+- [Choix de conception et choix technique :](#choix-de-conception-et-choix-technique-) - p5
+  - [Séparation des fonctionnalité en package et généricité:](#séparation-des-fonctionnalité-en-package-et-généricité)
+  - [UX / UI : Expérience utilisateur et interface  utilisateur :](#ux--ui--expérience-utilisateur-et-interface--utilisateur-)
+  - [Division pseudo MVC (Modèle, Vue, Contrôler) :](#division-pseudo-mvc-modèle-vue-contrôler-)
+- [Fonctions Et Procédures](#fonctions-et-procédures) - p7
+  - [Fonctions et procédures de ``P_arbre_binaire`` :](#fonctions-et-procédures-de-p_arbre_binaire-)
+  - [Fonctions et procédures de ``p_arbre genealogique`` :](#fonctions-et-procédures-de-p_arbre-genealogique-)
+  - [Fonctions et procédures de ``main`` :](#fonctions-et-procédures-de-main-) 
+- [Tests](#tests) - p19
+  - [Méthodologie](#méthodologie)
+  - [Exemple](#exemple)
+  - [Couverture](#couverture)
+- [Difficultés :](#difficultés-) - p21
+  - [Difficultés rencontrées :](#difficultés-rencontrées-)
+  - [Solutions appliquée :](#solutions-appliquée-)
+- [État du projet :](#état-du-projet-) - p22
+  - [État du projet :](#état-du-projet--1)
+  - [Amélioration possible :](#amélioration-possible-)
+- [Bilan personnel :](#bilan-personnel-) - p22
+  - [Intérêt personnel :](#intérêt-personnel-)
+  - [Temps de travail](#temps-de-travail)
+  - [Répartition du temps](#répartition-du-temps)
+  - [Enseignement tiré du projet](#enseignement-tiré-du-projet)
 
 ## Architecture du programme : 
 
@@ -146,9 +177,9 @@ Une des méthode qui a été considéré est d'utiliser  la bibliothèque ncurse
 
 Cependant ncurse pose un problème de dépendance et de surcharge du projet. ncurse est bien plus gros que ce qui est nécessaire pour l'objectif. De plus ncurse est une dépendance qui n'est pas facilement disponible donc elle pourrait compliquer grandement l'installation de notre projet qui n'utilise que la bibliothèque standard.
 
-#### ANSII escape character : 
+#### ANSI escape character : 
 
-L'alternative à ncurse qui a été choisi est l'utilisation des character d'échappement ANSII. Ces characters sont des characters qui transmis au terminal permettent de donner des commande qui permettent de bouger un curseur, supprimer des parties du terminal, changer les couleur du texte... 
+L'alternative à ncurse qui a été choisi est l'utilisation des character d'échappement ANSI. Ces characters sont des characters qui transmis au terminal permettent de donner des commande qui permettent de bouger un curseur, supprimer des parties du terminal, changer les couleur du texte... 
 
 Cette option bien que moins étendu nous permet d'avoir une interface textuelle sans rajouter de dépendances.
 
@@ -212,7 +243,8 @@ Rechercher fais partie des fonctions qui change entre un arbre binaire trié et 
 -- pré-condition : l’arbre est initialisé
 -- post-condition : retourne le noeud ou null si le noeud existe pas
 -- Tests de la procédure :
-function rechercher(racine : in  T_AB ; valeur : in T_element) return T_AB
+function rechercher(racine : in  T_AB ; valeur : in T_element) 
+  return T_AB;
 ```
 
 ##### Raffinage 
@@ -258,20 +290,25 @@ plus généralement :
 -- paramètres :
   -- arbre : in  T_AB -- Arbre qu’on veut afficher
   -- profondeur : in integer -- Profondeur de cette arbre pour affichage (déterminé le décalage de l’arbre)
-  -- etiquette_gauche : in string(0..10)  -- Étiquette pour la partie gauche 
-  -- etiquette_droite : in string(0..10) -- Étiquette pour la partie droite
+  -- etiquette_gauche : in unbounded_string
+        -- Étiquette pour la partie gauche 
+  -- etiquette_droite : in unbounded_string
+        -- Étiquette pour la partie droite
 -- pré-condition : 
 -- post-condition : 
 -- Tests de la procédure :
-procedure afficher(arbre : in T_AB; profondeur : in integer; ethiquette_gauche, etiquette_droite : in string(0..10))
+procedure afficher(arbre : in T_AB; 
+                   profondeur : in integer; 
+                   ethiquette_gauche, 
+                   etiquette_droite : in unbounded_string;
 ```
 
 ##### Rafinage
 ```
 R0 : “affiche un arbre”
 R1 : Comment “affiche un arbre”  -- arbre : in  T_AB; profondeur : in integer; 
-                                 -- etiquette_gauche : in string(0..10); 
-                                 -- etiquette_droite : in string(0..10) 
+                                 -- etiquette_gauche : in unbounded_string 
+                                 -- etiquette_droite : in unbounded_string
   if(arbre = null) then raise arbre_exception; end if;
   afficher racine; 
   if(arbre.all.droite /= null )then 
@@ -283,18 +320,22 @@ R1 : Comment “affiche un arbre”  -- arbre : in  T_AB; profondeur : in intege
 R2 : Comment “afficher racine”  -- arbre : in  T_AB;        
   afficher_element(arbre.all.element);
   new_line;
-R2 : Comment afficher sous arbres droite -- arbre : in  T_AB; profondeur : in integer; 
-                                         -- etiquette_gauche : in string(0..10); 
-                                         -- etiquette_droite : in string(0..10) 
+R2 : Comment afficher sous arbres droite 
+                    -- arbre : in  T_AB; 
+                    -- profondeur : in integer; 
+                    -- etiquette_gauche : in unbounded_string;
+                    -- etiquette_droite : in unbounded_string; 
   for i in 1..profondeur loop
     put(“   ”);
   end loop;
   put(etiquette_droite);
   put(“ : ”);
   afficher(arbre.all.droite, profondeur+1, etiquette_droite, etiquette_gauche)
-R2 : Comment afficher sous arbres gauche -- arbre : in  T_AB; profondeur : in integer; 
-                                         -- etiquette_gauche : in string(0..10); 
-                                         -- etiquette_droite : in string(0..10) 
+R2 : Comment afficher sous arbres gauche 
+                    -- arbre : in  T_AB; 
+                    -- profondeur : in integer; 
+                    -- etiquette_gauche : in unbounded_string;
+                    -- etiquette_droite : in unbounded_string;  
   for i in 1..profondeur loop
     put(“   ”);
   end loop;
@@ -349,7 +390,7 @@ R2 : comment “supprimer récursivement le noeud et ses antécédents" aka "sup
   return res;
 ```
 
-### Fonctions et procédures de ``p_arbre genealogique`` :
+### Fonctions et procédures de ``p_arbre_genealogique`` :
 
 #### Récupérer les ancêtres de génération n d'un individu : (``get_ancetre_generation``) : 
 
@@ -359,17 +400,21 @@ Une fois ce sous arbre trouvé on le parcours récursivement jusqu'à atteindre 
 Pour "récupérer la suite des ancêtres de génération n d'un individu" il nous  faut simplement changer la structure de donné on passe d'une liste vers un arbre et on change le critère d'ajout à la structure de donné de sortie.
 
 ##### Spécification
-```
+```ada
 --Nom : get_ancetre_generation
---sémantique : retourne la liste des ancêtres d’une certaine generation d’un individue
- --paramètres :
--- arbre : T_AG
--- persone : integer 
--- generation : integer
--- retour : List<T_Person>
+--sémantique : retourne la liste des ancêtres d’une
+              --certaine generation d’un individue
+--paramètres :
+  -- arbre : T_AG
+  -- persone : integer 
+  -- generation : integer
+-- retour : L_Personne
 -- préconditions : arbre/=null
 -- postconditions : 
-function get_ancetre_generation(arbre : in T_AG, persone : in integer, generation : integer) return L_Personne;
+function get_ancetre_generation(arbre : in T_AG;
+                                persone : in integer;
+                                generation : integer)
+                                return L_Personne;
 ```
 
 ##### Raffinage
@@ -397,17 +442,21 @@ Quand la profondeur du descendant rempli le critère ``profndeur_cible + profond
 Pour identifier la suite des descendants d'une génération donné pour un individu donné on utilise la même méthode il faut juste changer la structure des donnés de sortie et la condition de validité : ``T_personne`` devient ``L_Personne`` et ``profndeur_cible + profondeur_noeud  = profondeur_ancetre`` devient ``profndeur_cible + profondeur_noeud  > profondeur_ancetre``
 
 ##### Spécification
-```
---Nom : get_descendant_generation
---sémantique : retourne le descendant de n-ieme generation d’un individue
---paramètres :
--- arbre : T_AG
--- personne : id 
--- generation : integer
+```ada
+-- Nom : get_descendant_generation
+-- sémantique : retourne le descendant de n-ieme generation 
+            -- d’un individue
+-- paramètres :
+  -- arbre : T_AG
+  -- personne : id 
+  -- generation : integer
 -- retour : T_Personne
 -- préconditions : arbre/=null
 -- postconditions : 
-function  get_decendant_generation(arbre : in T_AG, persone : in T_persone, generation : integer) return T_Personne;
+function  get_decendant_generation(arbre : in T_AG; 
+                                   persone : in T_persone;
+                                   generation : integer)
+                                   return T_Personne;
 ```
 ##### Rafinage
 ```
@@ -440,9 +489,10 @@ R3 : Comment “Renvoyer le descendant si le noeud courrent est le descendant”
 Cette fonction nécessite un algorithme qui parcours l'arbre et qui a chaque nœud vérifie les sous arbres pour avoir le nombre de parents. C'est le même principe pour 2 ou 0 parents
 
 ##### Spécification 
-```
+```ada
 --Nom : get_un_parent
---sémantique : --paramètres : retourne la liste des individus ayant un seul parent
+--sémantique : retourne la liste des individus ayant un 
+            -- seul parent
 -- arbre : T_AG
 -- retour : L_Person
 -- préconditions : arbre/=null
@@ -537,8 +587,8 @@ end;
 | ``p_personne``            | ✓ : ``test_personne.adb``           |
 | ``p_arbre_binaire``       | ✓ : ``test_arbre_binaire.adb``      |
 | ``p_arbre_genealogique``  | ✓ : ``test_arbre_genealogique.adb`` |
-| ``p_front``               | x : Fait uniquement de l'IO est donc ne peut pas être testé |
-| ``p_linked_list``         | x : On fait confiance au package développé dans les TP qui ont été testé à ce moment |
+| ``p_front``               | x : *Fait uniquement de l'IO est donc ne peut pas être testé* |
+| ``p_linked_list``         | x : *On fait confiance au package développé dans les TP qui ont été testé à ce moment |
 
 
 
@@ -606,14 +656,3 @@ On peut remarquer le rapport a été un charge de travail importante pour moi. C
 ### Enseignement tiré du projet
 
 Un des principale enseignement tirés de ce projet est l'importance du temps accordé à la conception du projet. En effet du temps qu'on pourrait considérer comme gaspiller est en fait du temps qui permet de faciliter l'implémentation et qui éviter les problèmes qui peuvent apparaitre lors d'un développement qui n'est pas guidé.
-
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjk3NTgwOTUsLTIwNzc3MDc4MTYsLT
-U5MzIzNzUyOSwxMzAwODI0Mzg3LDIwNzU4OTE3NywxODQwNjQy
-MTQ3LDI2ODY4NTc1LC0xNjU3MDExNDI0LDI3NDczNzI3MCwtNT
-gyNDA3NjgyLC0xMDg2NjU1MDA0LDE1MDE2ODMyNDcsLTcyMTgy
-OTM0Miw0OTg3NzAyOTMsLTE5Nzg4OTQ4MTcsLTIwNzAxOTAxMD
-gsMTM4MzI5OTAxNywxMzM2NjkwMDAsLTEzNzkwMjU3MTUsMzU1
-OTY5MTY1XX0=
--->
