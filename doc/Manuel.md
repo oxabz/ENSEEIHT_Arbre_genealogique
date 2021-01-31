@@ -15,6 +15,12 @@
 
 ### Build
 
+Dans la racine du projet exécuter :
+```sh
+./build.sh
+```
+Le script effectuera la 
+
 ### Installation 
 
 #### Installation administrateur :
@@ -24,5 +30,5 @@
 
 ## Utilisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3MDIwOTg4OV19
+eyJoaXN0b3J5IjpbMzk2ODkxODI4LC01NzAyMDk4ODldfQ==
 -->
