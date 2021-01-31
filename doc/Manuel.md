@@ -13,13 +13,13 @@
 
 ## Installation
 
-### Build
+### Compilation
 
 Dans la racine du projet exécuter :
 ```sh
 ./build.sh
 ```
-Le script effectuera la 
+Le script effectuera la compilation du programme et met, le résultat dans le dossier ``target``.
 
 ### Installation 
 
@@ -30,5 +30,5 @@ Le script effectuera la
 
 ## Utilisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk2ODkxODI4LC01NzAyMDk4ODldfQ==
+eyJoaXN0b3J5IjpbMTM5NjEwOTQ0NCwtNTcwMjA5ODg5XX0=
 -->
