@@ -1,5 +1,7 @@
 # Manuel Utilisateur
+
 ## Dépendances 
+
 ### Build 
 | Dépendance | Version               |
 |------------|-----------------------|
@@ -10,11 +12,17 @@
 
 
 ## Installation
+
 ### Build
+
 ### Installation 
-#### Installation administrateur
-#### Installation utilisateur
+
+#### Installation administrateur :
+
+#### Installation utilisateur : 
+
+
 ## Utilisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzU3Mjc0NjVdfQ==
+eyJoaXN0b3J5IjpbLTU3MDIwOTg4OV19
 -->
