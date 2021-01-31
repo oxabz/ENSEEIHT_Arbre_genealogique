@@ -6,11 +6,15 @@
 | gnat       | testé avec : 7ubuntu1 |
 
 ### Utilisation
-- Terminal qui accepte les caractères d'échappement ANSI. ([xterm](https://en.wikipedia.org/wiki/Xterm "Xterm"), [rxvt](https://en.wikipedia.org/wiki/Rxvt "Rxvt"), [GNOME Terminal](https://en.wikipedia.org/wiki/GNOME_Terminal "GNOME Terminal"), [Konsole](https://en.wikipedia.org/wiki/Konsole))
+- Terminal qui accepte les caractères d'échappement ANSI. ([xterm](https://en.wikipedia.org/wiki/Xterm "Xterm"), [rxvt](https://en.wikipedia.org/wiki/Rxvt "Rxvt"), [GNOME Terminal](https://en.wikipedia.org/wiki/GNOME_Terminal "GNOME Terminal"), [Konsole](https://en.wikipedia.org/wiki/Konsole)...)
 
 
 ## Installation
+### Build
+### Installation 
+#### Installation administrateur
+#### Installation utilisateur
 ## Utilisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjAzNzYwNDA2XX0=
+eyJoaXN0b3J5IjpbLTE2NzU3Mjc0NjVdfQ==
 -->
