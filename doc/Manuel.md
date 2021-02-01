@@ -33,6 +33,7 @@ Le script effectuera la compilation du programme et met, le résultat dans le do
 - Déplacer l'exécutable vers ``~/.local/bin``
 - ajouter ``export PATH=$PATH:~/.local/bin`` au fichier ``.bashrc``/``.zshrc``.
 
+
 ## Utilisation
 
 - exécuter la commande/exécutable
@@ -41,7 +42,3 @@ Le script effectuera la compilation du programme et met, le résultat dans le do
 	- On peut modifier et faire des requête sur l'arbre en entrant les lettres correspondant a une commande et en suivant les demandes faite par le programme. Les lettres des commandes sont encadré dans les interface pour les mettre en évidence
 `` Exemple : [r]einitialiser l'arbre -> La commande est r.`` 
 	- On peut quitter le programme entrant la commende ``e``.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4MzI5NDIwMiwyMTM5MDQ3Nzg4LC01Nz
-AyMDk4ODldfQ==
--->
